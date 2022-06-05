@@ -89,6 +89,9 @@ const Routes = () => {
         <Switch>
           <Route exact path="/njsw36/" component={DocLanding} />
 
+          <Route path="/njsw36/login" component={Login} />
+          <Route path="/njsw36/SignUp" component={SignUp} />
+
           {/* Pages Dropdown Routes */}
           <Route path="/team-1" component={Team1} />
           <Route path="/team-2" component={Team2} />
@@ -117,8 +120,7 @@ const Routes = () => {
           <Route path="/pricing-pm" component={PricingProjectManagement} />
 
           {/* Feature Dropdown Routes */}
-          <Route path="/njsw36/login" component={Login} />
-          <Route path="/njsw36/SignUp" component={SignUp} />
+
           <Route path="/terms-conditions" component={TermsConditions} />
           <Route path="/solution-management" component={SolutionMangement} />
           <Route

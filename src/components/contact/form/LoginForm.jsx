@@ -49,7 +49,7 @@ const LoginForm = () => {
           </div>
           <div className="col-12">
             <div className="input-group-meta mb-25">
-              <label>Password</label>
+              <label>סיסמא</label>
               <input
                 placeholder="הכנס סיסמא"
                 name="password"
@@ -76,17 +76,17 @@ const LoginForm = () => {
               </span>
             </div>
           </div>
+          {/*<div className="col-12">*/}
+          {/*  <div className="agreement-checkbox d-flex justify-content-between align-items-center">*/}
+          {/*    <div>*/}
+          {/*      <input type="checkbox" id="remember" />*/}
+          {/*      <label htmlFor="remember">Keep me logged in</label>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*  /!*  /.agreement-checkbox *!/*/}
+          {/*</div>*/}
           <div className="col-12">
-            <div className="agreement-checkbox d-flex justify-content-between align-items-center">
-              <div>
-                <input type="checkbox" id="remember" />
-                <label htmlFor="remember">Keep me logged in</label>
-              </div>
-            </div>
-            {/*  /.agreement-checkbox */}
-          </div>
-          <div className="col-12">
-            <button className="theme-btn-one mt-50 mb-50">Login</button>
+            <button className="theme-btn-one mt-50 mb-50">התחברות</button>
           </div>
         </div>
       </form>

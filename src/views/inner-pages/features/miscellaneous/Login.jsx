@@ -7,14 +7,14 @@ const Login = () => {
   return (
     <div className="main-page-wrapper p0">
       <Helmet>
-        <title>Login || Deski-Saas & Software React Template</title>
+        <title>התחברות</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="user-data-page clearfix d-lg-flex">
         <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
           <h3 className="font-rubik">
-            Want your best managment <br />
-            software? <Link to="/signup">sign up</Link>
+            רוצה חלק חלק מתוכנית <br />
+            ההתמחות? <Link to="/njsw36/signup">הרשמ/י כאן</Link>
           </h3>
           <div className="illustration-holder">
             <img
@@ -39,15 +39,15 @@ const Login = () => {
         <div className="form-wrapper">
           <div className="d-flex justify-content-between">
             <div className="logo">
-              <Link to="/project-management">
-                <img src="/njsw36/images/logo/deski_01.svg" alt="logo" />
+              <Link to="/njsw36/project-management">
+                <img src="/njsw36/images/logo/logo.png" alt="logo"  width="190" height="70" />
               </Link>
             </div>
             <Link
               className="font-rubik go-back-button"
-              to="/njsw36/project-management"
+              to="/njsw36/"
             >
-              Go to home
+              חזור לדף הבית
             </Link>
           </div>
           <div className="mt-80 md-mt-40">
