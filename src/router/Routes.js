@@ -1,20 +1,7 @@
 import React from "react";
 
 // All HOME PAGE ROUTES
-import EventOrganizer from "../views/all-home-pages/EventOrganizer";
 import DocLanding from "../views/all-home-pages/DocLanding";
-import DocSignatureLanding from "../views/all-home-pages/DocSignatureLanding";
-import ProjectManagement from "../views/all-home-pages/ProjectManagement";
-import CustomerSupport from "../views/all-home-pages/CustomerSupport";
-import ProductLanding from "../views/all-home-pages/ProductLanding";
-import ProductLandingDark from "../views/all-home-pages/ProductLandingDark";
-import NoteTakingLanding from "../views/all-home-pages/NoteTakingLanding";
-import VideoEditorLanding from "../views/all-home-pages/VideoEditorLanding";
-import AppointmentScheduling from "../views/all-home-pages/AppointmentScheduling";
-import MobileAppLanding from "../views/all-home-pages/MobileAppLanding";
-import WebsiteBuilderLanding from "../views/all-home-pages/WebsiteBuilderLanding";
-import ComingSoon from "../views/all-home-pages/ComingSoon";
-
 // All INNER PAGES ROUTES START FROM BELLOW
 
 // PAGES DROPDOWN ALL ROUTES
@@ -93,8 +80,6 @@ import NotFound from "../views/NotFound";
 // Route Specific
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
-import FormSurveyLanding from "../views/all-home-pages/FormSurveyLanding";
-import VrLanding from "../views/all-home-pages/VrLanding";
 
 const Routes = () => {
   return (
@@ -102,24 +87,7 @@ const Routes = () => {
       <Router>
         <ScrollTopBehaviour />
         <Switch>
-          <Route exact path="/njsw36/" component={EventOrganizer} />
-          <Route path="/njsw36/doc-landing" component={DocLanding} />
-          <Route path="/doc-signature" component={DocSignatureLanding} />
-          <Route path="/project-management" component={ProjectManagement} />
-          <Route path="/customer-support" component={CustomerSupport} />
-          <Route path="/product-landing" component={ProductLanding} />
-          <Route path="/product-landing-dark" component={ProductLandingDark} />
-          <Route path="/note-taking-landing" component={NoteTakingLanding} />
-          <Route path="/video-editor-landing" component={VideoEditorLanding} />
-          <Route
-            path="/appointment-scheduling"
-            component={AppointmentScheduling}
-          />
-          <Route path="/mobile-app-landing" component={MobileAppLanding} />
-          <Route path="/website-builder" component={WebsiteBuilderLanding} />
-          <Route path="/form-survey-landing" component={FormSurveyLanding} />
-          <Route path="/vr-landing" component={VrLanding} />
-          <Route path="/coming-soon" component={ComingSoon} />
+          <Route path="/njsw36/" component={DocLanding} />
 
           {/* Pages Dropdown Routes */}
           <Route path="/team-1" component={Team1} />

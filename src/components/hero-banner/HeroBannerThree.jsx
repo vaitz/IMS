@@ -8,29 +8,25 @@ const HeroBannerThree = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-9 col-lg-11 col-md-8 m-auto">
-            <h1 className="font-rubik">Doc software you looking for.</h1>
+            <h1 className="font-rubik">תכנית ההתמחות להיי-טק</h1>
           </div>
           {/* End .col */}
 
           <div className="col-xl-8 col-lg-9 m-auto">
             <p className="sub-text font-rubik">
-              With deski Docs, you can write, edit, and collaborate wherever you
-              are with 7 day trial
+                תכנית ההתמחות הינה תכנית ייחודית וראשונה מסוגה שנבנתה בשיתוף פעולה בין פארק ההיי-טק גב-ים נגב למחלקה להנדסת מערכות תוכנה ומידע, המרכז לפיתוח קריירה באוניברסיטת בן-גוריון בנגב ועמותת "אלומה".
+                <br/>
+                מטרת התוכנית היא לאפשר לסטודנטים הלומדים באוניברסיטה גישה לחברות ההיי-טק המובילות הפועלות בפארק, והיכרות מעשית עם סביבת הפיתוח בתעשיית ההיי-טק המקומית.
             </p>
           </div>
           {/* End .col */}
         </div>
         {/* End .row */}
 
-        <div className="search-filter-form">
-          <FormDoc />
-        </div>
-        {/* End search-filter-from */}
-
         <p className="sing-in-call">
-          Already using deski?{" "}
-          <Link to="/login" className="font-rubik">
-            Sign in.
+          רוצה לקחת חלק מהתוכנית?{" "}
+          <Link to="/njsw36/login" className="font-rubik">
+            הרשמה כאן
           </Link>
           .
         </p>

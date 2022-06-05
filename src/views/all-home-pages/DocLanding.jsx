@@ -15,7 +15,7 @@ const DocLanding = () => {
   return (
     <div className="main-page-wrapper">
       <Helmet>
-        <title>Doc Landing || Deski-Saas & Software React Template</title>
+        <title>בדיקה</title>
       </Helmet>
       {/* End Page SEO Content */}
 

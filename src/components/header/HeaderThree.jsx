@@ -27,8 +27,8 @@ const HeaderThree = () => {
       >
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
-            <Link to="/">
-              <img src="images/logo/logo.jpeg" alt="brand logo"  width="190" height="70" />
+            <Link to="/njsw36/">
+              <img src="/njsw36/images/logo/logo.jpeg" alt="brand logo"  width="190" height="70" />
             </Link>
           </div>
           {/* End Logo */}
@@ -49,7 +49,7 @@ const HeaderThree = () => {
                         to="/njsw36/login"
                         className="signIn-action d-flex align-items-center"
                       >
-                        <img src="images/icon/52.svg" alt="icon" />
+                        <img src="/njsw36/images/icon/52.svg" alt="icon" />
                         <span>Login</span>
                       </Link>
                     </li>
@@ -60,7 +60,7 @@ const HeaderThree = () => {
                         className="signUp-action d-flex align-items-center"
                       >
                         <span>Getting Started</span>
-                        <img src="images/icon/53.svg" alt="icon" />
+                        <img src="/njsw36/images/icon/53.svg" alt="icon" />
                       </Link>
                     </li>
                   </ul>
