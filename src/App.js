@@ -7,13 +7,13 @@ import "aos/dist/aos.css";
 import { getUser } from "./utils/common";
 import { getDetails } from "./requests";
 import { GUEST } from "./constants";
+import { ThemeProvider } from "@mui/material/styles";
 
 const App = () => {
   const [userType, setUserType] = useState(GUEST);
   const [firstName, setFirstName] = useState("אורח");
-  const [programId, setProgramId] = useState("");
-  const [username, setUsername] = useState();
-  console.log(userType);
+  const [programId, setProgramId] = useState(123);
+  const [username, setUsername] = useState("user");
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -27,7 +27,7 @@ const App = () => {
   window.addEventListener("load", AOS.refresh);
 
   return (
-    <>
+    <ThemeProvider>
       <Helmet>
         <title>Deski - Saas & Software React Template</title>
         <meta property="og:site_name" content="deski" />
@@ -59,7 +59,7 @@ const App = () => {
         programId={programId}
         username={username}
       />
-    </>
+    </ThemeProvider>
   );
 };
 
