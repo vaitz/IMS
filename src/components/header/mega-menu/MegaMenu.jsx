@@ -12,7 +12,7 @@ const HomeDropdown = [
   },
   {
     img: "home02",
-    routerPath: "/doc-landing",
+    routerPath: "/njsw36/doc-landing",
     inenerText: "",
     inenerTextWrapClass: "",
     clasName: `dropdown-item img-box`,
@@ -366,8 +366,8 @@ const MegaMenu = () => {
       </li>
       {/* End li */}
 
-      <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+      <li className="nav-item">
+        <a className="nav-link" href="#" data-toggle="button">
           Pages
         </a>
         <ul className="dropdown-menu">

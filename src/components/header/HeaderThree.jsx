@@ -28,7 +28,7 @@ const HeaderThree = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
             <Link to="/">
-              <img src="images/logo/deski_01.svg" alt="brand logo" />
+              <img src="images/logo/logo.jpeg" alt="brand logo"  width="190" height="70" />
             </Link>
           </div>
           {/* End Logo */}
@@ -46,7 +46,7 @@ const HeaderThree = () => {
                   <ul className="right-widget user-login-button d-flex align-items-center justify-content-center">
                     <li>
                       <Link
-                        to="login"
+                        to="/njsw36/login"
                         className="signIn-action d-flex align-items-center"
                       >
                         <img src="images/icon/52.svg" alt="icon" />

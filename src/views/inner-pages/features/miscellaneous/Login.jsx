@@ -52,10 +52,10 @@ const Login = () => {
           </div>
           <div className="mt-80 md-mt-40">
             <h2>
-              Hi buddy, welcome <br /> Back!
+              שלום, ברוכים הבאים! <br />
             </h2>
             <p className="header-info pt-30 pb-50">
-              Still don't have an account? <Link to="/signup">Sign Up</Link>
+               עדיין איך לך משתמש?  <Link to="/signup">הרשם כאן</Link>
             </p>
           </div>
 

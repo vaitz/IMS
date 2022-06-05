@@ -7,7 +7,8 @@ import MegaMenuLanding from "../../header/mega-menu/MegaMenuLanding";
 
 Modal.setAppElement("#root");
 
-const logo = "images/logo/deski_06.svg";
+// const logo = "images/logo/deski_06.svg";
+const logo = "images/logo/logo.jpeg";
 
 const HeaderLanding = () => {
   const [isOpen, setIsOpen] = useState(false);
