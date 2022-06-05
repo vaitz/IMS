@@ -51,10 +51,10 @@ const SignUpForm = () => {
         <div className="row">
           <div className="col-12">
             <div className="input-group-meta mb-50">
-              <label>Name</label>
+              <label>שם משתמש</label>
               <input
                 type="text"
-                placeholder="Enter Full Name"
+                placeholder="הכנס/י שם משתמש"
                 name="name"
                 {...register("name")}
                 className={` ${errors.name ? "is-invalid" : ""}`}
@@ -67,9 +67,41 @@ const SignUpForm = () => {
           </div>
           <div className="col-12">
             <div className="input-group-meta mb-50">
-              <label>Email</label>
+              <label>שם פרטי</label>
               <input
-                placeholder="Enter Your Email"
+                type="text"
+                placeholder="הכנס/י שם פרטי"
+                name="name"
+                {...register("name")}
+                className={` ${errors.name ? "is-invalid" : ""}`}
+              />
+
+              {errors.name && (
+                <div className="invalid-feedback">{errors.name?.message}</div>
+              )}
+            </div>
+          </div>
+          <div className="col-12">
+            <div className="input-group-meta mb-50">
+              <label>שם משפחה</label>
+              <input
+                type="text"
+                placeholder="הכנס/י שם משפחה"
+                name="name"
+                {...register("name")}
+                className={` ${errors.name ? "is-invalid" : ""}`}
+              />
+
+              {errors.name && (
+                <div className="invalid-feedback">{errors.name?.message}</div>
+              )}
+            </div>
+          </div>
+          <div className="col-12">
+            <div className="input-group-meta mb-50">
+              <label>אימייל</label>
+              <input
+                placeholder="הכנס/י כתובת אימייל"
                 name="email"
                 type="text"
                 {...register("email")}
@@ -83,9 +115,9 @@ const SignUpForm = () => {
           </div>
           <div className="col-12">
             <div className="input-group-meta mb-50">
-              <label>Password</label>
+              <label>סיסמא</label>
               <input
-                placeholder="Enter Password"
+                placeholder="הכנס/י סיסמא"
                 name="password"
                 type={passwordShown ? "text" : "password"}
                 {...register("password")}
@@ -114,9 +146,9 @@ const SignUpForm = () => {
           </div>
           <div className="col-12">
             <div className="input-group-meta mb-25">
-              <label>Re-type Password</label>
+              <label>אימות סיסמא</label>
               <input
-                placeholder="Enter Password"
+                placeholder="הכנס/י סיסמא בשנית"
                 name="confirmPassword"
                 type={rePasswordShown ? "text" : "password"}
                 {...register("confirmPassword")}
@@ -155,8 +187,7 @@ const SignUpForm = () => {
                 />
 
                 <label htmlFor="acceptTerms">
-                  By clicking "SIGN UP" I agree to the Terms and Conditions and
-                  Privacy Policy.
+                  קראתי את הצהרת הרצינות ואני מסכים/מה עם הנאמר.
                 </label>
                 {errors.acceptTerms && (
                   <div className="invalid-feedback">
@@ -169,7 +200,7 @@ const SignUpForm = () => {
           </div>
           <div className="col-12">
             <button type="submit" className="theme-btn-one mt-30 mb-50">
-              Sign Up
+              הרשמה
             </button>
           </div>
           {/* End .col */}

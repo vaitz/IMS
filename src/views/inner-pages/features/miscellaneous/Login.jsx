@@ -39,7 +39,7 @@ const Login = () => {
         <div className="form-wrapper">
           <div className="d-flex justify-content-between">
             <div className="logo">
-              <Link to="/njsw36/project-management">
+              <Link to="/njsw36/">
                 <img src="/njsw36/images/logo/logo.png" alt="logo"  width="190" height="70" />
               </Link>
             </div>

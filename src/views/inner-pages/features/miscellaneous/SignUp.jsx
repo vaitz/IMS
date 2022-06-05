@@ -7,27 +7,28 @@ const SignUp = () => {
   return (
     <div className="main-page-wrapper p0">
       <Helmet>
-        <title>Sign Up || Deski-Saas & Software React Template</title>
+        <title>הרשמה</title>
       </Helmet>
       {/* End Page SEO Content */}
       <div className="user-data-page clearfix d-lg-flex">
         <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
           <h3 className="font-rubik">
-            We have a “strategic” plan its <br /> called doing things.
+            אם אתם חברה או סטודנט/ית המעוניינים לקחת חלק  <br />
+            כדאי לכם להירשם בהקדם ולהצטרף לחוויה.
           </h3>
           <div className="illustration-holder">
             <img
-              src="images/assets/ils_08.svg"
+              src="/njsw36/images/assets/ils_08.svg"
               alt="illustration"
               className="illustration"
             />
             <img
-              src="images/assets/ils_08.1.svg"
+              src="/njsw36/images/assets/ils_08.1.svg"
               alt="illustration"
               className="shapes shape-one"
             />
             <img
-              src="images/assets/ils_08.2.svg"
+              src="/njsw36/images/assets/ils_08.2.svg"
               alt="illustration"
               className="shapes shape-two"
             />
@@ -38,19 +39,19 @@ const SignUp = () => {
         <div className="form-wrapper">
           <div className="d-flex justify-content-between">
             <div className="logo">
-              <Link to="/">
-                <img src="images/logo/deski_01.svg" alt="logo" />
+              <Link to="/njsw36/">
+                <img src="/njsw36/images/logo/logo.png" alt="logo" width="190" height="70" />
               </Link>
             </div>
-            <Link className="font-rubik go-back-button" to="/">
-              Go to home
+            <Link className="font-rubik go-back-button" to="/njsw36">
+              חזור לדף הבית
             </Link>
           </div>
           {/* End d-flex */}
-          <div className="mt-30">
-            <h2>Join with thousands of startup!</h2>
-            <p className="header-info pt-30 pb-50">
-              Already have an account? <Link to="login">Login</Link>
+          <div className="mt-10">
+            <h3>הצטרפו אלינו!</h3>
+            <p className="header-info pt-20 pb-30">
+              נרשמת למערכת כבר? מעבר ל<Link to="/njsw36/login">התחברות</Link>
             </p>
           </div>
           <SignUpForm />
