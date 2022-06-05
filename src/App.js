@@ -1,15 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import Routes from "./router/Routes";
 import ScrollToTop from "./components/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { getUser } from "./utils/common";
+import { getDetails } from "./requests";
+import { GUEST } from "./constants";
 
 const App = () => {
+  const [userType, setUserType] = useState(GUEST);
+  const [firstName, setFirstName] = useState("אורח");
+  const [programId, setProgramId] = useState("");
+  const [username, setUsername] = useState();
+  console.log(userType);
   useEffect(() => {
     AOS.init({
       duration: 1200,
     });
+    const user = getUser();
+    if (user) {
+      setUsername(user);
+      getDetails(user, setUserType, setFirstName, setProgramId);
+    }
   }, []);
   window.addEventListener("load", AOS.refresh);
 
@@ -40,7 +53,12 @@ const App = () => {
       {/* End Seo Helmt */}
 
       <ScrollToTop />
-      <Routes />
+      <Routes
+        userType={userType}
+        firstName={firstName}
+        programId={programId}
+        username={username}
+      />
     </>
   );
 };

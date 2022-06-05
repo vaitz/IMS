@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import MegaMenu from "./mega-menu/MegaMenu";
 import MegaMenuMobile from "./mega-menu/MegaMenuMobile";
 
-const HeaderThree = () => {
+const HeaderThree = ({ userType, firstName, programId, username }) => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -28,7 +28,12 @@ const HeaderThree = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
             <Link to="/njsw36/">
-              <img src="/njsw36/images/logo/logo.png" alt="brand logo"  width="190" height="70" />
+              <img
+                src="/njsw36/images/logo/logo.png"
+                alt="brand logo"
+                width="190"
+                height="70"
+              />
             </Link>
           </div>
           {/* End Logo */}
@@ -40,7 +45,7 @@ const HeaderThree = () => {
                 id="navbarSupportedContent"
               >
                 <div className="d-lg-flex justify-content-between align-items-center">
-                  <MegaMenu />
+                  <MegaMenu userType={userType} />
                   {/* End MegaMenu */}
 
                   <ul className="right-widget user-login-button d-flex align-items-center justify-content-center">
