@@ -87,7 +87,7 @@ const Routes = () => {
       <Router>
         <ScrollTopBehaviour />
         <Switch>
-          <Route path="/njsw36/" component={DocLanding} />
+          <Route exact path="/njsw36/" component={DocLanding} />
 
           {/* Pages Dropdown Routes */}
           <Route path="/team-1" component={Team1} />
@@ -118,7 +118,7 @@ const Routes = () => {
 
           {/* Feature Dropdown Routes */}
           <Route path="/njsw36/login" component={Login} />
-          <Route path="/SignUp" component={SignUp} />
+          <Route path="/njsw36/SignUp" component={SignUp} />
           <Route path="/terms-conditions" component={TermsConditions} />
           <Route path="/solution-management" component={SolutionMangement} />
           <Route

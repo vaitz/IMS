@@ -1,13 +1,17 @@
 import React from "react";
 
 const BrandImages = [
-  "logo-32",
-  "logo-33",
-  "logo-34",
-  "logo-35",
-  "logo-36",
-  "logo-37",
-  "logo-38",
+  "company1",
+  "company2",
+  "company3",
+  "company4",
+  "company5",
+  "company6",
+  "company7",
+  "company8",
+  "company9",
+  "company10",
+
 ];
 
 const BrandThree = () => {
@@ -18,7 +22,7 @@ const BrandThree = () => {
           className="logo d-flex align-items-center justify-content-center"
           key={i}
         >
-          <img src={`images/logo/${val}.png`} alt="logo" />
+          <img src={`/njsw36/images/logo/${val}.png`} alt="logo" />
         </div>
       ))}
     </>

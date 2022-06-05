@@ -26,7 +26,7 @@ const FooterThree = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          <img src="images/logo/deski_01.svg" alt="" />
+          <img src="/njsw36/images/logo/deski_01.svg" alt="" />
         </a>
       </div>
       {/* /.about-widget */}
@@ -40,19 +40,19 @@ const FooterThree = () => {
         <h5 className="footer-title">Services</h5>
         <ul>
           <li>
-            <Link to="/blog-details">Web Design</Link>
+            <Link to="/njsw36//blog-details">Web Design</Link>
           </li>
           <li>
-            <Link to="/blog-details">Development</Link>
+            <Link to="/njsw36//blog-details">Development</Link>
           </li>
           <li>
-            <Link to="/blog-details">Wordpress</Link>
+            <Link to="/njsw36//blog-details">Wordpress</Link>
           </li>
           <li>
-            <Link to="/blog-details">Online Marketing</Link>
+            <Link to="/njsw36//blog-details">Online Marketing</Link>
           </li>
           <li>
-            <Link to="/blog-details">Content</Link>
+            <Link to="/njsw36//blog-details">Content</Link>
           </li>
         </ul>
       </div>

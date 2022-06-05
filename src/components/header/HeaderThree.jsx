@@ -28,7 +28,7 @@ const HeaderThree = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
             <Link to="/njsw36/">
-              <img src="/njsw36/images/logo/logo.jpeg" alt="brand logo"  width="190" height="70" />
+              <img src="/njsw36/images/logo/logo.png" alt="brand logo"  width="190" height="70" />
             </Link>
           </div>
           {/* End Logo */}
@@ -50,16 +50,16 @@ const HeaderThree = () => {
                         className="signIn-action d-flex align-items-center"
                       >
                         <img src="/njsw36/images/icon/52.svg" alt="icon" />
-                        <span>Login</span>
+                        <span>התחברות</span>
                       </Link>
                     </li>
                     {/* End li */}
                     <li>
                       <Link
-                        to="signup"
+                        to="/njsw36/signup"
                         className="signUp-action d-flex align-items-center"
                       >
-                        <span>Getting Started</span>
+                        <span>הרשמה לתוכנית</span>
                         <img src="/njsw36/images/icon/53.svg" alt="icon" />
                       </Link>
                     </li>

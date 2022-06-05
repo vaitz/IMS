@@ -15,7 +15,7 @@ const DocLanding = () => {
   return (
     <div className="main-page-wrapper">
       <Helmet>
-        <title>בדיקה</title>
+        <title>תוכנית ההתמחות להייטק</title>
       </Helmet>
       {/* End Page SEO Content */}
 
@@ -34,25 +34,32 @@ const DocLanding = () => {
           <div className="row">
             <div className="col-xl-12 m-auto">
               <div className="title-style-four text-center mb-80 md-mb-30">
-                <h2 data-aos="fade-up" data-aos-duration="1200">
-                  Create documentation with technical-free writing,
+                <h3 data-aos="fade-up" data-aos-duration="1200">
+                  תכנית ההתמחות הינה תכנית ייחודית וראשונה מסוגה שנבנתה בשיתוף פעולה בין פארק ההיי-טק גב-ים נגב למחלקה להנדסת מערכות תוכנה ומידע, המרכז לפיתוח קריירה באוניברסיטת בן-גוריון בנגב ועמותת "אלומה".
+                  <br/>
+                  מטרת התוכנית היא לאפשר לסטודנטים הלומדים באוניברסיטה גישה לחברות ההיי-טק המובילות הפועלות בפארק,
                   <span>
                     {" "}
-                    & effortless{" "}
-                    <img src="images/shape/line-shape-3.svg" alt="shape" />
+                    והיכרות מעשית עם סביבת הפיתוח{" "}
+                    <img src="/njsw36/images/shape/line-shape-3.svg" alt="shape" />
                   </span>
-                  hosting.
-                </h2>
+                   בתעשיית ההיי-טק המקומית.
+                </h3>
               </div>
             </div>
             {/* End .col */}
           </div>
           {/* End .row */}
 
-          <div className="row">
-            <div className="col-xl-11 m-auto">
-              <FancyFeatureEight />
-            </div>
+          <div className="row justify-content-center">
+            <img src="/njsw36/images/logo/GavYam.jpg"/>
+            <img src="/njsw36/images/logo/BGU.jpg"  />
+            <img src="/njsw36/images/logo/aloma.png" />
+
+            {/*<div className="col-xl-11 m-auto">*/}
+            {/*  <FancyFeatureEight />*/}
+            {/*</div>*/}
+            {/*<img src="/njsw36/images/logo/starship.jpg" className="illustration" />*/}
           </div>
           {/* End .row */}
         </div>
@@ -63,11 +70,11 @@ const DocLanding = () => {
      =============================================
 				Document Slide As Nav
 		============================================== */}
-      <div className="fancy-text-block-sixteen mt-200 md-mt-80">
-        <div className="container">
-          <DocSlickAsNav />
-        </div>
-      </div>
+      {/*<div className="fancy-text-block-sixteen mt-200 md-mt-80">*/}
+      {/*  <div className="container">*/}
+      {/*    <DocSlickAsNav />*/}
+      {/*  </div>*/}
+      {/*</div>*/}
       {/* End text block based image slide */}
 
       {/* 
@@ -79,14 +86,14 @@ const DocLanding = () => {
           <div className="title-style-four text-center mb-60 md-mb-40">
             <div className="row">
               <div className="col-lg-10 m-auto">
-                <h6>How it works</h6>
+                <h6>הצטרפו</h6>
                 <h2>
-                  Awesome place to start creating your{" "}
+                  סטודנט/ית או חברה שמעוניינת לקחת חלק בתוכנית?{" "}
                   <span>
-                    first doc with{" "}
-                    <img src="images/shape/line-shape-2.svg" alt="shape" />
+                    מהרו והירשמו בהקדם{" "}
+                    <img src="/njsw36/images/shape/line-shape-2.svg" alt="shape" />
                   </span>
-                  deski
+                  כדי לקחת חלק במחזור הקרוב.
                 </h2>
               </div>
             </div>
@@ -100,7 +107,7 @@ const DocLanding = () => {
                 data-aos-duration="1200"
               >
                 <div className="illustration-holder">
-                  <img src="images/assets/ils_10.svg" alt="illustration" />
+                  <img src="/njsw36/images/assets/ils_10.svg" alt="illustration" />
                 </div>
               </div>
               <div
@@ -109,13 +116,12 @@ const DocLanding = () => {
                 data-aos-duration="1200"
               >
                 <div className="text-wrapper">
-                  <h6>Documentation</h6>
+                  <h6>משתתפים</h6>
                   <h2 className="font-rubik title">
-                    A home for your team, best-practices & thoughts.
+                    100 סטודנטיות וסטודנטים מצטיינים
                   </h2>
                   <p>
-                    With deksi docs, you can write, edit, let it collaborate
-                    wherever you are lorem dumy text introduction.
+                    במחזור הראשון, השני והשלישי של התכנית השתתפו 100 סטודנטיות וסטודנטים מצטיינים מהתוכניות להנדסת תוכנה הנדסת מערכות מידע ומדעי המחשב אשר שובצו להתמחות בכ-20 חברות היי-טק מובילות בפארק גב-ים נגב.
                   </p>
                 </div>
                 {/* /.text-wrapper */}
@@ -132,7 +138,7 @@ const DocLanding = () => {
                 data-aos-duration="1200"
               >
                 <div className="illustration-holder">
-                  <img src="images/assets/ils_11.svg" alt="illustration" />
+                  <img src="/njsw36/images/assets/ils_11.svg" alt="illustration" />
                 </div>
               </div>
               <div
@@ -141,13 +147,12 @@ const DocLanding = () => {
                 data-aos-duration="1200"
               >
                 <div className="text-wrapper">
-                  <h6>User Guides</h6>
+                  <h6>נסיון מעשי</h6>
                   <h2 className="font-rubik title">
-                    Docs for your APIs, products, FAQs and user guides,
+                    פרויקט פיתוח טכנולוגי
                   </h2>
                   <p>
-                    With deksi docs, you can write, edit, let it collaborate
-                    wherever you are lorem dumy text introduction.
+                    במסגרת ההתמחות המתמחים עבדו על פרויקט פיתוח טכנולוגי בליווי מנטור מקצועי מטעם החברה.
                   </p>
                 </div>
                 {/* /.text-wrapper */}
@@ -164,7 +169,7 @@ const DocLanding = () => {
                 data-aos-duration="1200"
               >
                 <div className="illustration-holder">
-                  <img src="images/assets/ils_12.svg" alt="illustration" />
+                  <img src="/njsw36/images/assets/ils_12.svg" alt="illustration" />
                 </div>
               </div>
               <div
@@ -173,13 +178,13 @@ const DocLanding = () => {
                 data-aos-duration="1200"
               >
                 <div className="text-wrapper">
-                  <h6>Combine Idea</h6>
+                  <h6>מפגשים</h6>
                   <h2 className="font-rubik title">
-                    A place to think and track ideas for you & your team
+                    מפגשים מקצועיים
                   </h2>
                   <p>
-                    With deksi docs, you can write, edit, let it collaborate
-                    wherever you are lorem dumy text introduction.
+                    המתמחים השתתפו ב-13 מפגשי Meetup מקצועיים שהועברו ע"י אנשי פיתוח בכירים מקרב חברות ההיי-טק בפארק, בדגש על יישום בתעשייה.
+                    במפגשים אלו שולבו גם תכנים תעסוקתיים ומיומנויות לקידום הקריירה בהובלת המרכז לפיתוח קריירה באוניברסיטת בן-גוריון.
                   </p>
                 </div>
                 {/* /.text-wrapper */}
@@ -197,42 +202,42 @@ const DocLanding = () => {
 		============================================== */}
       <div className="client-feedback-slider-two mt-180 md-mt-100">
         <img
-          src="images/shape/78.svg"
+          src="/njsw36/images/shape/78.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/79.svg"
+          src="/njsw36/images/shape/79.svg"
           alt="shape"
           className="shapes shape-two"
         />
         <img
-          src="images/shape/80.svg"
+          src="/njsw36/images/shape/80.svg"
           alt="shape"
           className="shapes shape-three"
         />
         <img
-          src="images/shape/81.svg"
+          src="/njsw36/images/shape/81.svg"
           alt="shape"
           className="shapes shape-four"
         />
         <img
-          src="images/shape/82.svg"
+          src="/njsw36/images/shape/82.svg"
           alt="shape"
           className="shapes shape-five"
         />
         <img
-          src="images/shape/83.svg"
+          src="/njsw36/images/shape/83.svg"
           alt="shape"
           className="shapes shape-six"
         />
         <img
-          src="images/shape/84.svg"
+          src="/njsw36/images/shape/84.svg"
           alt="shape"
           className="shapes shape-seven"
         />
         <img
-          src="images/shape/85.svg"
+          src="/njsw36/images/shape/85.svg"
           alt="shape"
           className="shapes shape-eight"
         />
@@ -240,12 +245,12 @@ const DocLanding = () => {
           <div className="title-style-four text-center mb-100 md-mb-60">
             <div className="row">
               <div className="col-lg-7 col-md-9 m-auto">
-                <h6>Feedback</h6>
+                <h6>פידבק</h6>
                 <h2>
-                  What’s Our Client Say <br />
+                  מה המשתתפים בתוכנית  <br />
                   <span>
-                    About Us{" "}
-                    <img src="images/shape/line-shape-2.svg" alt="shape" />
+                    אומרים עליה{" "}
+                    <img src="/njsw36/images/shape/line-shape-2.svg" alt="shape" />
                   </span>
                 </h2>
               </div>
@@ -269,19 +274,14 @@ const DocLanding = () => {
               <div className="title-style-four">
                 <h2>
                   <span>
-                    Who is using ours
-                    <img src="images/shape/line-shape-10.svg" alt="shape" />
+                    החברות החונכות
+                    <img src="/njsw36/images/shape/line-shape-10.svg" />
                   </span>
-                  deski docs?
                 </h2>
               </div>
               <p className="sub-text">
-                Deski ties into your existing tools, services, & workflow. Get
-                notifications or create story with others tools.
+                החברות נמצאות בפארק ההייטק גב-ים בבאר שבע
               </p>
-              <a href="#" className="all-button">
-                See all partners <i className="flaticon-right-arrow"></i>
-              </a>
             </div>
             {/* End .col */}
           </div>
@@ -310,32 +310,32 @@ const DocLanding = () => {
 		============================================== */}
       <div className="faq-classic with-bg">
         <img
-          src="images/shape/86.svg"
+          src="/njsw36/images/shape/86.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/87.svg"
+          src="/njsw36/images/shape/87.svg"
           alt="shape"
           className="shapes shape-two"
         />
         <img
-          src="images/shape/88.svg"
+          src="/njsw36/images/shape/88.svg"
           alt="shape"
           className="shapes shape-three"
         />
         <img
-          src="images/shape/89.svg"
+          src="/njsw36/images/shape/89.svg"
           alt="shape"
           className="shapes shape-four"
         />
         <img
-          src="images/shape/90.svg"
+          src="/njsw36/images/shape/90.svg"
           alt="shape"
           className="shapes shape-five"
         />
         <img
-          src="images/shape/91.svg"
+          src="/njsw36/images/shape/91.svg"
           alt="shape"
           className="shapes shape-six"
         />
@@ -347,7 +347,7 @@ const DocLanding = () => {
                 <h2>
                   <span>
                     Questions & Answers
-                    <img src="images/shape/line-shape-2.svg" alt="" />
+                    <img src="/njsw36/images/shape/line-shape-2.svg" alt="" />
                   </span>
                 </h2>
               </div>

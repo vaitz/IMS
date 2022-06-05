@@ -26,23 +26,6 @@ export default function SlickAsNav() {
 
   return (
     <>
-      <Slider
-        className="slick-nav-none"
-        asNavFor={nav2}
-        ref={(slider1) => setNav1(slider1)}
-        autoplay={true}
-      >
-        <div className="item">
-          <img src="images/assets/feature-img-12.png" alt="feature" />
-        </div>
-        <div className="item">
-          <img src="images/assets/feature-img-12.png" alt="feature" />
-        </div>
-        <div className="item">
-          <img src="images/assets/feature-img-12.png" alt="feature" />
-        </div>
-      </Slider>
-      {/* Top Image slide */}
 
       <Slider
         {...settings}
@@ -55,6 +38,7 @@ export default function SlickAsNav() {
         <div className="block-style-eleven mt-40">
           <div className="num font-rubik">01</div>
           <div className="title">Personal Notes</div>
+          <img src="/njsw36/images/logo/GavYam.jpg"/>
           <p className="font-rubik">
             A place to think and track ideas for you and your team
           </p>
@@ -63,6 +47,7 @@ export default function SlickAsNav() {
         <div className="block-style-eleven mt-40">
           <div className="num font-rubik">02</div>
           <div className="title">Knowledge Base</div>
+          <img src="/njsw36/images/logo/BGU.jpg"  />
           <p className="font-rubik">
             A home for your team, best practices and thoughts.
           </p>
@@ -71,9 +56,7 @@ export default function SlickAsNav() {
         <div className="block-style-eleven mt-40">
           <div className="num font-rubik">03</div>
           <div className="title">Products Doc</div>
-          <p className="font-rubik">
-            Beautiful docs for your APIs, Products, FAQs, & User Guides,
-          </p>
+          <img src="/njsw36/images/logo/aloma.png" />
         </div>
         {/* /.block-style-eleven */}
       </Slider>

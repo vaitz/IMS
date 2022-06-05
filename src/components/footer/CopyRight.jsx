@@ -6,13 +6,13 @@ const CopyRight = () => {
     <div className="d-md-flex align-items-center justify-content-between">
       <ul className="order-md-last">
         <li>
-          <Link to="/terms-conditions"></Link>
+          <Link to="/njsw36//terms-conditions"></Link>
         </li>
         <li>
-          <Link to="/terms-conditions">Security</Link>
+          <Link to="/njsw36//terms-conditions">Security</Link>
         </li>
         <li>
-          <Link to="/terms-conditions">Terms</Link>
+          <Link to="/njsw36//terms-conditions">Terms</Link>
         </li>
       </ul>
 

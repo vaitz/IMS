@@ -18,17 +18,17 @@ const Login = () => {
           </h3>
           <div className="illustration-holder">
             <img
-              src="images/assets/ils_08.svg"
+              src="/njsw36/images/assets/ils_08.svg"
               alt="illustration"
               className="illustration"
             />
             <img
-              src="images/assets/ils_08.1.svg"
+              src="/njsw36/images/assets/ils_08.1.svg"
               alt="illustration"
               className="shapes shape-one"
             />
             <img
-              src="images/assets/ils_08.2.svg"
+              src="/njsw36/images/assets/ils_08.2.svg"
               alt="illustration"
               className="shapes shape-two"
             />
@@ -40,12 +40,12 @@ const Login = () => {
           <div className="d-flex justify-content-between">
             <div className="logo">
               <Link to="/project-management">
-                <img src="images/logo/deski_01.svg" alt="logo" />
+                <img src="/njsw36/images/logo/deski_01.svg" alt="logo" />
               </Link>
             </div>
             <Link
               className="font-rubik go-back-button"
-              to="/project-management"
+              to="/njsw36/project-management"
             >
               Go to home
             </Link>
@@ -55,7 +55,7 @@ const Login = () => {
               שלום, ברוכים הבאים! <br />
             </h2>
             <p className="header-info pt-30 pb-50">
-               עדיין איך לך משתמש?  <Link to="/signup">הרשם כאן</Link>
+               עדיין איך לך משתמש?  <Link to="/njsw36/signup">הרשם כאן</Link>
             </p>
           </div>
 

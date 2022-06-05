@@ -33,22 +33,22 @@ export default function TestimonialTwo() {
 
   const TestimonilContent = [
     {
-      img: "logo-8",
-      desc: `Having a home based business is a wonderful asset to your life. The problem still stands it comes time advertise your business for a cheap cost. I know you have looked answer everywhere.`,
-      reviewerName: "Jannatul Ekra",
-      designation: "Designer",
+      img: "company4",
+      desc: `זכיתי להוביל את פעילות המתמחים, הם משולבים הלכה למעשה בפיתוח תוכנה במסגרת פרויקטמרכזי של החברה ועושים זאת בהצלחה רבה.`,
+      reviewerName: "מנטור",
+      designation: "Elbit Systems",
     },
     {
-      img: "logo-9",
-      desc: `Having a home based business is a wonderful asset to your life. The problem still stands it comes time advertise your business for a cheap cost. I know you have looked answer everywhere.`,
-      reviewerName: "Bostami Hasan",
-      designation: "Front-end Engineer",
+      img: "company10",
+      desc: `We feel the students we chose are top-talent. They should be proud of what they accomplished. We are!`,
+      reviewerName: "מנטור",
+      designation: "Taboola",
     },
     {
-      img: "logo-10",
-      desc: ` Having a home based business is a wonderful asset to your life. The problem still stands it comes time advertise your business for a cheap cost. I know you have looked answer everywhere.`,
-      reviewerName: "Kuyeti Krima",
-      designation: "Visual Designer",
+      img: "company9",
+      desc: `הם ענו על כל הציפיות ואף מעבר, ועמדו בהצלחה בכל המשימות.`,
+      reviewerName: "מנטור",
+      designation: "RAD",
     },
     {
       img: "logo-9",
@@ -70,7 +70,7 @@ export default function TestimonialTwo() {
         <div className="item" key={i}>
           <div className="bg-wrapper">
             <img
-              src={`images/logo/${val.img}.png`}
+              src={`/njsw36/images/logo/${val.img}.png`}
               alt=""
               className="logo mr-auto"
             />
