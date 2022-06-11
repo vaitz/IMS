@@ -6,7 +6,6 @@ import { getWorkingHours } from "./requests";
 import Button from "../../../button";
 
 const Dropdown = styled(Select)`
-  width: 300px;
   margin: 20px 0 100px;
 `;
 const Item = styled.div`
@@ -48,7 +47,7 @@ const WorkingHours = styled.div`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 1000px;
+  align-items: center;
 `;
 
 const ButtonWrapper = styled.div`
@@ -57,6 +56,10 @@ const ButtonWrapper = styled.div`
 
 const MarginDiv = styled.div`
   margin-right: 20px;
+`;
+
+const Width = styled.div`
+  width: 1000px;
 `;
 
 const ApproveHours = ({ username }) => {
@@ -111,47 +114,55 @@ const ApproveHours = ({ username }) => {
   };
 
   return (
-    <Container>
-      <div>בחר מתמחה</div>
-      <Dropdown
-        options={interns}
-        value={selectedIntern}
-        onChange={setSelectedIntern}
-        placeholder={"בחר מתמחה"}
-      />
-      {showHours && (
-        <HeaderWrapper>
-          <Row>
-            <DateTitle>תאריך</DateTitle>
-            <StartTime>שעת התחלה</StartTime>
-            <EndTime>שעת סיום</EndTime>
-            <WorkingHours>שעות עבודה</WorkingHours>
-            <div>אושרו/מחכות לאישור</div>
-          </Row>
-        </HeaderWrapper>
-      )}
-      {hours.map(
-        ({ date, startTime, endTime, totalTime, id, approved }, index) => (
-          <Item>
-            <div>{date}</div>
-            <div>{startTime}</div>
-            <div>{endTime}</div>
-            <div>{totalTime}</div>
-            {!approved ? (
-              <input
-                id={id}
-                type={"checkbox"}
-                onClick={() => handleOnChange(index)}
-              />
-            ) : (
-              <MarginDiv />
-            )}
-          </Item>
-        )
-      )}
-      <ButtonWrapper>
-        <Button value={"אישור"} onClick={onApprove} disabled={disableButton} />
-      </ButtonWrapper>
+    <Container className="font-rubik">
+      <Width>
+        <h2>אישור דיווח שעות</h2>
+        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+        <div>בחר מתמחה</div>
+        <Dropdown
+          options={interns}
+          value={selectedIntern}
+          onChange={setSelectedIntern}
+          placeholder={"בחר מתמחה"}
+        />
+        {showHours && (
+          <HeaderWrapper>
+            <Row>
+              <DateTitle>תאריך</DateTitle>
+              <StartTime>שעת התחלה</StartTime>
+              <EndTime>שעת סיום</EndTime>
+              <WorkingHours>שעות עבודה</WorkingHours>
+              <div>אושרו/מחכות לאישור</div>
+            </Row>
+          </HeaderWrapper>
+        )}
+        {hours.map(
+          ({ date, startTime, endTime, totalTime, id, approved }, index) => (
+            <Item>
+              <div>{date}</div>
+              <div>{startTime}</div>
+              <div>{endTime}</div>
+              <div>{totalTime}</div>
+              {!approved ? (
+                <input
+                  id={id}
+                  type={"checkbox"}
+                  onClick={() => handleOnChange(index)}
+                />
+              ) : (
+                <MarginDiv />
+              )}
+            </Item>
+          )
+        )}
+        <ButtonWrapper>
+          <Button
+            value={"אישור"}
+            onClick={onApprove}
+            disabled={disableButton}
+          />
+        </ButtonWrapper>
+      </Width>
     </Container>
   );
 };

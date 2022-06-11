@@ -1,4 +1,3 @@
-import fetchMock from "fetch-mock";
 import { SERVER_ADDRESS } from "../../../config";
 
 export const createInternship = (
@@ -41,7 +40,7 @@ export const createInternship = (
     });
 };
 
-export const getPrograms = (setPrograms) => {
+export const getPrograms = (setPrograms, formatPrograms) => {
   fetch(SERVER_ADDRESS + "/activePrograms", {
     method: "Get",
     mode: "cors",
@@ -50,7 +49,7 @@ export const getPrograms = (setPrograms) => {
       response.json().then((data) => {
         let tempData = [""];
         tempData.push(...data);
-        setPrograms(tempData);
+        setPrograms(formatPrograms(tempData));
       });
     })
     .catch((error) => {
@@ -78,15 +77,3 @@ export const getMentors = (setMentors, username) => {
       console.log(error);
     });
 };
-
-const data = ["123", "2", "3"];
-const mentors = [
-  { firstName: "חי", lastName: "מתתיהו", username: "ff" },
-  { firstName: "יובל", lastName: "מור", username: "aa" },
-];
-
-fetchMock.mock(SERVER_ADDRESS + `/mentorsByCompanyRep/user`, mentors);
-fetchMock.mock(SERVER_ADDRESS + "/companyRep/createInternship", {
-  status: 201,
-});
-fetchMock.mock(SERVER_ADDRESS + "/activePrograms", data);

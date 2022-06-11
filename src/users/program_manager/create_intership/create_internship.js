@@ -5,6 +5,7 @@ import PopUp from "../../../popup";
 import { Select } from "../../guest/register/register";
 import { getPrograms } from "../../company_representive/create_intership/requests";
 import { useHistory } from "react-router-dom";
+import Button from "../../../button";
 
 const Label = styled.text`
   font-size: 18px;
@@ -15,20 +16,25 @@ const Label = styled.text`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0 400px;
 `;
 
 const Input = styled.input`
-  width: 500px;
   height: 20px;
 `;
 
-const Button = styled.button`
-  width: auto;
-  height: 30px;
-  margin: 150px 300px 200px;
-  background: #7a5cfa;
-  color: #ffffff;
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
 `;
+
+// const Button = styled`
+//   width: 150;
+//   height: 30px;
+//   margin-top: 50px;
+//   background: #7a5cfa;
+//   color: #ffffff;
+// `;
 
 const CreateInternship = () => {
   const [program, setProgram] = useState("");
@@ -69,12 +75,14 @@ const CreateInternship = () => {
   };
 
   return (
-    <Container>
+    <Container className="font-rubik">
       {popup && (
         <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>
           {`נוצרה ההתמחות:  "${internshipName}"  `}
         </PopUp>
       )}
+      <h2>יצירת התמחות</h2>
+
       <Label>שם התוכנית</Label>
       <Select
         id="program"
@@ -141,20 +149,21 @@ const CreateInternship = () => {
         </>
       )}
       <br />
-      <Button
-        onClick={() => onSubmit()}
-        disabled={
-          !(
-            company &&
-            internshipName &&
-            internshipDescription &&
-            demands &&
-            program
-          )
-        }
-      >
-        צור התמחות
-      </Button>
+      <ButtonContainer>
+        <Button
+          onClick={() => onSubmit()}
+          disabled={
+            !(
+              company &&
+              internshipName &&
+              internshipDescription &&
+              demands &&
+              program
+            )
+          }
+          value={"צור התמחות"}
+        />
+      </ButtonContainer>
     </Container>
   );
 };

@@ -29,6 +29,7 @@ import ApproveCompanyRepCandidates from "../users/company_representive/approve_c
 import { AssignInternships } from "../users/program_manager/assign_internships/assign_internships";
 import Programs from "../users/system_manager/programs/programs";
 import CreateProgram from "../users/system_manager/create_program/create_program";
+import CreateInternship from "../users/program_manager/create_intership/create_internship";
 
 const Routes = (props) => {
   return (
@@ -90,11 +91,15 @@ const Routes = (props) => {
           </Route>
           //Program manager
           <Route path="/njsw36/students">
-            <Students programId={props.programId} />
+            <Students username={props.username} />
           </Route>
           <Route path="/njsw36/assignInternships">
             <AssignInternships programId={props.programId} />
           </Route>
+          <Route
+            path="/njsw36/createInternship/manager"
+            component={CreateInternship}
+          />
           //System manager
           <Route path="/njsw36/programs">
             <Programs />

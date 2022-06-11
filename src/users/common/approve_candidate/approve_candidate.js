@@ -5,7 +5,12 @@ import tableIcons from "../../program_manager/assign_internships/MaterialTableIc
 import Button from "../../../button";
 import { approveCandidates, getCandidates } from "./requests";
 import { getPrograms } from "../../company_representive/create_intership/requests";
-import Dropdown from "../../../dropdown";
+import Select from "react-select";
+
+const Dropdown = styled(Select)`
+  margin: 20px 0 60px;
+  width: 300px;
+`;
 
 const Div = styled.div`
   height: auto;
@@ -17,16 +22,25 @@ const ButtonWrapper = styled.div`
   margin: 150px 400px 200px;
 `;
 
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+
 const ApproveCandidate = ({ username, userType }) => {
   const [candidates, setCandidates] = useState([]);
   const [disableButton, setDisableButton] = useState(true);
-  const [programs, setPrograms] = useState([]);
+  const [programs, setPrograms] = useState([{ value: 0, label: "test" }]);
   const [selectedProgram, setSelectedProgram] = useState();
 
-  console.log(programs);
+  console.log(userType);
   useEffect(() => {
-    getPrograms(setPrograms);
+    getPrograms(setPrograms, formatPrograms);
   }, []);
+
+  const formatPrograms = (programs) =>
+    programs.map((option, index) => ({ value: index, label: option }));
 
   useEffect(() => {
     if (selectedProgram) {
@@ -118,12 +132,14 @@ const ApproveCandidate = ({ username, userType }) => {
       }));
 
   return (
-    <Fragment>
+    <Container className="font-rubik">
+      <h2>אישור מועמדים</h2>
+      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       <Dropdown
         options={programs}
-        placeholder={"בחר תוכנית"}
         value={selectedProgram}
-        onChange={(program) => setSelectedProgram(program)}
+        placeholder={"בחר תוכנית"}
+        onChange={setSelectedProgram}
       />
       {selectedProgram && (
         <>
@@ -158,7 +174,7 @@ const ApproveCandidate = ({ username, userType }) => {
           </ButtonWrapper>
         </>
       )}
-    </Fragment>
+    </Container>
   );
 };
 

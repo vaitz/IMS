@@ -1,4 +1,3 @@
-import fetchMock from "fetch-mock";
 import { SERVER_ADDRESS } from "../../../config";
 
 export const getCompanies = ({
@@ -23,22 +22,6 @@ export const getCompanies = ({
       })
   );
 };
-
-const data = [
-  {
-    companyName: "google",
-    internshipName: "one",
-    about: "blabla",
-    requirements: "requirements",
-  },
-  {
-    companyName: "apple",
-    internshipName: "two",
-    about: "blabla",
-    requirements: "requirements",
-  },
-];
-// fetchMock.mock(SERVER_ADDRESS+'/internships/123', data);
 
 export const getCompanyData = (
   setCompanyData,
@@ -67,30 +50,6 @@ export const getCompanyData = (
   );
 };
 
-const studentsNames1 = [
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: true },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-];
-
-const studentsNames2 = [
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: true },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
-];
-
-fetchMock.mock(
-  SERVER_ADDRESS + "/programManager/123/google/one/nominees",
-  studentsNames1
-);
-// fetchMock.mock(SERVER_ADDRESS+'/programManager/123/apple/two/nominees', studentsNames2);
-
 export const assignIntern = (company, student) => {
   const data = {
     companyName: company.companyName,
@@ -108,4 +67,3 @@ export const assignIntern = (company, student) => {
   }).then((response) => console.log(response));
 };
 
-fetchMock.mock(SERVER_ADDRESS + "/assignIntern", { status: 200 });

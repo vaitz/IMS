@@ -1,4 +1,3 @@
-import fetchMock from "fetch-mock";
 import {SERVER_ADDRESS} from '../../../config'
 
 export const createInternship = (setPopup,setError, company,internshipName,internshipDescription,demands,program,mentor) => {
@@ -66,7 +65,3 @@ export const getCompanies = (setCompanies) => {
     });
 }
 
-
-fetchMock.mock(SERVER_ADDRESS+'/programManager/createInternship', "success");
-fetchMock.mock(SERVER_ADDRESS+'/companies', ['elbit','meta']);
-fetchMock.mock(SERVER_ADDRESS+'/mentors/elbit', [{username: "maor", firstName: "maor", lastName:"cohen"},{username: "maor", firstName: "yuval", lastName:"cohen"}]);

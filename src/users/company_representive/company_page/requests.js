@@ -1,5 +1,4 @@
 import { SERVER_ADDRESS } from "../../../config";
-import fetchMock from "fetch-mock";
 
 export const createCompanyPage = (
   setError,
@@ -36,6 +35,3 @@ export const createCompanyPage = (
     });
 };
 
-fetchMock.mock(SERVER_ADDRESS + "/companyRep/createCompanyProfile", {
-  status: 201,
-});

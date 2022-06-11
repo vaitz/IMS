@@ -13,7 +13,7 @@ const Login = () => {
       <div className="user-data-page clearfix d-lg-flex">
         <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
           <h3 className="font-rubik">
-            רוצה חלק חלק מתוכנית <br />
+            רוצה לקחת חלק מתוכנית <br />
             ההתמחות? <Link to="/njsw36/signup">הרשמ/י כאן</Link>
           </h3>
           <div className="illustration-holder">
@@ -37,25 +37,15 @@ const Login = () => {
         {/* /.illustration-wrapper */}
 
         <div className="form-wrapper">
-          <div className="d-flex justify-content-between">
-            <div className="logo">
-              <Link to="/njsw36/">
-                <img src="/njsw36/static/images/logo/logo.png" alt="logo"  width="190" height="70" />
-              </Link>
-            </div>
-            <Link
-              className="font-rubik go-back-button"
-              to="/njsw36/"
-            >
+          <div className="font-rubik mt-80 md-mt-40">
+            <Link className="font-rubik go-back-button" to="/njsw36/">
               חזור לדף הבית
             </Link>
-          </div>
-          <div className="mt-80 md-mt-40">
-            <h2>
+            <h2 className="font-rubik">
               שלום, ברוכים הבאים! <br />
             </h2>
             <p className="header-info pt-30 pb-50">
-               עדיין איך לך משתמש?  <Link to="/njsw36/signup">הרשם כאן</Link>
+              עדיין איך לך משתמש? <Link to="/njsw36/signup">הרשם כאן</Link>
             </p>
           </div>
 

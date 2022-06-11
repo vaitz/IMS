@@ -7,17 +7,18 @@ import Button from "../../../button";
 import Select from "react-select";
 
 const Div = styled.div`
-  width: 400px;
+  width: 610px;
   height: auto;
-  margin-top: 100px;
-  display: flex;
+  margin: 100px 0 50px;
 `;
 const BaseDropDown = styled(Select)`
   width: 300px;
 `;
 
-const ButtonWrapper = styled.div`
-  margin: 150px 400px 200px;
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const AssignInternships = ({ programId }) => {
@@ -107,7 +108,11 @@ export const AssignInternships = ({ programId }) => {
   };
 
   return (
-    <Fragment>
+    <Container className="font-rubik text-center">
+      <span>
+        <h2>שיבוץ התמחויות</h2>
+        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+      </span>
       <BaseDropDown
         options={companies}
         placeholder={"בחר חברה"}
@@ -136,13 +141,7 @@ export const AssignInternships = ({ programId }) => {
           onRowClick={(evt, selectedRow) => setSelectedRow(selectedRow)}
         />
       </Div>
-      <ButtonWrapper>
-        <Button
-          value={"שבץ להתמחות"}
-          onClick={onClick}
-          disabled={!selectedRow}
-        />
-      </ButtonWrapper>
-    </Fragment>
+      <Button value={"שבץ להתמחות"} onClick={onClick} disabled={!selectedRow} />
+    </Container>
   );
 };
