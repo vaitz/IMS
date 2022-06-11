@@ -1,5 +1,4 @@
 import { SERVER_ADDRESS } from "./config";
-import fetchMock from "fetch-mock";
 import {
   ADVANCED_CANDIDATE,
   PROGRAM_MANAGER,
@@ -42,17 +41,3 @@ export const getDetails = (
   );
 };
 
-const data = {
-  userType: ADVANCED_CANDIDATE,
-  session: 2,
-  username: "user",
-  firstName: "חי",
-  program: "123",
-};
-fetchMock.mock(SERVER_ADDRESS + `/users/logout`, { data: "" });
-fetchMock.mock(SERVER_ADDRESS + `/users/details/user`, {
-  status: 200,
-  userType: PROGRAM_MANAGER,
-  firstName: "hay",
-  program: "star",
-});

@@ -1,6 +1,5 @@
 import {setUserSession} from "../../../utils/common";
 import {SERVER_ADDRESS} from '../../../config'
-import fetchMock from "fetch-mock";
 import {
     PROGRAM_MANAGER,
     MENTOR,
@@ -45,6 +44,3 @@ export const loginRequest = (setLoading, setError, username, password, setUserTy
     else setError("משהו השתבש, אנא נסה שנית מאוחר יותר");
 }));
 }
-
-const data =  { userType: COMPANY_REPRESENTATIVE, session: 2, username: "user", firstName: "חי", program: "123" } ;
-fetchMock.mock(SERVER_ADDRESS+'/users/login', data);
