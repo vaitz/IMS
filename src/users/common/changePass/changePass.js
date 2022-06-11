@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { validateEmptyFields } from "../../guest/login/validations";
 import { changePassRequest } from "./requests";
 import { validatePassword } from "../../guest/register/validations";
-import PopUp from "../../../components/popup";
+import PopUp from "../../../popup";
 
 function ChangePass({ username }) {
   const [loading, setLoading] = useState(false);

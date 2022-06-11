@@ -6,14 +6,29 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { getUser } from "./utils/common";
 import { getDetails } from "./requests";
-import { GUEST } from "./constants";
-import { ThemeProvider } from "@mui/material/styles";
+import { ADVANCED_CANDIDATE, GUEST, INTERN, SYSTEM_MANAGER } from "./constants";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const App = () => {
   const [userType, setUserType] = useState(GUEST);
   const [firstName, setFirstName] = useState("אורח");
   const [programId, setProgramId] = useState(123);
   const [username, setUsername] = useState("user");
+  const theme = createTheme({
+    background: {
+      primary: {
+        main: "#0052cc",
+      },
+    },
+    palette: {
+      primary: {
+        main: "#0052cc",
+      },
+      secondary: {
+        main: "#edf2ff",
+      },
+    },
+  });
   useEffect(() => {
     AOS.init({
       duration: 1200,
@@ -27,7 +42,7 @@ const App = () => {
   window.addEventListener("load", AOS.refresh);
 
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <Helmet>
         <title>Deski - Saas & Software React Template</title>
         <meta property="og:site_name" content="deski" />

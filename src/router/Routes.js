@@ -17,7 +17,6 @@ import HeaderThree from "../components/header/HeaderThree";
 import Home from "../users/common/home/home";
 import Internships from "../users/candidate/internships/internships";
 import InternshipsPriorities from "../users/candidate/internships_priorities/internships_priorities";
-import { COMPANY_REPRESENTATIVE, INTERN } from "../constants";
 import ReportHours from "../users/intern/report_hours/report_hours";
 import UploadReport from "../users/intern/upload_report/upload_report";
 import ApproveMentorCandidates from "../users/mentor/approve_candidates";
@@ -30,11 +29,6 @@ import ApproveCompanyRepCandidates from "../users/company_representive/approve_c
 import { AssignInternships } from "../users/program_manager/assign_internships/assign_internships";
 import Programs from "../users/system_manager/programs/programs";
 import CreateProgram from "../users/system_manager/create_program/create_program";
-
-const ContentWrapper = styled.div`
-  padding: 30px 50px;
-  width: auto;
-`;
 
 const Routes = (props) => {
   return (

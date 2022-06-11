@@ -14,7 +14,7 @@ import {
 const MegaMenu = ({ userType }) => {
   return (
     <>
-      {SidebarData[SYSTEM_MANAGER].map((item) => (
+      {SidebarData[userType].map((item) => (
         <li className="navbar-nav">
           <Link
             to={item.path}

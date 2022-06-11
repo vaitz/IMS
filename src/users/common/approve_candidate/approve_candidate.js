@@ -2,10 +2,10 @@ import React, { Fragment, useEffect, useState } from "react";
 import styled from "styled-components";
 import MaterialTable from "material-table";
 import tableIcons from "../../program_manager/assign_internships/MaterialTableIcons";
-import Button from "../../../components/button";
+import Button from "../../../button";
 import { approveCandidates, getCandidates } from "./requests";
 import { getPrograms } from "../../company_representive/create_intership/requests";
-import Dropdown from "../../../components/dropdown";
+import Dropdown from "../../../dropdown";
 
 const Div = styled.div`
   height: auto;

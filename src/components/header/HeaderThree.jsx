@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MegaMenu from "./mega-menu/MegaMenu";
 import MegaMenuMobile from "./mega-menu/MegaMenuMobile";
+import { GUEST } from "../../constants";
 
 const HeaderThree = ({ userType, firstName, programId, username }) => {
   const [navbar, setNavbar] = useState(false);
@@ -48,27 +49,29 @@ const HeaderThree = ({ userType, firstName, programId, username }) => {
                   <MegaMenu userType={userType} />
                   {/* End MegaMenu */}
 
-                  <ul className="right-widget user-login-button d-flex align-items-center justify-content-center">
-                    <li>
-                      <Link
-                        to="/njsw36/login"
-                        className="signIn-action d-flex align-items-center"
-                      >
-                        <img src="/njsw36/images/icon/52.svg" alt="icon" />
-                        <span>התחברות</span>
-                      </Link>
-                    </li>
-                    {/* End li */}
-                    <li>
-                      <Link
-                        to="/njsw36/signup"
-                        className="signUp-action d-flex align-items-center"
-                      >
-                        <span>הרשמה לתוכנית</span>
-                        <img src="/njsw36/images/icon/53.svg" alt="icon" />
-                      </Link>
-                    </li>
-                  </ul>
+                  {userType === GUEST && (
+                    <ul className="right-widget user-login-button d-flex align-items-center justify-content-center">
+                      <li>
+                        <Link
+                          to="/njsw36/login"
+                          className="signIn-action d-flex align-items-center"
+                        >
+                          <img src="/njsw36/images/icon/52.svg" alt="icon" />
+                          <span>התחברות</span>
+                        </Link>
+                      </li>
+                      {/* End li */}
+                      <li>
+                        <Link
+                          to="/njsw36/signup"
+                          className="signUp-action d-flex align-items-center"
+                        >
+                          <span>הרשמה לתוכנית</span>
+                          <img src="/njsw36/images/icon/53.svg" alt="icon" />
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
                   {/* End right-button-group  */}
                 </div>
               </div>
@@ -76,8 +79,6 @@ const HeaderThree = ({ userType, firstName, programId, username }) => {
           </nav>
           {/* End nav */}
         </div>
-
-        <MegaMenuMobile />
         {/* 	End Mega Menu for Mobile */}
       </div>
       {/* /.theme-main-menu */}

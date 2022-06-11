@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { createInternship, getMentors, getPrograms } from "./requests";
-import PopUp from "../../../components/popup";
+import PopUp from "../../../popup";
 import { Select } from "../../guest/register/register";
 import { useHistory } from "react-router-dom";
 

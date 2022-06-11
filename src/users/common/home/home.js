@@ -346,67 +346,7 @@ const Home = () => {
           alt="shape"
           className="shapes shape-six"
         />
-        <div className="container">
-          <div className="title-style-four text-center mb-100 md-mb-70">
-            <div className="row">
-              <div className="col-lg-7 m-auto">
-                <h6>FAQ’s</h6>
-                <h2>
-                  <span>
-                    Questions & Answers
-                    <img src="/njsw36/images/shape/line-shape-2.svg" alt="" />
-                  </span>
-                </h2>
-              </div>
-              {/* End .col */}
-            </div>
-          </div>
-          {/* End title */}
-          <FaqClassic />
-        </div>
       </div>
-      {/* /.faq-classic */}
-
-      {/*
-     =============================================
-				Call to Action
-		============================================== */}
-      <div className="fancy-short-banner-four">
-        <div className="container">
-          <div className="bg-wrapper">
-            <CallToActionTwo />
-          </div>
-          {/* /.bg-wrapper */}
-        </div>
-        {/* /.container */}
-      </div>
-      {/* /.fancy-short-banner-four */}
-
-      {/*
-     =============================================
-				Footer
-		============================================== */}
-      <footer className="theme-footer-three pt-100">
-        <div className="top-footer">
-          <div className="container">
-            <FooterThree />
-          </div>
-          {/* /.container */}
-        </div>
-        {/* /.top-footer */}
-
-        <div className="container">
-          <div className="bottom-footer-content">
-            <div className="row">
-              <div className="col-lg-8 ml-auto">
-                <CopyRight />
-              </div>
-            </div>
-          </div>
-          {/* /.bottom-footer */}
-        </div>
-      </footer>
-      {/* /.theme-footer-three */}
     </div>
   );
 };
