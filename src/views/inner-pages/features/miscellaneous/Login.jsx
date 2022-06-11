@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import LoginForm from "../../../../components/contact/form/LoginForm";
 
-const Login = () => {
+const Login = ({ setUserType, setFirstName, setProgramId, setUsername }) => {
   return (
     <div className="main-page-wrapper p0">
       <Helmet>
@@ -49,7 +49,12 @@ const Login = () => {
             </p>
           </div>
 
-          <LoginForm />
+          <LoginForm
+            setUserType={setUserType}
+            setProgramId={setProgramId}
+            setFirstName={setFirstName}
+            setUsername={setUsername}
+          />
           {/* Login Form End */}
           <p className="text-center font-rubik copyright-text">
             Copyright @{new Date().getFullYear()}{" "}
