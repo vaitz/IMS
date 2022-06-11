@@ -149,11 +149,11 @@ const ReportHours = ({ username }) => {
   };
 
   return (
-    <ContentContainer dir="rtl">
+    <ContentContainer dir="rtl" className="font-rubik">
       <Container>
-        <Center>
-          <Label>השעות שלי</Label>
-        </Center>
+        <span className="text-center">
+          <h2>השעות שלי</h2>
+        </span>
         <HeaderWrapper>
           <Row>
             <div>תאריך</div>
