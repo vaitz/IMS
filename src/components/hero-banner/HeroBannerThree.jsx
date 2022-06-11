@@ -8,24 +8,24 @@ const HeroBannerThree = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-9 col-lg-11 col-md-8 m-auto">
-
             <h1 className="font-rubik">תכנית ההתמחות להיי-טק</h1>
           </div>
           {/* End .col */}
 
           <div className="col-xl-8 col-lg-9 m-auto">
-
             <p className="sub-text font-rubik">
-                תכנית ההתמחות הינה תכנית ייחודית וראשונה מסוגה שנבנתה בשיתוף פעולה בין פארק ההיי-טק גב-ים נגב למחלקה להנדסת מערכות תוכנה ומידע, המרכז לפיתוח קריירה באוניברסיטת בן-גוריון בנגב ועמותת "אלומה".
-                <br/>
-                מטרת התוכנית היא לאפשר לסטודנטים הלומדים באוניברסיטה גישה לחברות ההיי-טק המובילות הפועלות בפארק, והיכרות מעשית עם סביבת הפיתוח בתעשיית ההיי-טק המקומית.
+              תכנית ההתמחות הינה תכנית ייחודית וראשונה מסוגה שנבנתה בשיתוף פעולה
+              בין פארק ההיי-טק גב-ים נגב למחלקה להנדסת מערכות תוכנה ומידע, המרכז
+              לפיתוח קריירה באוניברסיטת בן-גוריון בנגב ועמותת "אלומה".
+              <br />
+              מטרת התוכנית היא לאפשר לסטודנטים הלומדים באוניברסיטה גישה לחברות
+              ההיי-טק המובילות הפועלות בפארק, והיכרות מעשית עם סביבת הפיתוח
+              בתעשיית ההיי-טק המקומית.
             </p>
           </div>
           {/* End .col */}
         </div>
         {/* End .row */}
-
-
 
         <p className="sing-in-call">
           רוצה לקחת חלק מהתוכנית?{" "}
@@ -43,8 +43,16 @@ const HeroBannerThree = () => {
       </div>
       {/* /.container */}
 
-      <img src="/njsw36/static/images/shape/68.svg" alt="shape" className="shapes shape-one" />
-      <img src="/njsw36/static/images/shape/69.svg" alt="shape" className="shapes shape-two" />
+      <img
+        src="/njsw36/static/images/shape/68.svg"
+        alt="shape"
+        className="shapes shape-one"
+      />
+      <img
+        src="/njsw36/static/images/shape/69.svg"
+        alt="shape"
+        className="shapes shape-two"
+      />
       <img
         src="/njsw36/static/images/shape/70.svg"
         alt="shape"
@@ -60,7 +68,11 @@ const HeroBannerThree = () => {
         alt="shape"
         className="shapes shape-five"
       />
-      <img src="/njsw36/static/images/shape/73.svg" alt="shape" className="shapes shape-six" />
+      <img
+        src="/njsw36/static/images/shape/73.svg"
+        alt="shape"
+        className="shapes shape-six"
+      />
       <img
         src="/njsw36/static/images/shape/74.svg"
         alt="shape"
@@ -76,7 +88,11 @@ const HeroBannerThree = () => {
         alt="shape"
         className="shapes shape-nine"
       />
-      <img src="/njsw36/static/images/shape/77.svg" alt="shape" className="shapes shape-ten" />
+      <img
+        src="/njsw36/static/images/shape/77.svg"
+        alt="shape"
+        className="shapes shape-ten"
+      />
     </div>
     // End hero-banner-three
   );

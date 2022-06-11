@@ -13,7 +13,7 @@ const SignUp = () => {
       <div className="user-data-page clearfix d-lg-flex">
         <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
           <h3 className="font-rubik">
-            אם אתם חברה או סטודנט/ית המעוניינים לקחת חלק  <br />
+            אם אתם חברה או סטודנט/ית המעוניינים לקחת חלק <br />
             כדאי לכם להירשם בהקדם ולהצטרף לחוויה.
           </h3>
           <div className="illustration-holder">
@@ -37,19 +37,22 @@ const SignUp = () => {
         {/* /.illustration-wrapper  */}
 
         <div className="form-wrapper">
-          <div className="d-flex justify-content-between">
-            <div className="logo">
-              <Link to="/njsw36/">
-                <img src="/njsw36/static/images/logo/logo.png" alt="logo" width="190" height="70" />
-              </Link>
-            </div>
-            <Link className="font-rubik go-back-button" to="/njsw36">
+          {/*<div className="d-flex justify-content-between">*/}
+          {/*  <div className="logo">*/}
+          {/*    <Link to="/njsw36/">*/}
+          {/*      <img src="/njsw36/static/images/logo/logo.png" alt="logo" width="190" height="70" />*/}
+          {/*    </Link>*/}
+          {/*  </div>*/}
+          {/*  <Link className="font-rubik go-back-button" to="/njsw36">*/}
+          {/*    חזור לדף הבית*/}
+          {/*  </Link>*/}
+          {/*</div>*/}
+          {/* End d-flex */}
+          <div className="font-rubik mt-10">
+            <Link className="font-rubik go-back-button" to="/njsw36/">
               חזור לדף הבית
             </Link>
-          </div>
-          {/* End d-flex */}
-          <div className="mt-10">
-            <h3>הצטרפו אלינו!</h3>
+            <h3 className="font-rubik">הצטרפו אלינו!</h3>
             <p className="header-info pt-20 pb-30">
               נרשמת למערכת כבר? מעבר ל<Link to="/njsw36/login">התחברות</Link>
             </p>

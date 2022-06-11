@@ -10,7 +10,7 @@ import { ADVANCED_CANDIDATE, GUEST, INTERN, SYSTEM_MANAGER } from "./constants";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const App = () => {
-  const [userType, setUserType] = useState(INTERN);
+  const [userType, setUserType] = useState(GUEST);
   const [firstName, setFirstName] = useState("אורח");
   const [programId, setProgramId] = useState(123);
   const [username, setUsername] = useState("user");
