@@ -27,7 +27,7 @@ export const getCompanies = ({
 const data = [
   {
     companyName: "google",
-    internshipName: "one",
+    internshipName: "Fullstack",
     about: "blabla",
     requirements: "requirements",
   },
@@ -69,24 +69,13 @@ export const getCompanyData = (
 
 const studentsNames1 = [
   { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: true },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי", lastName: "מתתיהו", assigned: false },
-];
-
-const studentsNames2 = [
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: true },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
-  { username: "hay", firstName: "חי2", lastName: "מתתיהו", assigned: false },
+  { username: "hay", firstName: "מאי", lastName: "וייץ", assigned: true },
+  { username: "hay", firstName: "לי ג'ו", lastName: "ברק", assigned: false },
+  { username: "hay", firstName: "יובל", lastName: "מור יוסף", assigned: false },
 ];
 
 fetchMock.mock(
-  SERVER_ADDRESS + "/programManager/123/google/one/nominees",
+  SERVER_ADDRESS + "/programManager/123/google/Fullstack/nominees",
   studentsNames1
 );
 // fetchMock.mock(SERVER_ADDRESS+'/programManager/123/apple/two/nominees', studentsNames2);

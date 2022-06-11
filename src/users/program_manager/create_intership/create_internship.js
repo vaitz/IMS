@@ -75,12 +75,14 @@ const CreateInternship = () => {
   };
 
   return (
-    <Container>
+    <Container className="font-rubik">
       {popup && (
         <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>
           {`נוצרה ההתמחות:  "${internshipName}"  `}
         </PopUp>
       )}
+      <h2>יצירת התמחות</h2>
+
       <Label>שם התוכנית</Label>
       <Select
         id="program"
