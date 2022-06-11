@@ -5,8 +5,12 @@ import tableIcons from "../../program_manager/assign_internships/MaterialTableIc
 import Button from "../../../button";
 import { approveCandidates, getCandidates } from "./requests";
 import { getPrograms } from "../../company_representive/create_intership/requests";
-import Dropdown from "../../../dropdown";
 import Select from "react-select";
+
+const Dropdown = styled(Select)`
+  margin: 20px 0 60px;
+  width: 300px;
+`;
 
 const Div = styled.div`
   height: auto;
@@ -18,13 +22,19 @@ const ButtonWrapper = styled.div`
   margin: 150px 400px 200px;
 `;
 
+const Container = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+
 const ApproveCandidate = ({ username, userType }) => {
   const [candidates, setCandidates] = useState([]);
   const [disableButton, setDisableButton] = useState(true);
-  const [programs, setPrograms] = useState([]);
+  const [programs, setPrograms] = useState([{ value: 0, label: "test" }]);
   const [selectedProgram, setSelectedProgram] = useState();
 
-  console.log(programs);
+  console.log(userType);
   useEffect(() => {
     getPrograms(setPrograms, formatPrograms);
   }, []);
@@ -122,8 +132,13 @@ const ApproveCandidate = ({ username, userType }) => {
       }));
 
   return (
-    <Fragment>
-      <Select options={programs} />
+    <Container>
+      <Dropdown
+        options={programs}
+        value={selectedProgram}
+        placeholder={"בחר תוכנית"}
+        onChange={setSelectedProgram}
+      />
       {selectedProgram && (
         <>
           <Div>
@@ -157,7 +172,7 @@ const ApproveCandidate = ({ username, userType }) => {
           </ButtonWrapper>
         </>
       )}
-    </Fragment>
+    </Container>
   );
 };
 
