@@ -6,7 +6,15 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { getUser } from "./utils/common";
 import { getDetails } from "./requests";
-import { ADVANCED_CANDIDATE, GUEST, INTERN, SYSTEM_MANAGER } from "./constants";
+import {
+  ADVANCED_CANDIDATE,
+  GUEST,
+  INTERN,
+  SYSTEM_MANAGER,
+  PROGRAM_MANAGER,
+  COMPANY_REPRESENTATIVE,
+  MENTOR,
+} from "./constants";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const App = () => {
@@ -73,6 +81,10 @@ const App = () => {
         firstName={firstName}
         programId={programId}
         username={username}
+        setUserType={setUserType}
+        setFirstName={setFirstName}
+        setProgramId={setProgramId}
+        setUsername={setUsername}
       />
     </ThemeProvider>
   );

@@ -2,8 +2,19 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
+import { loginRequest } from "../../../users/guest/login/requests";
+import { useHistory } from "react-router-dom";
 
-const LoginForm = () => {
+const LoginForm = ({
+  setUserType,
+  setFirstName,
+  setProgramId,
+  setUsername,
+}) => {
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+  let history = useHistory();
+
   // for password show hide
   const [passwordShown, setPasswordShown] = useState(false);
   const togglePasswordVisiblity = () => {
@@ -25,6 +36,17 @@ const LoginForm = () => {
     // display form data on success
     console.log("Message submited: " + JSON.stringify(data));
     e.target.reset();
+    loginRequest(
+      setLoading,
+      setError,
+      data.username,
+      data.password,
+      setUserType,
+      setFirstName,
+      setProgramId,
+      setUsername,
+      history
+    );
   }
 
   return (

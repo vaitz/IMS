@@ -47,7 +47,14 @@ const Routes = (props) => {
             <ChangePass username={props.username} />
           </Route>
           //guest
-          <Route path="/njsw36/login" component={Login} />
+          <Route path="/njsw36/login">
+            <Login
+              setUserType={props.setUserType}
+              setFirstName={props.setFirstName}
+              setProgramId={props.setProgramId}
+              setUsername={props.setUsername}
+            />
+          </Route>
           <Route path="/njsw36/SignUp" component={SignUp} />
           // Advanced candidate
           <Route path="/njsw36/internships">
