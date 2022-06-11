@@ -22,16 +22,16 @@ const BlockFeaturesOne = () => {
           data-aos="fade-right"
         >
           <div className="img-meta d-inline-block position-relative md-mt-70">
-            <img src="images/media/img_120.jpg" alt="media" />
+            <img src="/njsw36/static/images/media/img_120.jpg" alt="media" />
             <img
-              src="images/shape/244.svg"
+              src="/njsw36/static/images/shape/244.svg"
               alt="media"
               className="shapes shape-one"
               data-aos="fade-down"
               data-aos-delay="300"
             />
             <img
-              src="images/media/img_121.png"
+              src="/njsw36/static/images/media/img_121.png"
               alt="media"
               className="shapes shape-two"
               data-aos="fade-up"

@@ -24,9 +24,13 @@ const FeaturesAbout = () => {
         data-aos="fade-left"
       >
         <div className="illustration-holder-two d-inline-block pl-4 pl-md-5 md-mt-90">
-          <img src="images/assets/screen_38.png" alt="" className="w-100" />
           <img
-            src="images/assets/screen_38.1.png"
+            src="/njsw36/static/images/assets/screen_38.png"
+            alt=""
+            className="w-100"
+          />
+          <img
+            src="/njsw36/static/images/assets/screen_38.1.png"
             alt=""
             className="shapes shape-one"
           />

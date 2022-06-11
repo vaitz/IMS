@@ -81,7 +81,7 @@ const FeaturesCustomerSupport = () => {
           <div className="shapes shape-four"></div>
           <div className="shapes shape-five"></div>
           <img
-            src="images/shape/51.svg"
+            src="/njsw36/static/images/shape/51.svg"
             alt="shape"
             className="shapes shape-six"
           />
@@ -91,7 +91,10 @@ const FeaturesCustomerSupport = () => {
                 Our
                 <span>
                   Features{" "}
-                  <img src="images/shape/line-shape-2.svg" alt="shape" />
+                  <img
+                    src="/njsw36/static/images/shape/line-shape-2.svg"
+                    alt="shape"
+                  />
                 </span>
                 list
               </h2>
@@ -125,7 +128,10 @@ const FeaturesCustomerSupport = () => {
                     Connect deski with the software you{" "}
                     <span>
                       use every
-                      <img src="images/shape/line-shape-2.svg" alt="" />
+                      <img
+                        src="/njsw36/static/images/shape/line-shape-2.svg"
+                        alt=""
+                      />
                     </span>
                     day.
                   </h2>

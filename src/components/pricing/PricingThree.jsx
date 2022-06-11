@@ -98,7 +98,11 @@ const PricingThree = () => {
             </div>
             <div className="price font-slab">${item.price}</div>
             <p className="user-condition">{item.priceMeta}</p>
-            <img src="images/shape/114.svg" alt="shape" className="line" />
+            <img
+              src="/njsw36/static/images/shape/114.svg"
+              alt="shape"
+              className="line"
+            />
             <ul>
               {item.priceList.map((val, i) => (
                 <li className={val.listClass} key={i}>

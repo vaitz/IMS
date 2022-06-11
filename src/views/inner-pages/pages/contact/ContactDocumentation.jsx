@@ -47,12 +47,12 @@ const ContactDocumentation = () => {
           <div className="contact-info-wrapper">
             <ContactAddress />
             <img
-              src="images/shape/64.svg"
+              src="/njsw36/static/images/shape/64.svg"
               alt="shape"
               className="shapes shape-one"
             />
             <img
-              src="images/shape/65.svg"
+              src="/njsw36/static/images/shape/65.svg"
               alt="shape"
               className="shapes shape-two"
             />

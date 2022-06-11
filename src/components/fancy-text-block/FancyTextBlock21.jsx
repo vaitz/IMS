@@ -12,9 +12,13 @@ const FancyTextBlock21 = () => {
           data-aos-duration="1200"
         >
           <div className="img-meta">
-            <img src="images/media/img_72.png" alt="media" className="m-auto" />
             <img
-              src="images/shape/138.svg"
+              src="/njsw36/static/images/media/img_72.png"
+              alt="media"
+              className="m-auto"
+            />
+            <img
+              src="/njsw36/static/images/shape/138.svg"
               alt="shape"
               className="shapes shape-one"
             />
@@ -30,7 +34,11 @@ const FancyTextBlock21 = () => {
         >
           <div className="text-wrapper md-pt-50">
             <a className="fancybox" onClick={() => setOpen(true)}>
-              <img src="images/icon/71.svg" alt="icon" className="icon" />
+              <img
+                src="/njsw36/static/images/icon/71.svg"
+                alt="icon"
+                className="icon"
+              />
             </a>
 
             <div className="client-info">

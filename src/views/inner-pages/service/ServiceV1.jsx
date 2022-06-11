@@ -74,7 +74,7 @@ const ServiceV1 = () => {
           <div className="shapes shape-four"></div>
           <div className="shapes shape-five"></div>
           <img
-            src="images/shape/51.svg"
+            src="/njsw36/static/images/shape/51.svg"
             alt="shape"
             className="shapes shape-six"
           />
@@ -83,7 +83,10 @@ const ServiceV1 = () => {
               <h2>
                 <span>
                   Explore Services
-                  <img src="images/shape/line-shape-2.svg" alt="shape" />
+                  <img
+                    src="/njsw36/static/images/shape/line-shape-2.svg"
+                    alt="shape"
+                  />
                 </span>
               </h2>
               <div className="sub-text mt-15">
@@ -115,7 +118,10 @@ const ServiceV1 = () => {
                   <h2>
                     <span>
                       Why your should
-                      <img src="images/shape/line-shape-6.svg" alt="" />
+                      <img
+                        src="/njsw36/static/images/shape/line-shape-6.svg"
+                        alt=""
+                      />
                     </span>
                     choose deski.
                   </h2>
@@ -141,14 +147,14 @@ const ServiceV1 = () => {
               data-aos-duration="1200"
             >
               <div className="img-gallery">
-                <img src="images/media/img_37.png" alt="" />
+                <img src="/njsw36/static/images/media/img_37.png" alt="" />
                 <img
-                  src="images/shape/53.svg"
+                  src="/njsw36/static/images/shape/53.svg"
                   alt="shape"
                   className="shapes shape-one"
                 />
                 <img
-                  src="images/shape/52.svg"
+                  src="/njsw36/static/images/shape/52.svg"
                   alt="shape"
                   className="shapes shape-two"
                 />

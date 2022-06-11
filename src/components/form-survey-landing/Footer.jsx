@@ -20,7 +20,7 @@ const Footer = () => {
     <div className="d-lg-flex align-items-center justify-content-between">
       <div className="logo text-center">
         <a href="index.html">
-          <img src="images/logo/deski_06.svg" alt="logo" />
+          <img src="/njsw36/static/images/logo/deski_06.svg" alt="logo" />
         </a>
       </div>
       <ul className="style-none footer-nav d-flex flex-wrap justify-content-center md-pt-10 md-pb-20">

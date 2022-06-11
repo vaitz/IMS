@@ -27,12 +27,12 @@ const EventOrganizer = () => {
 		============================================== */}
       <div className="pricing-section-three-inner-page mb-200 md-mb-120">
         <img
-          src="images/shape/124.svg"
+          src="/njsw36/static/images/shape/124.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/125.svg"
+          src="/njsw36/static/images/shape/125.svg"
           alt="shape"
           className="shapes shape-two"
         />

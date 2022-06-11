@@ -66,7 +66,10 @@ const ProductCustomerSupport = () => {
               First-timer? Or old-hand? provide support with
               <span>
                 deski is{" "}
-                <img src="images/shape/line-shape-8.svg" alt="line shape" />
+                <img
+                  src="/njsw36/static/images/shape/line-shape-8.svg"
+                  alt="line shape"
+                />
               </span>{" "}
               simple.
             </h2>
@@ -82,7 +85,10 @@ const ProductCustomerSupport = () => {
                   data-aos-duration="1200"
                 >
                   <div className="illustration-holder">
-                    <img src="images/assets/ils_04.svg" alt="illustrator" />
+                    <img
+                      src="/njsw36/static/images/assets/ils_04.svg"
+                      alt="illustrator"
+                    />
                   </div>
                   {/* /.illustration-holder */}
                 </div>
@@ -116,7 +122,10 @@ const ProductCustomerSupport = () => {
                   data-aos-duration="1200"
                 >
                   <div className="illustration-holder">
-                    <img src="images/assets/ils_05.svg" alt="illustrator" />
+                    <img
+                      src="/njsw36/static/images/assets/ils_05.svg"
+                      alt="illustrator"
+                    />
                   </div>{" "}
                   {/* /.illustration-holder */}
                 </div>
@@ -150,7 +159,10 @@ const ProductCustomerSupport = () => {
                   data-aos-duration="1200"
                 >
                   <div className="illustration-holder">
-                    <img src="images/assets/ils_06.svg" alt="illustrator" />
+                    <img
+                      src="/njsw36/static/images/assets/ils_06.svg"
+                      alt="illustrator"
+                    />
                   </div>{" "}
                   {/* /.illustration-holder */}
                 </div>
@@ -184,7 +196,10 @@ const ProductCustomerSupport = () => {
                   data-aos-duration="1200"
                 >
                   <div className="illustration-holder">
-                    <img src="images/assets/ils_07.svg" alt="illustrator" />
+                    <img
+                      src="/njsw36/static/images/assets/ils_07.svg"
+                      alt="illustrator"
+                    />
                   </div>
                   {/* /.illustration-holder */}
                 </div>
@@ -244,7 +259,10 @@ const ProductCustomerSupport = () => {
               data-aos="fade-left"
               data-aos-duration="1200"
             >
-              <img src="images/assets/feature-img-11.png" alt="feature" />
+              <img
+                src="/njsw36/static/images/assets/feature-img-11.png"
+                alt="feature"
+              />
             </div>
             {/* End .col */}
           </div>
@@ -270,7 +288,10 @@ const ProductCustomerSupport = () => {
                     Connect deski with the software you
                     <span>
                       use every
-                      <img src="images/shape/line-shape-2.svg" alt="" />
+                      <img
+                        src="/njsw36/static/images/shape/line-shape-2.svg"
+                        alt=""
+                      />
                     </span>
                     day.
                   </h2>

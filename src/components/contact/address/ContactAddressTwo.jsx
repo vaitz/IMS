@@ -21,7 +21,7 @@ const ContactAddressTwo = () => {
       <div className="col-md-4 col-sm-6">
         <div className="address-info">
           <div className="icon">
-            <img src="images/icon/15.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/15.svg" alt="icon" />
           </div>
           <div className="title">Location</div>
           <p className="font-rubik">
@@ -35,7 +35,7 @@ const ContactAddressTwo = () => {
       <div className="col-md-4 col-sm-6">
         <div className="address-info">
           <div className="icon">
-            <img src="images/icon/16.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/16.svg" alt="icon" />
           </div>
           <div className="title">Contact</div>
           <p className="font-rubik">
@@ -50,7 +50,7 @@ const ContactAddressTwo = () => {
       <div className="col-md-4 col-sm-6">
         <div className="address-info">
           <div className="icon">
-            <img src="images/icon/17.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/17.svg" alt="icon" />
           </div>
           <div className="title">Social Media</div>
           <p className="font-rubik">Follow on social media</p>

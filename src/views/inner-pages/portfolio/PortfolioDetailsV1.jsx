@@ -41,7 +41,7 @@ const PortfolioV5 = () => {
 
           <div className="main-content mt-75">
             <img
-              src="images/gallery/img_33.jpg"
+              src="/njsw36/static/images/gallery/img_33.jpg"
               alt="gallery"
               className="mb-90 md-mb-50"
             />
@@ -86,7 +86,7 @@ const PortfolioV5 = () => {
                     <li>
                       <a href="#" className="d-flex align-items-center">
                         <img
-                          src="images/gallery/img_34.jpg"
+                          src="/njsw36/static/images/gallery/img_34.jpg"
                           alt="gallery"
                           className="d-none d-lg-block"
                         />
@@ -102,7 +102,7 @@ const PortfolioV5 = () => {
                         className="d-flex flex-row-reverse align-items-center text-right"
                       >
                         <img
-                          src="images/gallery/img_35.jpg"
+                          src="/njsw36/static/images/gallery/img_35.jpg"
                           alt="gallery"
                           className="d-none d-lg-block"
                         />

@@ -21,7 +21,7 @@ const ContactAddress = () => {
       <div className="col-lg-4 col-sm-6 d-lg-flex">
         <div className="address-info">
           <div className="icon d-flex align-items-end">
-            <img src="images/icon/44.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/44.svg" alt="icon" />
           </div>
           <div className="title">Location</div>
           <p className="font-rubik">
@@ -35,7 +35,7 @@ const ContactAddress = () => {
       <div className="col-lg-4 col-sm-6 d-lg-flex">
         <div className="address-info">
           <div className="icon d-flex align-items-end">
-            <img src="images/icon/45.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/45.svg" alt="icon" />
           </div>
           <div className="title">Contact</div>
           <p className="font-rubik">
@@ -50,7 +50,7 @@ const ContactAddress = () => {
       <div className="col-lg-4 col-sm-6 d-lg-flex">
         <div className="address-info">
           <div className="icon d-flex align-items-end">
-            <img src="images/icon/46.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/46.svg" alt="icon" />
           </div>
           <div className="title">Social Media</div>
           <p className="font-rubik">Find on social media</p>

@@ -26,12 +26,12 @@ const Documentation = () => {
 			============================================== */}
       <div className="fancy-hero-five">
         <img
-          src="images/shape/93.svg"
+          src="/njsw36/static/images/shape/93.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/94.svg"
+          src="/njsw36/static/images/shape/94.svg"
           alt="shape"
           className="shapes shape-two"
         />
@@ -42,7 +42,10 @@ const Documentation = () => {
                 <h1 className="heading">
                   <span>
                     The Truste Docs{" "}
-                    <img src="images/shape/line-shape-11.svg" alt="shape" />
+                    <img
+                      src="/njsw36/static/images/shape/line-shape-11.svg"
+                      alt="shape"
+                    />
                   </span>
                   site ever.
                 </h1>
@@ -54,7 +57,7 @@ const Documentation = () => {
               </div>
               <div className="col-lg-5 col-md-4">
                 <img
-                  src="images/media/img_52.png"
+                  src="/njsw36/static/images/media/img_52.png"
                   alt="media"
                   className="img-meta"
                 />
@@ -85,7 +88,10 @@ const Documentation = () => {
                       We’r providing quality service
                       <span>
                         since 2010!
-                        <img src="images/shape/line-shape-2.svg" alt="shape" />
+                        <img
+                          src="/njsw36/static/images/shape/line-shape-2.svg"
+                          alt="shape"
+                        />
                       </span>
                     </h2>
                   </div>
@@ -119,7 +125,7 @@ const Documentation = () => {
 			============================================== */}
       <div className="fancy-text-block-eighteen mt-170 md-mt-80">
         <img
-          src="images/assets/ils_13.svg"
+          src="/njsw36/static/images/assets/ils_13.svg"
           alt="illustration"
           className="illustration"
           data-aos="fade-up"
@@ -145,7 +151,10 @@ const Documentation = () => {
               <h2>
                 <span>
                   Our Members
-                  <img src="images/shape/line-shape-2.svg" alt="shape" />
+                  <img
+                    src="/njsw36/static/images/shape/line-shape-2.svg"
+                    alt="shape"
+                  />
                 </span>
               </h2>
             </div>
@@ -173,7 +182,10 @@ const Documentation = () => {
               Who is
               <span>
                 using deski{" "}
-                <img src="images/shape/line-shape-2.svg" alt="shape" />
+                <img
+                  src="/njsw36/static/images/shape/line-shape-2.svg"
+                  alt="shape"
+                />
               </span>
               docs?
             </h2>

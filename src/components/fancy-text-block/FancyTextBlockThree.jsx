@@ -21,7 +21,7 @@ const FancyTextBlockThree = () => {
             data-aos-delay="100"
           >
             <div className="icon-box d-flex align-items-center justify-content-center">
-              <img src="images/icon/07.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/07.svg" alt="icon" />
             </div>
             <div className="text-meta">
               <h4>Time well spent</h4>
@@ -40,7 +40,7 @@ const FancyTextBlockThree = () => {
             data-aos-delay="200"
           >
             <div className="icon-box d-flex align-items-center justify-content-center">
-              <img src="images/icon/08.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/08.svg" alt="icon" />
             </div>
             <div className="text-meta">
               <h4>Quietly powerful</h4>
@@ -73,7 +73,7 @@ const FancyTextBlockThree = () => {
             data-aos-delay="100"
           >
             <div className="icon-box d-flex align-items-center justify-content-center">
-              <img src="images/icon/07.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/07.svg" alt="icon" />
             </div>
             <div className="text-meta">
               <h4>Make your work easy</h4>
@@ -92,7 +92,7 @@ const FancyTextBlockThree = () => {
             data-aos-delay="200"
           >
             <div className="icon-box d-flex align-items-center justify-content-center">
-              <img src="images/icon/08.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/08.svg" alt="icon" />
             </div>
             <div className="text-meta">
               <h4>Build together</h4>

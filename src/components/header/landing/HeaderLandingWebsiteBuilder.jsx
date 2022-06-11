@@ -34,7 +34,7 @@ const HeaderLandingWebsiteBuilder = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-lg-1">
             <Link to="/doc-landing">
-              <img src="images/logo/deski_09.svg" alt="brand" />
+              <img src="/njsw36/static/images/logo/deski_09.svg" alt="brand" />
             </Link>
           </div>
           {/* End logo */}
@@ -46,7 +46,7 @@ const HeaderLandingWebsiteBuilder = () => {
                   to="login"
                   className="signIn-action d-flex align-items-center"
                 >
-                  <img src="images/icon/120.svg" alt="icon" />
+                  <img src="/njsw36/static/images/icon/120.svg" alt="icon" />
                   <span>login</span>
                 </Link>
               </li>
@@ -132,10 +132,10 @@ const HeaderLandingWebsiteBuilder = () => {
       <div className={click ? "mobile-menu  menu-open" : "mobile-menu"}>
         <div className="logo order-md-1">
           <Link to="/doc-landing">
-            <img src="images/logo/deski_06.svg" alt="brand" />
+            <img src="/njsw36/static/images/logo/deski_06.svg" alt="brand" />
           </Link>
           <div className="fix-icon text-dark" onClick={handleClick}>
-            <img src="images/icon/close.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/close.svg" alt="icon" />
           </div>
           {/* Mobile Menu close icon */}
         </div>

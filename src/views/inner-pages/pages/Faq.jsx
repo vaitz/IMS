@@ -93,7 +93,7 @@ const Faq = () => {
           <form onClick={handleSubmit} className="search-form">
             <input type="text" placeholder="Search for articles..." />
             <button>
-              <img src="images/icon/47.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/47.svg" alt="icon" />
             </button>
           </form>
         </div>
@@ -111,7 +111,7 @@ const Faq = () => {
         ==============================================  */}
       <div className="faqs-inner-page">
         <img
-          src="images/shape/66.svg"
+          src="/njsw36/static/images/shape/66.svg"
           alt="shape"
           className="shapes shape-one"
         />
@@ -126,7 +126,7 @@ const Faq = () => {
                   <div className="col-lg-6">
                     <div className="d-flex">
                       <img
-                        src="images/icon/48.svg"
+                        src="/njsw36/static/images/icon/48.svg"
                         alt="icon"
                         className="icon"
                       />
@@ -141,8 +141,14 @@ const Faq = () => {
                   </div>
                   <div className="col-lg-6">
                     <div className="avatar d-flex align-items-center">
-                      <img src="images/media/img_41.png" alt="media" />
-                      <img src="images/media/img_42.png" alt="media" />
+                      <img
+                        src="/njsw36/static/images/media/img_41.png"
+                        alt="media"
+                      />
+                      <img
+                        src="/njsw36/static/images/media/img_42.png"
+                        alt="media"
+                      />
                       <span className="avatar_image avatar_fallback font-rubik">
                         +1
                       </span>

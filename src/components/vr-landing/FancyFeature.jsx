@@ -16,7 +16,11 @@ const FancyFeature = () => {
         className="img-meta mt-80 mb-65 md-mt-50 md-mb-50"
         data-aos="fade-up"
       >
-        <img src="images/media/img_118.jpg" alt="media" className="w-100" />
+        <img
+          src="/njsw36/static/images/media/img_118.jpg"
+          alt="media"
+          className="w-100"
+        />
       </div>
       <div className="d-flex align-items-center justify-content-center">
         <ul className="d-flex justify-content-center rating">

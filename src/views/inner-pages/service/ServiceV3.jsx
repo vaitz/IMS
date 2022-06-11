@@ -72,27 +72,27 @@ const ServiceV3 = () => {
       <div className="fancy-text-block-seven mt-130 md-mt-80">
         <div className="bg-wrapper no-bg">
           <img
-            src="images/shape/29.svg"
+            src="/njsw36/static/images/shape/29.svg"
             alt="shape"
             className="shapes shape-one"
           />
           <img
-            src="images/shape/30.svg"
+            src="/njsw36/static/images/shape/30.svg"
             alt="shape"
             className="shapes shape-two"
           />
           <img
-            src="images/shape/31.svg"
+            src="/njsw36/static/images/shape/31.svg"
             alt="shape"
             className="shapes shape-three"
           />
           <img
-            src="images/shape/32.svg"
+            src="/njsw36/static/images/shape/32.svg"
             alt="shape"
             className="shapes shape-four"
           />
           <img
-            src="images/shape/33.svg"
+            src="/njsw36/static/images/shape/33.svg"
             alt="shape"
             className="shapes shape-five"
           />
@@ -104,7 +104,10 @@ const ServiceV3 = () => {
                 data-aos-duration="1200"
               >
                 <div className="img-holder">
-                  <img src="images/media/img_108.png" alt="media" />
+                  <img
+                    src="/njsw36/static/images/media/img_108.png"
+                    alt="media"
+                  />
                 </div>
               </div>
               <div
@@ -113,7 +116,11 @@ const ServiceV3 = () => {
                 data-aos-duration="1200"
               >
                 <div className="quote-wrapper pt-60">
-                  <img src="images/icon/185.png" alt="icon" className="icon" />
+                  <img
+                    src="/njsw36/static/images/icon/185.png"
+                    alt="icon"
+                    className="icon"
+                  />
                   <blockquote className="font-rubik">
                     Deski combines excellent live chat, ticketing and automation
                     that allow us to provide quality.
@@ -175,8 +182,16 @@ const ServiceV3 = () => {
           </div>
         </div>
         {/* /.container */}
-        <img src="images/shape/210.svg" alt="" className="shapes shape-one" />
-        <img src="images/shape/211.svg" alt="" className="shapes shape-two" />
+        <img
+          src="/njsw36/static/images/shape/210.svg"
+          alt=""
+          className="shapes shape-one"
+        />
+        <img
+          src="/njsw36/static/images/shape/211.svg"
+          alt=""
+          className="shapes shape-two"
+        />
       </div>
       {/* /.fancy-short-banner-ten */}
 

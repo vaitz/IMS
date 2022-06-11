@@ -42,7 +42,7 @@ const HeaderLandingFormSurvey = () => {
         <div className="d-flex align-items-center">
           <div className="logo order-lg-1">
             <Link to="/">
-              <img src="images/logo/deski_06.svg" alt="brand" />
+              <img src="/njsw36/static/images/logo/deski_06.svg" alt="brand" />
             </Link>
           </div>
           {/* End logo */}
@@ -54,7 +54,7 @@ const HeaderLandingFormSurvey = () => {
                   to="login"
                   className="signIn-action d-flex align-items-center"
                 >
-                  <img src="images/icon/120.svg" alt="icon" />
+                  <img src="/njsw36/static/images/icon/120.svg" alt="icon" />
                   <span>login</span>
                 </Link>
               </li>
@@ -147,10 +147,10 @@ const HeaderLandingFormSurvey = () => {
       <div className={click ? "mobile-menu  menu-open" : "mobile-menu"}>
         <div className="logo order-md-1">
           <Link to="/">
-            <img src="images/logo/deski_06.svg" alt="brand" />
+            <img src="/njsw36/static/images/logo/deski_06.svg" alt="brand" />
           </Link>
           <div className="fix-icon text-dark" onClick={handleClick}>
-            <img src="images/icon/close.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/close.svg" alt="icon" />
           </div>
           {/* Mobile Menu close icon */}
         </div>
@@ -202,7 +202,7 @@ const HeaderLandingFormSurvey = () => {
         <div className="box_inner ">
           <main className="main-body box_inner modal-content clearfix">
             <button className="close" onClick={toggleModalOne}>
-              <img src="images/icon/close.svg" alt="close" />
+              <img src="/njsw36/static/images/icon/close.svg" alt="close" />
             </button>
             {/* End close icon */}
 
@@ -217,7 +217,7 @@ const HeaderLandingFormSurvey = () => {
                   </div>
                 </div>
                 <img
-                  src="images/assets/ils_18.svg"
+                  src="/njsw36/static/images/assets/ils_18.svg"
                   alt=""
                   className="illustration mt-auto"
                 />

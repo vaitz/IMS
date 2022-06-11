@@ -14,7 +14,7 @@ const HeroBannerEleven = () => {
                 <span>
                   documents
                   <img
-                    src="images/shape/line-shape-12.svg"
+                    src="/njsw36/static/images/shape/line-shape-12.svg"
                     alt="shape"
                     className="cs-screen"
                   />
@@ -32,7 +32,10 @@ const HeroBannerEleven = () => {
           {/* End .col-xl-7 */}
 
           <div className="illustration-container">
-            <img src="images/assets/ils-02.png" alt="illustration" />
+            <img
+              src="/njsw36/static/images/assets/ils-02.png"
+              alt="illustration"
+            />
           </div>
         </div>
         {/* Emd .row */}

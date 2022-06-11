@@ -12,12 +12,16 @@ const FancyVideoSix = () => {
         videoId="qnwTVQlxs4g"
         onClose={() => setOpen(false)}
       />
-      <img src="images/media/img_111.png" alt="media" className="main-img" />
+      <img
+        src="/njsw36/static/images/media/img_111.png"
+        alt="media"
+        className="main-img"
+      />
       <div
         className="ancybox video-button d-flex align-items-center justify-content-center"
         onClick={() => setOpen(true)}
       >
-        <img src="images/icon/170.svg" alt="icon" />
+        <img src="/njsw36/static/images/icon/170.svg" alt="icon" />
       </div>
     </>
   );

@@ -55,7 +55,7 @@ export default function DocSlickAsNavTwo() {
         {/* /.d-flex */}
         <div className="d-flex item_content">
           <div className="icon d-flex align-items-center justify-content-center">
-            <img src="images/icon/81.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/81.svg" alt="icon" />
           </div>
           <p>
             Get task complated by <br />
@@ -75,23 +75,32 @@ export default function DocSlickAsNavTwo() {
           ref={(slider1) => setNav1(slider1)}
         >
           <div className="carousel-item">
-            <img src="images/assets/screen_07.png" alt="feature" />
+            <img
+              src="/njsw36/static/images/assets/screen_07.png"
+              alt="feature"
+            />
           </div>
           <div className="carousel-item">
-            <img src="images/assets/screen_08.png" alt="feature" />
+            <img
+              src="/njsw36/static/images/assets/screen_08.png"
+              alt="feature"
+            />
           </div>
           <div className="carousel-item">
-            <img src="images/assets/screen_09.png" alt="feature" />
+            <img
+              src="/njsw36/static/images/assets/screen_09.png"
+              alt="feature"
+            />
           </div>
         </Slider>
         {/* Top Image slide */}
         <img
-          src="images/shape/152.svg"
+          src="/njsw36/static/images/shape/152.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/153.png"
+          src="njsw36/static/njsw36/static/images/shape/153.png"
           alt="shape"
           className="shapes shape-two"
         />

@@ -21,12 +21,12 @@ const TeamDetailsV2 = () => {
         ==============================================  */}
       <div className="fancy-hero-five  bg-white">
         <img
-          src="images/shape/95.svg"
+          src="/njsw36/static/images/shape/95.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/96.svg"
+          src="/njsw36/static/images/shape/96.svg"
           alt="shape"
           className="shapes shape-two"
         />
@@ -37,7 +37,10 @@ const TeamDetailsV2 = () => {
               <h1 className="heading">
                 <span>
                   Single Profile
-                  <img src="images/shape/line-shape-11.svg" alt="" />
+                  <img
+                    src="/njsw36/static/images/shape/line-shape-11.svg"
+                    alt=""
+                  />
                 </span>{" "}
                 Slider
               </h1>
@@ -57,12 +60,12 @@ const TeamDetailsV2 = () => {
           {/* Team Details Gallery */}
         </div>
         <img
-          src="images/shape/214.svg"
+          src="/njsw36/static/images/shape/214.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/215.svg"
+          src="/njsw36/static/images/shape/215.svg"
           alt="shape"
           className="shapes shape-two"
         />

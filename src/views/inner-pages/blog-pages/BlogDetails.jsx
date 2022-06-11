@@ -22,12 +22,12 @@ const BlogDetails = () => {
         ==============================================  */}
       <div className="fancy-hero-five bg-white">
         <img
-          src="images/shape/95.svg"
+          src="/njsw36/static/images/shape/95.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/96.svg"
+          src="/njsw36/static/images/shape/96.svg"
           alt="shape"
           className="shapes shape-two"
         />
@@ -38,7 +38,10 @@ const BlogDetails = () => {
               <h1 className="heading">
                 <span>
                   Quis Nostr Exercitation
-                  <img src="images/shape/line-shape-11.svg" alt="" />
+                  <img
+                    src="/njsw36/static/images/shape/line-shape-11.svg"
+                    alt=""
+                  />
                 </span>{" "}
                 Laboris nisi
               </h1>
@@ -61,7 +64,7 @@ const BlogDetails = () => {
             <div className="col-xl-10 offset-xl-1 col-lg-12 feature-blog-one width-lg blog-details-post-v1">
               <div className="post-meta">
                 <img
-                  src="images/blog/media_28.png"
+                  src="/njsw36/static/images/blog/media_28.png"
                   alt="media post"
                   className="image-meta"
                 />
@@ -99,7 +102,7 @@ const BlogDetails = () => {
                   elementum facilisis leo. Ultricies leo integer.
                 </p>
                 <img
-                  src="images/blog/media_29.png"
+                  src="/njsw36/static/images/blog/media_29.png"
                   alt="media post"
                   className="image-meta mt-35"
                 />
@@ -166,7 +169,7 @@ const BlogDetails = () => {
                 <div className="single-comment">
                   <div className="d-flex">
                     <img
-                      src="images/blog/media_30.png"
+                      src="/njsw36/static/images/blog/media_30.png"
                       alt="blog post"
                       className="user-img"
                     />
@@ -187,7 +190,7 @@ const BlogDetails = () => {
                 <div className="single-comment">
                   <div className="d-flex">
                     <img
-                      src="images/blog/media_31.png"
+                      src="/njsw36/static/images/blog/media_31.png"
                       alt="blog post"
                       className="user-img"
                     />

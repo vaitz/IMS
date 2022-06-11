@@ -7,7 +7,7 @@ const FooterEight = () => {
       <div className="col-xl-4 col-lg-3 col-12 footer-about-widget">
         <div className="logo">
           <a href="index">
-            <img src="static/images/logo/deski_06.svg" alt="" />
+            <img src="/njsw36/static/images/images/logo/deski_06.svg" alt="" />
           </a>
         </div>
         <ul className="font-rubik mt-10">

@@ -54,7 +54,7 @@ const ServiceDetails = () => {
                   indust for previewing lightly visual mockups.
                 </p>
                 <img
-                  src="images/gallery/img_42.jpg"
+                  src="/njsw36/static/images/gallery/img_42.jpg"
                   alt="gallery"
                   className="img-meta w-100"
                 />

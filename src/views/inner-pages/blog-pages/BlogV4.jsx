@@ -20,12 +20,12 @@ const BlogV4 = () => {
 			==============================================  */}
       <div className="fancy-hero-five">
         <img
-          src="images/shape/95.svg"
+          src="/njsw36/static/images/shape/95.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/96.svg"
+          src="/njsw36/static/images/shape/96.svg"
           alt="shape"
           className="shapes shape-two"
         />
@@ -36,7 +36,10 @@ const BlogV4 = () => {
               <h1 className="heading">
                 <span>
                   Our inside stories
-                  <img src="images/shape/line-shape-11.svg" alt="" />
+                  <img
+                    src="/njsw36/static/images/shape/line-shape-11.svg"
+                    alt=""
+                  />
                 </span>
                 lorem que
               </h1>

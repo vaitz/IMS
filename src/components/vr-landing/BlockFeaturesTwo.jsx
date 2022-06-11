@@ -20,9 +20,9 @@ const BlockFeaturesTwo = () => {
         </div>
         <div className="col-xl-7 col-lg-5 col-md-8" data-aos="fade-left">
           <div className="img-meta d-inline-block position-relative md-mt-70">
-            <img src="images/media/img_122.jpg" alt="media" />
+            <img src="/njsw36/static/images/media/img_122.jpg" alt="media" />
             <img
-              src="images/media/img_123.png"
+              src="/njsw36/static/images/media/img_123.png"
               alt="media"
               className="shapes shape-three"
               data-aos="fade-up"

@@ -17,7 +17,11 @@ const FancyTextBlock22 = () => {
               className="fancybox mb-20 md-mb-10"
               onClick={() => setOpen(true)}
             >
-              <img src="images/icon/71.svg" alt="icon" className="icon" />
+              <img
+                src="/njsw36/static/images/icon/71.svg"
+                alt="icon"
+                className="icon"
+              />
             </a>
             <div className="title-style-seven">
               <h2>
@@ -43,7 +47,7 @@ const FancyTextBlock22 = () => {
           data-aos-duration="1200"
         >
           <div className="illustration-holder">
-            <img src="images/assets/ils_21.svg" alt="about" />
+            <img src="/njsw36/static/images/assets/ils_21.svg" alt="about" />
           </div>
         </div>
         {/* End .col */}

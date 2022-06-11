@@ -22,12 +22,12 @@ const Team5 = () => {
         ==============================================  */}
       <div className="fancy-hero-five  bg-white">
         <img
-          src="images/shape/95.svg"
+          src="/njsw36/static/images/shape/95.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/96.svg"
+          src="/njsw36/static/images/shape/96.svg"
           alt="shape"
           className="shapes shape-two"
         />
@@ -38,7 +38,10 @@ const Team5 = () => {
               <h1 className="heading">
                 <span>
                   We’ve Most Talented
-                  <img src="images/shape/line-shape-11.svg" alt="" />
+                  <img
+                    src="/njsw36/static/images/shape/line-shape-11.svg"
+                    alt=""
+                  />
                 </span>
                 Team Members
               </h1>
@@ -59,7 +62,7 @@ const Team5 = () => {
               <TeamFive />
             </div>
             <img
-              src="images/shape/126.svg"
+              src="/njsw36/static/images/shape/126.svg"
               alt="shape"
               className="shapes shape-one"
             />

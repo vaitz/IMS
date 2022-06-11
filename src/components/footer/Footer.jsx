@@ -10,7 +10,7 @@ const Footer = () => {
         data-aos-duration="1200"
       >
         <a href="index.html" className="logo">
-          <img src="static/images/logo/deski_02.svg" alt="" />
+          <img src="/njsw36/static/images/images/logo/deski_02.svg" alt="" />
         </a>
       </div>
       {/* /.about-widget */}

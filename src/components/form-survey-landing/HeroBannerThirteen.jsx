@@ -29,17 +29,17 @@ const HeroBannerThirteen = () => {
 
         <div className="screen-holder">
           <img
-            src="images/assets/ils_22.svg"
+            src="/njsw36/static/images/assets/ils_22.svg"
             alt="illustration"
             className="img-meta"
           />
           <img
-            src="images/assets/ils_22.1.svg"
+            src="/njsw36/static/images/assets/ils_22.1.svg"
             alt="illustration"
             className="shapes shape-one"
           />
           <img
-            src="images/assets/ils_22.2.svg"
+            src="/njsw36/static/images/assets/ils_22.2.svg"
             alt="illustration"
             className="shapes shape-two"
           />

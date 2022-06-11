@@ -26,7 +26,7 @@ const ServiceV4 = () => {
         className="fancy-hero-seven"
         style={{
           backgroundImage: `url(${
-            process.env.PUBLIC_URL + "images/media/img_109.png"
+            process.env.PUBLIC_URL + "/njsw36/static/images/media/img_109.png"
           })`,
         }}
       >
@@ -66,7 +66,11 @@ const ServiceV4 = () => {
                 data-aos-duration="1200"
               >
                 <div className="quote-wrapper pt-60">
-                  <img src="images/icon/185.png" alt="icon" className="icon" />
+                  <img
+                    src="/njsw36/static/images/icon/185.png"
+                    alt="icon"
+                    className="icon"
+                  />
                   <blockquote className="font-rubik">
                     Deski combines excellent live chat, ticketing and automation
                     that allow us to provide quality.

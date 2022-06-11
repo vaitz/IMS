@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Modal from "react-modal";
 import MegaMenuLanding from "../header/mega-menu/MegaMenuLanding";
 import HeaderPopupForm from "../form/HeaderPopupForm";
-const logo = "images/logo/deski_06.svg";
+const logo = "/njsw36/static/images/logo/deski_06.svg";
 
 const HeaderLanding = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -116,7 +116,7 @@ const HeaderLanding = () => {
           <div className="right-widget">
             <button className="demo-button" onClick={toggleModalOne}>
               <span>Contact Us</span>
-              <img src="images/icon/user.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/user.svg" alt="icon" />
             </button>
           </div>
         </div>
@@ -127,7 +127,7 @@ const HeaderLanding = () => {
       <div className={click ? "mobile-menu  menu-open" : "mobile-menu"}>
         <div className="logo order-md-1">
           <Link to="/">
-            <img src="images/logo/deski_06.svg" alt="brand" />
+            <img src="/njsw36/static/images/logo/deski_06.svg" alt="brand" />
           </Link>
           <div className="fix-icon text-dark" onClick={handleClick}>
             <img src="/njsw36/static/images/icon/close.svg" alt="icon" />
@@ -207,7 +207,7 @@ const HeaderLanding = () => {
                   </div>
                 </div>
                 <img
-                  src="images/assets/ils_18.svg"
+                  src="/njsw36/static/images/assets/ils_18.svg"
                   alt=""
                   className="illustration mt-auto"
                 />

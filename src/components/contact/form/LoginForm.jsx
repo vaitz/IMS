@@ -12,8 +12,7 @@ const LoginForm = () => {
 
   // for validation
   const validationSchema = Yup.object().shape({
-    username: Yup.string()
-      .required("שם משתמש נדרש"),
+    username: Yup.string().required("שם משתמש נדרש"),
     password: Yup.string().required("סיסמא נדרשת"),
   });
 
@@ -43,7 +42,9 @@ const LoginForm = () => {
                 className={` ${errors.username ? "is-invalid" : ""}`}
               />
               {errors.username && (
-                <div className="invalid-feedback">{errors.username?.message}</div>
+                <div className="invalid-feedback">
+                  {errors.username?.message}
+                </div>
               )}
             </div>
           </div>
@@ -71,7 +72,7 @@ const LoginForm = () => {
                     passwordShown ? "passVicon eye-slash" : "passVicon"
                   }
                 >
-                  <img src="images/icon/view.svg" alt="ico" />
+                  <img src="/njsw36/static/images/icon/view.svg" alt="ico" />
                 </span>
               </span>
             </div>

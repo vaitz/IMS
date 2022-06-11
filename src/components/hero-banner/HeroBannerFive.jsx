@@ -43,7 +43,11 @@ const HeroBannerFive = () => {
             data-aos-duration="1200"
             data-aos-delay="200"
           >
-            <img src="images/icon/apple.svg" alt="brand" className="icon" />
+            <img
+              src="/njsw36/static/images/icon/apple.svg"
+              alt="brand"
+              className="icon"
+            />
             <div>
               <span>Download on the</span>
               <strong>App store</strong>
@@ -56,7 +60,11 @@ const HeroBannerFive = () => {
             data-aos-duration="1200"
             data-aos-delay="300"
           >
-            <img src="images/icon/windows.svg" alt="icon" className="icon" />
+            <img
+              src="/njsw36/static/images/icon/windows.svg"
+              alt="icon"
+              className="icon"
+            />
             <div>
               <span>Get it on</span>
               <strong>Windows pc</strong>
@@ -86,17 +94,17 @@ const HeroBannerFive = () => {
         <div className="container text-center">
           <div className="screen-container">
             <img
-              src="images/assets/screen_01.png"
+              src="/njsw36/static/images/assets/screen_01.png"
               alt="shape"
               className="main-screen"
             />
             <img
-              src="images/assets/screen_01.1.png"
+              src="/njsw36/static/images/assets/screen_01.1.png"
               alt="shape"
               className="shapes screen-one"
             />
             <img
-              src="images/assets/screen_01.2.png"
+              src="/njsw36/static/images/assets/screen_01.2.png"
               alt="shape"
               className="shapes screen-two"
             />
@@ -107,22 +115,22 @@ const HeroBannerFive = () => {
       {/* /.img-gallery */}
 
       <img
-        src="images/shape/133.svg"
+        src="/njsw36/static/images/shape/133.svg"
         alt="shape"
         className="shapes shape-one"
       />
       <img
-        src="images/shape/134.svg"
+        src="/njsw36/static/images/shape/134.svg"
         alt="shape"
         className="shapes shape-two"
       />
       <img
-        src="images/shape/135.svg"
+        src="/njsw36/static/images/shape/135.svg"
         alt="shape"
         className="shapes shape-three"
       />
       <img
-        src="images/shape/136.svg"
+        src="/njsw36/static/images/shape/136.svg"
         alt="shape"
         className="shapes shape-four"
       />
@@ -151,7 +159,7 @@ const HeroBannerFive = () => {
         <div className="box_inner ">
           <main className="main-body box_inner modal-content clearfix">
             <button className="close" onClick={toggleModalOne}>
-              <img src="images/icon/close.svg" alt="close" />
+              <img src="/njsw36/static/images/icon/close.svg" alt="close" />
             </button>
             {/* End close icon */}
 
@@ -166,7 +174,7 @@ const HeroBannerFive = () => {
                   </div>
                 </div>
                 <img
-                  src="images/assets/ils_18.svg"
+                  src="/njsw36/static/images/assets/ils_18.svg"
                   alt=""
                   className="illustration mt-auto"
                 />

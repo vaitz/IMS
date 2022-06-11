@@ -50,12 +50,12 @@ const HeroBannerEight = () => {
       </div>
       {/* /.partner-slider-two */}
       <img
-        src="images/shape/173.svg"
+        src="/njsw36/static/images/shape/173.svg"
         alt="shape"
         className="shapes shape-right"
       />
       <img
-        src="images/shape/174.svg"
+        src="/njsw36/static/images/shape/174.svg"
         alt="shape"
         className="shapes shape-left"
       />

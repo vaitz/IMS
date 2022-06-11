@@ -88,7 +88,7 @@ const Testimonials = () => {
               </div>
               <p className="pt-25 pb-30">{review.ratingDetails}</p>
               <div className="d-flex align-items-center justify-content-between">
-                <img src="images/icon/198.svg" alt="icon" />
+                <img src="/njsw36/static/images/icon/198.svg" alt="icon" />
                 <ul className="d-flex justify-content-center rating">
                   {review.rating.map((star, i) => (
                     <li key={i}>

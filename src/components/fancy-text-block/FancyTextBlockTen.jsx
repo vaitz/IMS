@@ -9,7 +9,11 @@ const FancyTextBlockTen = () => {
           data-aos="fade-right"
           data-aos-duration="1200"
         >
-          <img src="images/icon/34.svg" alt="" className="icon" />
+          <img
+            src="/njsw36/static/images/icon/34.svg"
+            alt=""
+            className="icon"
+          />
           <p className="font-rubik">
             Deski combines excellent live chat, ticketing and automation that
             allow us to provide quality.
@@ -32,14 +36,22 @@ const FancyTextBlockTen = () => {
               data-aos-duration="1200"
               data-aos-delay="100"
             >
-              <img src="images/media/img_25.png" alt="" className="img-meta" />
+              <img
+                src="/njsw36/static/images/media/img_25.png"
+                alt=""
+                className="img-meta"
+              />
             </div>
             <div
               className="col-6"
               data-aos="fade-left"
               data-aos-duration="1200"
             >
-              <img src="images/media/img_26.png" alt="" className="img-meta" />
+              <img
+                src="/njsw36/static/images/media/img_26.png"
+                alt=""
+                className="img-meta"
+              />
             </div>
           </div>
         </div>
@@ -56,7 +68,7 @@ const FancyTextBlockTen = () => {
                 data-aos-duration="1200"
               >
                 <img
-                  src="images/media/img_27.png"
+                  src="/njsw36/static/images/media/img_27.png"
                   alt="media"
                   className="img-meta"
                 />
@@ -68,7 +80,7 @@ const FancyTextBlockTen = () => {
                 data-aos-delay="100"
               >
                 <img
-                  src="images/media/img_28.png"
+                  src="/njsw36/static/images/media/img_28.png"
                   alt="media"
                   className="img-meta"
                 />

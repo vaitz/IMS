@@ -35,7 +35,7 @@ const FaqDetails = () => {
           <form onClick={handleSubmit} className="search-form">
             <input type="text" placeholder="Search for articles..." />
             <button>
-              <img src="images/icon/47.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/47.svg" alt="icon" />
             </button>
           </form>
         </div>
@@ -53,7 +53,7 @@ const FaqDetails = () => {
         ==============================================  */}
       <div className="faqs-inner-page">
         <img
-          src="images/shape/66.svg"
+          src="/njsw36/static/images/shape/66.svg"
           alt="shape"
           className="shapes shape-one"
         />
@@ -68,7 +68,7 @@ const FaqDetails = () => {
                   <div className="article-preview mb-0">
                     <div className="d-flex">
                       <img
-                        src="images/media/img_43.png"
+                        src="/njsw36/static/images/media/img_43.png"
                         alt="media"
                         className="avatar-img"
                       />
@@ -125,13 +125,22 @@ const FaqDetails = () => {
                           data-aos-delay="50"
                         >
                           <button>
-                            <img src="images/icon/happy.svg" alt="icon" />
+                            <img
+                              src="/njsw36/static/images/icon/happy.svg"
+                              alt="icon"
+                            />
                           </button>
                           <button>
-                            <img src="images/icon/sad.svg" alt="icon" />
+                            <img
+                              src="/njsw36/static/images/icon/sad.svg"
+                              alt="icon"
+                            />
                           </button>
                           <button>
-                            <img src="images/icon/surprised.svg" alt="icon" />
+                            <img
+                              src="/njsw36/static/images/icon/surprised.svg"
+                              alt="icon"
+                            />
                           </button>
                         </div>
                       </div>

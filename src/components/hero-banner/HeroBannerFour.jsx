@@ -6,22 +6,22 @@ const HeroBannerFour = () => {
   return (
     <div className="hero-banner-four">
       <img
-        src="images/shape/100.svg"
+        src="/njsw36/static/images/shape/100.svg"
         alt="shape"
         className="shapes shape-four"
       />
       <img
-        src="images/shape/101.svg"
+        src="/njsw36/static/images/shape/101.svg"
         alt="shape"
         className="shapes shape-five"
       />
       <img
-        src="images/shape/102.svg"
+        src="/njsw36/static/images/shape/102.svg"
         alt="shape"
         className="shapes shape-six"
       />
       <img
-        src="images/shape/103.svg"
+        src="/njsw36/static/images/shape/103.svg"
         alt="shape"
         className="shapes shape-seven"
       />
@@ -31,22 +31,22 @@ const HeroBannerFour = () => {
           <div className="col-lg-6 order-lg-last">
             <div className="illustration-holder">
               <img
-                src="images/assets/ils_14.svg"
+                src="/njsw36/static/images/assets/ils_14.svg"
                 alt="shape"
                 className="illustration"
               />
               <img
-                src="images/assets/ils_14.1.svg"
+                src="/njsw36/static/images/assets/ils_14.1.svg"
                 alt="shape"
                 className="shapes shape-one"
               />
               <img
-                src="images/assets/ils_14.2.svg"
+                src="/njsw36/static/images/assets/ils_14.2.svg"
                 alt="shape"
                 className="shapes shape-two"
               />
               <img
-                src="images/assets/ils_14.3.svg"
+                src="/njsw36/static/images/assets/ils_14.3.svg"
                 alt="shape"
                 className="shapes shape-three"
               />

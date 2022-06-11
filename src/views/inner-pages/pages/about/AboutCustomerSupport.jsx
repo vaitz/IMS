@@ -132,7 +132,7 @@ const CustomerSupport = () => {
           <div className="shapes shape-three"></div>
           <div className="shapes shape-four"></div>
           <img
-            src="images/shape/47.svg"
+            src="/njsw36/static/images/shape/47.svg"
             alt="shape"
             className="shapes shape-five"
           />

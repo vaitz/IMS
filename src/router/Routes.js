@@ -1,78 +1,8 @@
 import React from "react";
 
-// All HOME PAGE ROUTES
-import DocLanding from "../views/all-home-pages/DocLanding";
-// All INNER PAGES ROUTES START FROM BELLOW
-
-// PAGES DROPDOWN ALL ROUTES
-
-// Team inner pages
-import Team1 from "../views/inner-pages/pages/team/Team1";
-import Team2 from "../views/inner-pages/pages/team/Team2";
-import Team3 from "../views/inner-pages/pages/team/Team3";
-import Team4 from "../views/inner-pages/pages/team/Team4";
-import Team5 from "../views/inner-pages/pages/team/Team5";
-import Team6 from "../views/inner-pages/pages/team/Team6";
-import TeamDetailsV1 from "../views/inner-pages/pages/team/TeamDetailsV1";
-import TeamDetailsV2 from "../views/inner-pages/pages/team/TeamDetailsV2";
-import Faq from "../views/inner-pages/pages/Faq";
-import FaqDetails from "../views/inner-pages/pages/FaqDetails";
-
-// Contact us inner pages
-import ContactCustomerSupport from "../views/inner-pages/pages/contact/ContactCustomerSupport";
-import ContactEventOrganizer from "../views/inner-pages/pages/contact/ContactEventOrganizer";
-import ContactProjectManagement from "../views/inner-pages/pages/contact/ContactProjectManagement";
-import ContactDocumentation from "../views/inner-pages/pages/contact/ContactDocumentation";
-
-// About us inner pages
-import AboutCustomerSupport from "../views/inner-pages/pages/about/AboutCustomerSupport";
-import AboutEventOrganizer from "../views/inner-pages/pages/about/AboutEventOrganizer";
-import AboutProjectManagement from "../views/inner-pages/pages/about/AboutProjectManagement";
-import AboutDocumentation from "../views/inner-pages/pages/about/AboutDocumentation";
-
-// Pricing inner pages
-import PricingCustomerSupport from "../views/inner-pages/pages/pricing/PricingCustomerSupport";
-import PricingEventOrganizer from "../views/inner-pages/pages/pricing/PricingEventOrganizer";
-import PricingProjectManagement from "../views/inner-pages/pages/pricing/PricingProjectManagement";
-
 // FEATURES DROPDOWN ALL ROUTES
 import Login from "../views/inner-pages/features/miscellaneous/Login";
 import SignUp from "../views/inner-pages/features/miscellaneous/SignUp";
-import TermsConditions from "../views/inner-pages/features/miscellaneous/TermsConditions";
-import SolutionMangement from "../views/inner-pages/features/SolutionMangement";
-import ProductCustomerSupport from "../views/inner-pages/features/ProductCustomerSupport";
-import FeaturesCustomerSupport from "../views/inner-pages/features/FeaturesCustomerSupport";
-
-// SERVICE PAGES ROUTES
-import ServiceV1 from "../views/inner-pages/service/ServiceV1";
-import ServiceV2 from "../views/inner-pages/service/ServiceV2";
-import ServiceV3 from "../views/inner-pages/service/ServiceV3";
-import ServiceV4 from "../views/inner-pages/service/ServiceV4";
-import ServiceDetails from "../views/inner-pages/service/ServiceDetails";
-
-// DOCS DROPDOWN ALL ROUTES
-import DocFullWidth from "../views/inner-pages/docs/DocFullWidth";
-import DocFullWidthBanner from "../views/inner-pages/docs/DocFullWidthBanner";
-import DocBox from "../views/inner-pages/docs/DocBox";
-import DocBoxWithBanner from "../views/inner-pages/docs/DocBoxWithBanner";
-import Changelog from "../views/inner-pages/docs/Changelog";
-
-// PORTFOLIO DROPDOWN ALL ROUTES
-import PortfolioV1 from "../views/inner-pages/portfolio/PortfolioV1";
-import PortfolioV2 from "../views/inner-pages/portfolio/PortfolioV2";
-import PortfolioV3 from "../views/inner-pages/portfolio/PortfolioV3";
-import PortfolioV4 from "../views/inner-pages/portfolio/PortfolioV4";
-import PortfolioV5 from "../views/inner-pages/portfolio/PortfolioV5";
-import PortfolioDetailsV1 from "../views/inner-pages/portfolio/PortfolioDetailsV1";
-
-// BLOGS DROPDOWN ALL ROUTES
-import BlogV1 from "../views/inner-pages/blog-pages/BlogV1";
-import BlogV2 from "../views/inner-pages/blog-pages/BlogV2";
-import BlogV3 from "../views/inner-pages/blog-pages/BlogV3";
-import BlogV4 from "../views/inner-pages/blog-pages/BlogV4";
-import BlogV5 from "../views/inner-pages/blog-pages/BlogV5";
-import BlogV6 from "../views/inner-pages/blog-pages/BlogV6";
-import BlogDetails from "../views/inner-pages/blog-pages/BlogDetails";
 
 // Not Found Page
 import NotFound from "../views/NotFound";
@@ -80,95 +10,102 @@ import NotFound from "../views/NotFound";
 // Route Specific
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
+import ChangePass from "../users/common/changePass/changePass";
+import styled from "styled-components";
+import { Helmet } from "react-helmet";
+import HeaderThree from "../components/header/HeaderThree";
+import Home from "../users/common/home/home";
+import Internships from "../users/candidate/internships/internships";
+import InternshipsPriorities from "../users/candidate/internships_priorities/internships_priorities";
+import ReportHours from "../users/intern/report_hours/report_hours";
+import UploadReport from "../users/intern/upload_report/upload_report";
+import ApproveMentorCandidates from "../users/mentor/approve_candidates";
+import Students from "../users/mentor/interns/students";
+import ApproveHours from "../users/mentor/approve_hours/approve_hours";
+import UploadReportMentor from "../users/mentor/upload_report/upload_report";
+import CompanyPage from "../users/company_representive/company_page/comapany_page";
+import CreateInternshipCom from "../users/company_representive/create_intership/create_internship";
+import ApproveCompanyRepCandidates from "../users/company_representive/approve_candidates";
+import { AssignInternships } from "../users/program_manager/assign_internships/assign_internships";
+import Programs from "../users/system_manager/programs/programs";
+import CreateProgram from "../users/system_manager/create_program/create_program";
 
-const Routes = () => {
+const Routes = (props) => {
   return (
-    <>
+    <div className="main-page-wrapper">
+      <Helmet>
+        <title>תוכנית ההתמחות להייטק</title>
+      </Helmet>
       <Router>
+        <HeaderThree {...props} />
         <ScrollTopBehaviour />
         <Switch>
-          <Route exact path="/njsw36/" component={DocLanding} />
-
+          //common
+          <Route exact path="/njsw36/" component={Home} />
+          <Route path="/njsw36/changePass">
+            <ChangePass username={props.username} />
+          </Route>
+          //guest
           <Route path="/njsw36/login" component={Login} />
           <Route path="/njsw36/SignUp" component={SignUp} />
-
-          {/* Pages Dropdown Routes */}
-          <Route path="/team-1" component={Team1} />
-          <Route path="/team-2" component={Team2} />
-          <Route path="/team-3" component={Team3} />
-          <Route path="/team-4" component={Team4} />
-          <Route path="/team-5" component={Team5} />
-          <Route path="/team-6" component={Team6} />
-          <Route path="/team-details-v1" component={TeamDetailsV1} />
-          <Route path="/team-details-v2" component={TeamDetailsV2} />
-          {/* faq inner pages */}
-          <Route path="/faq" component={Faq} />
-          <Route path="/faq-details" component={FaqDetails} />
-          {/* contact us inner pages */}
-          <Route path="/contact-cs" component={ContactCustomerSupport} />
-          <Route path="/contact-eo" component={ContactEventOrganizer} />
-          <Route path="/contact-pm" component={ContactProjectManagement} />
-          <Route path="/contact-doc" component={ContactDocumentation} />
-          {/* about us inner pages */}
-          <Route path="/about-cs" component={AboutCustomerSupport} />
-          <Route path="/about-eo" component={AboutEventOrganizer} />
-          <Route path="/about-pm" component={AboutProjectManagement} />
-          <Route path="/about-doc" component={AboutDocumentation} />
-          {/* pricing inner pages */}
-          <Route path="/pricing-cs" component={PricingCustomerSupport} />
-          <Route path="/pricing-eo" component={PricingEventOrganizer} />
-          <Route path="/pricing-pm" component={PricingProjectManagement} />
-
-          {/* Feature Dropdown Routes */}
-
-          <Route path="/terms-conditions" component={TermsConditions} />
-          <Route path="/solution-management" component={SolutionMangement} />
-          <Route
-            path="/product-customer-support"
-            component={ProductCustomerSupport}
-          />
-          <Route
-            path="/features-customer-support"
-            component={FeaturesCustomerSupport}
-          />
-
-          {/* Service inner pages */}
-          <Route path="/service-v1" component={ServiceV1} />
-          <Route path="/service-v2" component={ServiceV2} />
-          <Route path="/service-v3" component={ServiceV3} />
-          <Route path="/service-v4" component={ServiceV4} />
-          <Route path="/service-details" component={ServiceDetails} />
-
-          {/* inner pages Docs   */}
-          <Route path="/doc-full-width" component={DocFullWidth} />
-          <Route path="/doc-full-width-banner" component={DocFullWidthBanner} />
-          <Route path="/doc-box" component={DocBox} />
-          <Route path="/doc-box-with-banner" component={DocBoxWithBanner} />
-          <Route path="/changelog" component={Changelog} />
-
-          {/* inner Portfolio pages Dropdown   */}
-          <Route path="/classic-style" component={PortfolioV1} />
-          <Route path="/grid-two-col" component={PortfolioV2} />
-          <Route path="/grid-three-col" component={PortfolioV3} />
-          <Route path="/gallery-slider" component={PortfolioV4} />
-          <Route path="/grid-single" component={PortfolioV5} />
-          <Route path="/portfolio-details-v1" component={PortfolioDetailsV1} />
-
-          {/* inner Blog pages Dropdown   */}
-          <Route path="/blog-v1" component={BlogV1} />
-          <Route path="/blog-v2" component={BlogV2} />
-          <Route path="/blog-v3" component={BlogV3} />
-          <Route path="/blog-v4" component={BlogV4} />
-          <Route path="/blog-v5" component={BlogV5} />
-          <Route path="/blog-v6" component={BlogV6} />
-          <Route path="/blog-details" component={BlogDetails} />
+          // Advanced candidate
+          <Route path="/njsw36/internships">
+            <Internships program={props.programId} />
+          </Route>
+          <Route path="/njsw36/internshipsPriorities">
+            <InternshipsPriorities
+              program={props.programId}
+              username={props.username}
+            />
+          </Route>
+          // Intern
+          <Route path="/njsw36/reportHours">
+            <ReportHours username={props.username} />
+          </Route>
+          <Route path="/njsw36/uploadReport">
+            <UploadReport username={props.username} />
+          </Route>
+          //Mentor
+          <Route path="/njsw36/approveMentorCandidates">
+            <ApproveMentorCandidates username={props.username} />
+          </Route>
+          <Route path="/njsw36/mentor/interns">
+            <Students username={props.username} />
+          </Route>
+          <Route path="/njsw36/mentor/approveHours">
+            <ApproveHours username={props.username} />
+          </Route>
+          <Route path="/njsw36/uploadReportMentor">
+            <UploadReportMentor username={props.username} />
+          </Route>
+          // COMPANY_REPRESENTATIVE
+          <Route path="/njsw36/CompanyPage">
+            <CompanyPage username={props.username} />
+          </Route>
+          <Route path="/njsw36/createInternship/company">
+            <CreateInternshipCom username={props.username} />
+          </Route>
+          <Route path="/njsw36/approveCompanyRepCandidates">
+            <ApproveCompanyRepCandidates username={props.username} />
+          </Route>
+          //Program manager
+          <Route path="/njsw36/students">
+            <Students programId={props.programId} />
+          </Route>
+          <Route path="/njsw36/assignInternships">
+            <AssignInternships programId={props.programId} />
+          </Route>
+          //System manager
+          <Route path="/njsw36/programs">
+            <Programs />
+          </Route>
+          <Route path="/njsw36/createProgram" component={CreateProgram} />
+          // Not found
           <Route path="/404" component={NotFound} />
-
-          {/* NotFound Route */}
           <Route component={NotFound} />
         </Switch>
       </Router>
-    </>
+    </div>
   );
 };
 

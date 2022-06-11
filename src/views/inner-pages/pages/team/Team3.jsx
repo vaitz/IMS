@@ -86,12 +86,12 @@ const Team3 = () => {
         <div className="bubble-three"></div>
         <div className="bubble-four"></div>
         <img
-          src="images/shape/212.svg"
+          src="/njsw36/static/images/shape/212.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/213.svg"
+          src="/njsw36/static/images/shape/213.svg"
           alt="shape"
           className="shapes shape-two"
         />

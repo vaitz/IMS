@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MegaMenu from "./mega-menu/MegaMenu";
 import MegaMenuMobile from "./mega-menu/MegaMenuMobile";
+import { GUEST } from "../../constants";
 
-const HeaderThree = () => {
+const HeaderThree = ({ userType, firstName, programId, username }) => {
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -28,7 +29,12 @@ const HeaderThree = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
             <Link to="/njsw36/">
-              <img src="/njsw36/static/images/logo/logo.png" alt="brand logo"  width="190" height="70" />
+              <img
+                src="/njsw36/static/images/logo/logo.png"
+                alt="brand logo"
+                width="190"
+                height="70"
+              />
             </Link>
           </div>
           {/* End Logo */}
@@ -40,30 +46,38 @@ const HeaderThree = () => {
                 id="navbarSupportedContent"
               >
                 <div className="d-lg-flex justify-content-between align-items-center">
-                  <MegaMenu />
+                  <MegaMenu userType={userType} />
                   {/* End MegaMenu */}
 
-                  <ul className="right-widget user-login-button d-flex align-items-center justify-content-center">
-                    <li>
-                      <Link
-                        to="/njsw36/login"
-                        className="signIn-action d-flex align-items-center"
-                      >
-                        <img src="/njsw36/static/images/icon/52.svg" alt="icon" />
-                        <span>התחברות</span>
-                      </Link>
-                    </li>
-                    {/* End li */}
-                    <li>
-                      <Link
-                        to="/njsw36/signup"
-                        className="signUp-action d-flex align-items-center"
-                      >
-                        <span>הרשמה לתוכנית</span>
-                        <img src="/njsw36/static/images/icon/53.svg" alt="icon" />
-                      </Link>
-                    </li>
-                  </ul>
+                  {userType === GUEST && (
+                    <ul className="right-widget user-login-button d-flex align-items-center justify-content-center">
+                      <li>
+                        <Link
+                          to="/njsw36/login"
+                          className="signIn-action d-flex align-items-center"
+                        >
+                          <img
+                            src="/njsw36/static/images/icon/52.svg"
+                            alt="icon"
+                          />
+                          <span>התחברות</span>
+                        </Link>
+                      </li>
+                      {/* End li */}
+                      <li>
+                        <Link
+                          to="/njsw36/signup"
+                          className="signUp-action d-flex align-items-center"
+                        >
+                          <span>הרשמה לתוכנית</span>
+                          <img
+                            src="/njsw36/static/images/icon/53.svg"
+                            alt="icon"
+                          />
+                        </Link>
+                      </li>
+                    </ul>
+                  )}
                   {/* End right-button-group  */}
                 </div>
               </div>
@@ -71,8 +85,6 @@ const HeaderThree = () => {
           </nav>
           {/* End nav */}
         </div>
-
-        <MegaMenuMobile />
         {/* 	End Mega Menu for Mobile */}
       </div>
       {/* /.theme-main-menu */}

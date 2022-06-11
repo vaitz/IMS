@@ -30,59 +30,59 @@ const HeroBannerTwelve = () => {
 
         <div className="screen-holder" data-aos="fade-up">
           <img
-            src="images/assets/screen_32.png"
+            src="/njsw36/static/images/assets/screen_32.png"
             alt="screen"
             className="img-meta"
           />
           <img
-            src="images/assets/screen_33.png"
+            src="/njsw36/static/images/assets/screen_33.png"
             alt="screen"
             className="shapes screen-one"
           />
           <img
-            src="images/assets/screen_34.png"
+            src="/njsw36/static/images/assets/screen_34.png"
             alt="screen"
             className="shapes screen-two"
           />
           <img
-            src="images/shape/230.svg"
+            src="/njsw36/static/images/shape/230.svg"
             alt="screen"
             className="shapes shape-one"
           />
           <img
-            src="images/shape/231.svg"
+            src="/njsw36/static/images/shape/231.svg"
             alt="screen"
             className="shapes shape-two"
           />
           {/* </div> <!-- /.screen-holder --> */}
         </div>
         <img
-          src="images/shape/232.svg"
+          src="/njsw36/static/images/shape/232.svg"
           alt="shape"
           className="shapes shape-three"
         />
         <img
-          src="images/shape/233.svg"
+          src="/njsw36/static/images/shape/233.svg"
           alt="shape"
           className="shapes shape-four"
         />
         <img
-          src="images/shape/234.svg"
+          src="/njsw36/static/images/shape/234.svg"
           alt="shape"
           className="shapes shape-five"
         />
         <img
-          src="images/shape/235.svg"
+          src="/njsw36/static/images/shape/235.svg"
           alt="shape"
           className="shapes shape-six"
         />
         <img
-          src="images/shape/236.svg"
+          src="/njsw36/static/images/shape/236.svg"
           alt="shape"
           className="shapes shape-seven"
         />
         <img
-          src="images/shape/232.svg"
+          src="/njsw36/static/images/shape/232.svg"
           alt="shape"
           className="shapes shape-eight"
         />

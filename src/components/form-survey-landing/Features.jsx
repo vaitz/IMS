@@ -29,19 +29,23 @@ const Features = () => {
         data-aos="fade-left"
       >
         <div className="illustration-holder d-inline-block md-mt-60">
-          <img src="images/assets/ils_23.svg" alt="" className="w-100" />
           <img
-            src="images/assets/ils_23.1.svg"
+            src="/njsw36/static/images/assets/ils_23.svg"
+            alt=""
+            className="w-100"
+          />
+          <img
+            src="/njsw36/static/images/assets/ils_23.1.svg"
             alt=""
             className="shapes shape-one"
           />
           <img
-            src="images/assets/ils_23.2.svg"
+            src="/njsw36/static/images/assets/ils_23.2.svg"
             alt=""
             className="shapes shape-two"
           />
           <img
-            src="images/assets/ils_23.3.svg"
+            src="/njsw36/static/images/assets/ils_23.3.svg"
             alt=""
             className="shapes shape-three"
           />

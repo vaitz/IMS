@@ -51,12 +51,12 @@ const ProjectManagement = () => {
         {/* /.fancy-hero-one */}
         <div className="pricing-table-area">
           <img
-            src="images/shape/62.svg"
+            src="/njsw36/static/images/shape/62.svg"
             alt="shape"
             className="shapes shape-one"
           />
           <img
-            src="images/shape/63.svg"
+            src="/njsw36/static/images/shape/63.svg"
             alt="shape"
             className="shapes shape-two"
           />
@@ -97,7 +97,11 @@ const ProjectManagement = () => {
                 data-aos-duration="1200"
               >
                 <div className="text-wrapper md-pb-40">
-                  <img src="images/icon/42.svg" alt="iocn" className="icon" />
+                  <img
+                    src="/njsw36/static/images/icon/42.svg"
+                    alt="iocn"
+                    className="icon"
+                  />
                   <div className="more-text">
                     More Over <span>1500+ customers</span>
                   </div>
@@ -119,7 +123,7 @@ const ProjectManagement = () => {
                 data-aos-duration="1200"
               >
                 <img
-                  src="images/media/img_40.png"
+                  src="/njsw36/static/images/media/img_40.png"
                   alt="media"
                   className="main-img"
                 />

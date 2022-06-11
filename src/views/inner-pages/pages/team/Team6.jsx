@@ -53,7 +53,10 @@ const Team6 = () => {
               <h2>
                 <span>
                   Our Members
-                  <img src="images/shape/line-shape-2.svg" alt="shape" />
+                  <img
+                    src="/njsw36/static/images/shape/line-shape-2.svg"
+                    alt="shape"
+                  />
                 </span>
               </h2>
             </div>

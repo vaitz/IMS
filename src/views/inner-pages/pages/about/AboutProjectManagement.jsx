@@ -63,7 +63,7 @@ const ProjectManagement = () => {
               className="col-lg-6 col-md-7 col-sm-8 m-auto"
               data-aos="fade-left"
             >
-              <img src="images/media/img_05.png" alt="media" />
+              <img src="/njsw36/static/images/media/img_05.png" alt="media" />
             </div>
             <div className="col-lg-6" data-aos="fade-right">
               <div className="quote-wrapper">
@@ -132,7 +132,7 @@ const ProjectManagement = () => {
               data-aos-duration="1200"
             >
               <img
-                src="images/media/img_06.png"
+                src="/njsw36/static/images/media/img_06.png"
                 alt="media"
                 className="fancy_img_media"
               />

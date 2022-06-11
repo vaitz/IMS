@@ -6,7 +6,10 @@ const CallToActionSix = () => {
       <h2>
         <span>
           Try Deski Free{" "}
-          <img src="images/shape/line-shape-13.svg" alt="sahpe" />
+          <img
+            src="/njsw36/static/images/shape/line-shape-13.svg"
+            alt="sahpe"
+          />
         </span>
       </h2>
       <p className="pt-45 pb-50 text-dark">

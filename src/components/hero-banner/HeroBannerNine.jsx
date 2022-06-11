@@ -6,10 +6,14 @@ import { Link } from "react-router-dom";
 const HeroBannerNine = () => {
   return (
     <div className="hero-banner-nine lg-container">
-      <img src="images/shape/190.svg" alt="shape" className="shapes bg-shape" />
+      <img
+        src="/njsw36/static/images/shape/190.svg"
+        alt="shape"
+        className="shapes bg-shape"
+      />
       <div className="container">
         <div className="illustration-container">
-          <img src="images/assets/screen_17.png" alt="screen" />
+          <img src="/njsw36/static/images/assets/screen_17.png" alt="screen" />
         </div>
         {/* illustration-container */}
 
@@ -18,7 +22,8 @@ const HeroBannerNine = () => {
             <h1 className="hero-heading">
               Simplified{" "}
               <span>
-                Scheduling <img src="images/shape/189.svg" alt="shape" />
+                Scheduling{" "}
+                <img src="/njsw36/static/images/shape/189.svg" alt="shape" />
               </span>{" "}
               app for all.
             </h1>

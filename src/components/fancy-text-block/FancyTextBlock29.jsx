@@ -56,7 +56,10 @@ const FancyTextBlock29 = () => {
             {/* <!-- /.text-block --> */}
           </div>
           <div className="col-xl-7 col-lg-6" data-aos="fade-right">
-            <img src="images/assets/screen_35.png" alt="screen" />
+            <img
+              src="/njsw36/static/images/assets/screen_35.png"
+              alt="screen"
+            />
           </div>
         </div>
       </div>
@@ -97,7 +100,10 @@ const FancyTextBlock29 = () => {
             className="col-xl-7 col-lg-6 order-lg-first"
             data-aos="fade-left"
           >
-            <img src="images/assets/screen_36.png" alt="screen" />
+            <img
+              src="/njsw36/static/images/assets/screen_36.png"
+              alt="screen"
+            />
           </div>
         </div>
       </div>
@@ -127,7 +133,10 @@ const FancyTextBlock29 = () => {
             {/* <!-- /.text-block --> */}
           </div>
           <div className="col-xl-7 col-lg-6">
-            <img src="images/assets/screen_37.png" alt="screen" />
+            <img
+              src="/njsw36/static/images/assets/screen_37.png"
+              alt="screen"
+            />
           </div>
         </div>
       </div>

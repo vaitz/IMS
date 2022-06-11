@@ -31,7 +31,7 @@ const HeroBannerSix = () => {
               data-aos-delay="150"
             >
               <img
-                src="images/icon/play-circle.svg"
+                src="/njsw36/static/images/icon/play-circle.svg"
                 alt="icon"
                 className="icon"
               />
@@ -44,7 +44,11 @@ const HeroBannerSix = () => {
               data-aos-duration="1200"
               data-aos-delay="200"
             >
-              <img src="images/icon/apple.svg" alt="icon" className="icon" />
+              <img
+                src="/njsw36/static/images/icon/apple.svg"
+                alt="icon"
+                className="icon"
+              />
               <div>
                 <span>Download on the</span>
                 <strong>App store</strong>

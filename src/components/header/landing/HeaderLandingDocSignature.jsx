@@ -42,7 +42,7 @@ const HeaderLandingDocSignature = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
             <Link to="/">
-              <img src="images/logo/deski_06.svg" alt="brand" />
+              <img src="/njsw36/static/images/logo/deski_06.svg" alt="brand" />
             </Link>
           </div>
           {/* End logo */}
@@ -123,7 +123,7 @@ const HeaderLandingDocSignature = () => {
           <div className="right-widget">
             <button className="demo-button" onClick={toggleModalOne}>
               <span>Request A Demo</span>
-              <img src="images/icon/user.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/user.svg" alt="icon" />
             </button>
           </div>
         </div>
@@ -134,10 +134,10 @@ const HeaderLandingDocSignature = () => {
       <div className={click ? "mobile-menu  menu-open" : "mobile-menu"}>
         <div className="logo order-md-1">
           <Link to="/">
-            <img src="images/logo/deski_06.svg" alt="brand" />
+            <img src="/njsw36/static/images/logo/deski_06.svg" alt="brand" />
           </Link>
           <div className="fix-icon text-dark" onClick={handleClick}>
-            <img src="images/icon/close.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/close.svg" alt="icon" />
           </div>
           {/* Mobile Menu close icon */}
         </div>
@@ -194,7 +194,7 @@ const HeaderLandingDocSignature = () => {
         <div className="box_inner ">
           <main className="main-body box_inner modal-content clearfix">
             <button className="close" onClick={toggleModalOne}>
-              <img src="images/icon/close.svg" alt="close" />
+              <img src="/njsw36/static/images/icon/close.svg" alt="close" />
             </button>
             {/* End close icon */}
 
@@ -209,7 +209,7 @@ const HeaderLandingDocSignature = () => {
                   </div>
                 </div>
                 <img
-                  src="images/assets/ils_18.svg"
+                  src="/njsw36/static/images/assets/ils_18.svg"
                   alt=""
                   className="illustration mt-auto"
                 />

@@ -12,22 +12,22 @@ const HeroBannerTwo = () => {
           <div className="col-lg-6 order-lg-last">
             <div className="illustration-holder">
               <img
-                src="images/assets/ils-01.png"
+                src="/njsw36/static/images/assets/ils-01.png"
                 alt="shape"
                 className="illustration_01"
               />
               <img
-                src="images/assets/ils-01.1.png"
+                src="/njsw36/static/images/assets/ils-01.1.png"
                 alt="shape"
                 className="shapes shape-one"
               />
               <img
-                src="images/assets/ils-01.2.png"
+                src="/njsw36/static/images/assets/ils-01.2.png"
                 alt="shape"
                 className="shapes shape-two"
               />
               <img
-                src="images/assets/ils-01.3.png"
+                src="/njsw36/static/images/assets/ils-01.3.png"
                 alt="shape"
                 className="shapes shape-three"
               />
@@ -40,7 +40,7 @@ const HeroBannerTwo = () => {
                 <span>
                   Great ticketing
                   <img
-                    src="images/shape/line-shape-1.svg"
+                    src="/njsw36/static/images/shape/line-shape-1.svg"
                     alt="shape"
                     className="cs-screen"
                   />

@@ -81,7 +81,7 @@ const VideoGallery = () => {
                 className="icon d-flex align-items-center justify-content-center"
                 onClick={() => setOpen(true)}
               >
-                <img src="images/icon/118.svg" alt="" />
+                <img src="/njsw36/static/images/icon/118.svg" alt="" />
               </span>
             </div>
           </div>

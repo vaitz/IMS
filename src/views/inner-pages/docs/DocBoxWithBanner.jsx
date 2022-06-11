@@ -73,7 +73,7 @@ const DocBoxWithBanner = () => {
                   <form action="#">
                     <input type="text" placeholder="Search here.." />
                     <button>
-                      <img src="images/icon/59.svg" alt="icon" />
+                      <img src="/njsw36/static/images/icon/59.svg" alt="icon" />
                     </button>
                   </form>
                 </div>
@@ -256,7 +256,7 @@ const DocBoxWithBanner = () => {
                   </li>
                 </ul>
                 <img
-                  src="images/doc/img_01.png"
+                  src="/njsw36/static/images/doc/img_01.png"
                   alt="doc"
                   className="img-meta"
                 />

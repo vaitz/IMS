@@ -28,12 +28,12 @@ const EventOrganizer = () => {
 			============================================== */}
       <div className="fancy-text-block-twenty">
         <img
-          src="images/shape/124.svg"
+          src="/njsw36/static/images/shape/124.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/125.svg"
+          src="/njsw36/static/images/shape/125.svg"
           alt="shape"
           className="shapes shape-two"
         />
@@ -89,12 +89,12 @@ const EventOrganizer = () => {
 			==============================================  */}
       <div className="team-section-four mt-250 md-mt-150">
         <img
-          src="images/shape/129.svg"
+          src="/njsw36/static/images/shape/129.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="images/shape/130.svg"
+          src="/njsw36/static/images/shape/130.svg"
           alt="shape"
           className="shapes shape-two"
         />
@@ -109,7 +109,7 @@ const EventOrganizer = () => {
               <TeamFive />
             </div>
             <img
-              src="images/shape/126.svg"
+              src="/njsw36/static/images/shape/126.svg"
               alt="shape"
               className="shapes shape-one"
             />
@@ -147,9 +147,9 @@ const EventOrganizer = () => {
               data-aos-duration="1200"
             >
               <div className="illustration-holder d-flex justify-content-end md-mt-50">
-                <img src="images/media/img_58.png" alt="media" />
+                <img src="/njsw36/static/images/media/img_58.png" alt="media" />
                 <img
-                  src="images/shape/113.svg"
+                  src="/njsw36/static/images/shape/113.svg"
                   alt="media"
                   className="shapes shape-one"
                 />

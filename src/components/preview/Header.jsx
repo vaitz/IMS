@@ -22,7 +22,10 @@ const Header = () => {
         <div className="d-flex align-items-center justify-content-between">
           <div className="logo order-md-1">
             <a href="/">
-              <img src="/images/logo/deski_01.svg" alt="home-demo" />
+              <img
+                src="/njsw36/static/images/logo/deski_01.svg"
+                alt="home-demo"
+              />
             </a>
           </div>
           {/* End logo */}
@@ -118,10 +121,13 @@ const Header = () => {
           <div className={click ? "mobile-menu menu-open" : "mobile-menu"}>
             <div className="logo order-md-1">
               <a href="#intro">
-                <img src="/images/logo/deski_01.svg" alt="home-demo" />
+                <img
+                  src="/njsw36/static/images/logo/deski_01.svg"
+                  alt="home-demo"
+                />
               </a>
               <div className="fix-icon text-dark" onClick={handleClick}>
-                <img src="images/icon/close.svg" alt="icon" />
+                <img src="/njsw36/static/images/icon/close.svg" alt="icon" />
               </div>
               {/* Mobile Menu close icon */}
             </div>

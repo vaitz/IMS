@@ -21,42 +21,42 @@ const CallToActionSeven = () => {
       </div>
       {/* <!-- /.container --> */}
       <img
-        src="images/shape/239.svg"
+        src="/njsw36/static/images/shape/239.svg"
         alt="shape"
         className="shapes shape-one"
       />
       <img
-        src="images/shape/240.svg"
+        src="/njsw36/static/images/shape/240.svg"
         alt="shape"
         className="shapes shape-two"
       />
       <img
-        src="images/shape/232.svg"
+        src="/njsw36/static/images/shape/232.svg"
         alt="shape"
         className="shapes shape-three"
       />
       <img
-        src="images/shape/233.svg"
+        src="/njsw36/static/images/shape/233.svg"
         alt="shape"
         className="shapes shape-four"
       />
       <img
-        src="images/shape/234.svg"
+        src="/njsw36/static/images/shape/234.svg"
         alt="shape"
         className="shapes shape-five"
       />
       <img
-        src="images/shape/235.svg"
+        src="/njsw36/static/images/shape/235.svg"
         alt="shape"
         className="shapes shape-six"
       />
       <img
-        src="images/shape/236.svg"
+        src="/njsw36/static/images/shape/236.svg"
         alt="shape"
         className="shapes shape-seven"
       />
       <img
-        src="images/shape/232.svg"
+        src="/njsw36/static/images/shape/232.svg"
         alt="shape"
         className="shapes shape-eight"
       />

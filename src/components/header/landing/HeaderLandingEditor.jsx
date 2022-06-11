@@ -33,7 +33,7 @@ const HeaderLandingEditor = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
             <Link to="/customer-support">
-              <img src="images/logo/deski_06.svg" alt="brand" />
+              <img src="/njsw36/static/images/logo/deski_06.svg" alt="brand" />
             </Link>
           </div>
           {/* End logo */}
@@ -112,7 +112,7 @@ const HeaderLandingEditor = () => {
                   to="login"
                   className="signIn-action d-flex align-items-center"
                 >
-                  <img src="images/icon/52.svg" alt="icon" />
+                  <img src="/njsw36/static/images/icon/52.svg" alt="icon" />
                   <span>login</span>
                 </Link>
               </li>
@@ -132,10 +132,10 @@ const HeaderLandingEditor = () => {
       <div className={click ? "mobile-menu  menu-open" : "mobile-menu"}>
         <div className="logo order-md-1">
           <Link to="/customer-support">
-            <img src="images/logo/deski_06.svg" alt="brand" />
+            <img src="/njsw36/static/images/logo/deski_06.svg" alt="brand" />
           </Link>
           <div className="fix-icon text-dark" onClick={handleClick}>
-            <img src="images/icon/close.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/close.svg" alt="icon" />
           </div>
           {/* Mobile Menu close icon */}
         </div>

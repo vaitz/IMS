@@ -7,7 +7,7 @@ const HeroBannerSeven = () => {
     <div className="hero-banner-seven lg-container">
       <div className="container">
         <div className="illustration-container">
-          <img src="images/assets/ils_20.svg" alt="ils" />
+          <img src="/njsw36/static/images/assets/ils_20.svg" alt="ils" />
         </div>
         {/* End .illustration-container */}
 
