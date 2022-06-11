@@ -51,13 +51,13 @@ const FancyFeatureThirtyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: item.bgColor }}
             >
-              <img src={`images/icon/${item.icon}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${item.icon}.svg`} alt="icon" />
             </div>
             <div className="text">
               <h4>{item.title}</h4>
               <p>{item.descriptions}</p>
               <Link to="/service-details" className="tran3s">
-                <img src="images/icon/182.svg" alt="icon" />
+                <img src="/njsw36/static/images/icon/182.svg" alt="icon" />
               </Link>
             </div>
           </div>

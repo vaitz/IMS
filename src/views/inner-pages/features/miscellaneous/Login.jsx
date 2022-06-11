@@ -18,17 +18,17 @@ const Login = () => {
           </h3>
           <div className="illustration-holder">
             <img
-              src="/njsw36/images/assets/ils_08.svg"
+              src="/njsw36/static/images/assets/ils_08.svg"
               alt="illustration"
               className="illustration"
             />
             <img
-              src="/njsw36/images/assets/ils_08.1.svg"
+              src="/njsw36/static/images/assets/ils_08.1.svg"
               alt="illustration"
               className="shapes shape-one"
             />
             <img
-              src="/njsw36/images/assets/ils_08.2.svg"
+              src="/njsw36/static/images/assets/ils_08.2.svg"
               alt="illustration"
               className="shapes shape-two"
             />
@@ -40,7 +40,7 @@ const Login = () => {
           <div className="d-flex justify-content-between">
             <div className="logo">
               <Link to="/njsw36/">
-                <img src="/njsw36/images/logo/logo.png" alt="logo"  width="190" height="70" />
+                <img src="/njsw36/static/images/logo/logo.png" alt="logo"  width="190" height="70" />
               </Link>
             </div>
             <Link

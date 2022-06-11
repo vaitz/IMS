@@ -41,13 +41,13 @@ const FancyFeatureTen = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: val.bgColor }}
             >
-              <img src={`images/icon/${val.icon}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${val.icon}.svg`} alt="icon" />
             </div>
             <h3>{val.title}</h3>
             <p>{val.desc}</p>
             <Link to="/solution-management" className="mt-30">
               {" "}
-              <img src="images/icon/69.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/69.svg" alt="icon" />
             </Link>
           </div>
           {/* /.block-style-ten */}

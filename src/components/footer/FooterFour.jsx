@@ -88,7 +88,7 @@ const FooterFour = () => {
       <div className="col-xl-4 col-lg-3 col-12 footer-about-widget">
         <div className="logo">
           <a href="index-event.html">
-            <img src="images/logo/deski_05.svg" alt="" />
+            <img src="/njsw36/static/images/logo/deski_05.svg" alt="" />
           </a>
         </div>
         <ul className="font-rubik mt-10">

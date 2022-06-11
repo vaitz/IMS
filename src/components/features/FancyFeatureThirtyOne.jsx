@@ -33,7 +33,7 @@ const FancyFeatureThirtyOne = () => {
         >
           <div className="block-style-thirtyOne mt-40">
             <div className="icon d-flex align-items-end">
-              <img src={`images/icon/${item.icon}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${item.icon}.svg`} alt="icon" />
             </div>
             <h4>{item.title}</h4>
             <p>{item.desc}</p>

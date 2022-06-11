@@ -38,7 +38,7 @@ const BlogStyle5 = () => {
         >
           <div className="feature-article-meta">
             <div className="img-meta">
-              <img src={`images/blog/${val.img}.jpg`} alt="media" />
+              <img src={`/njsw36/static/images/blog/${val.img}.jpg`} alt="media" />
             </div>
             <div className="post-meta">
               <h3>

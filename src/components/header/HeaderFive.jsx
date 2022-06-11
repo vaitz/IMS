@@ -28,7 +28,7 @@ const HeaderFive = () => {
         <div className="d-flex align-items-center justify-content-center">
           <div className="logo">
             <Link to="/">
-              <img src="images/logo/deski_09.svg" alt="brand logo" />
+              <img src="/njsw36/static/images/logo/deski_09.svg" alt="brand logo" />
             </Link>
           </div>
           {/* End Logo */}

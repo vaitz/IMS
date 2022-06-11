@@ -52,7 +52,7 @@ const TeamFour = () => {
           key={i}
         >
           <Link to="/team-details-v1" className="team-member">
-            <img src={`images/media/${item.img}.png`} alt="team" />
+            <img src={`/njsw36/static/images/media/${item.img}.png`} alt="team" />
             <div className="name">{item.name}</div>
             <div className="position">{item.designation}</div>
           </Link>

@@ -14,7 +14,7 @@ const AboutThree = () => {
             <h2>
               <span>
                 Certified and trusted{" "}
-                <img src="images/shape/line-shape-7.svg" alt="shape" />
+                <img src="/njsw36/static/images/shape/line-shape-7.svg" alt="shape" />
               </span>
               support portal.
             </h2>
@@ -34,13 +34,13 @@ const AboutThree = () => {
       <div className="col-lg-6 order-lg-first">
         <div className="img-gallery">
           <img
-            src="images/media/img_38.png"
+            src="/njsw36/static/images/media/img_38.png"
             alt="media"
             data-aos="fade-left"
             data-aos-duration="1200"
           />
           <img
-            src="images/media/img_36.png"
+            src="/njsw36/static/images/media/img_36.png"
             alt="media"
             className="overlay-img"
             data-aos="fade-right"
@@ -48,12 +48,12 @@ const AboutThree = () => {
             data-aos-delay="100"
           />
           <img
-            src="images/shape/49.svg"
+            src="/njsw36/static/images/shape/49.svg"
             alt="shape"
             className="shapes shape-one"
           />
           <img
-            src="images/shape/54.svg"
+            src="/njsw36/static/images/shape/54.svg"
             alt="shape"
             className="shapes shape-three"
           />

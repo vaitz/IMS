@@ -12,12 +12,12 @@ const FancyVideoOne = () => {
         videoId="qnwTVQlxs4g"
         onClose={() => setOpen(false)}
       />
-      <img src="images/media/img_65.png" alt="media" className="main-img" />
+      <img src="/njsw36/static/images/media/img_65.png" alt="media" className="main-img" />
       <div
         className="fancybox video-button d-flex align-items-center"
         onClick={() => setOpen(true)}
       >
-        <img src="images/icon/66.svg" alt="icon" />
+        <img src="/njsw36/static/images/icon/66.svg" alt="icon" />
       </div>
     </>
   );

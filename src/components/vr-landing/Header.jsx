@@ -130,7 +130,7 @@ const HeaderLanding = () => {
             <img src="images/logo/deski_06.svg" alt="brand" />
           </Link>
           <div className="fix-icon text-dark" onClick={handleClick}>
-            <img src="images/icon/close.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/close.svg" alt="icon" />
           </div>
           {/* Mobile Menu close icon */}
         </div>
@@ -192,7 +192,7 @@ const HeaderLanding = () => {
         <div className="box_inner ">
           <main className="main-body box_inner modal-content clearfix">
             <button className="close" onClick={toggleModalOne}>
-              <img src="images/icon/close.svg" alt="close" />
+              <img src="/njsw36/static/images/icon/close.svg" alt="close" />
             </button>
             {/* End close icon */}
 

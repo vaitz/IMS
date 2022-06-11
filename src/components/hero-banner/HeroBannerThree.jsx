@@ -36,47 +36,47 @@ const HeroBannerThree = () => {
         </p>
 
         <img
-          src="/njsw36/images/assets/ils_09.svg"
+          src="/njsw36/static/images/assets/ils_09.svg"
           alt="illustration"
           className="illustration"
         />
       </div>
       {/* /.container */}
 
-      <img src="/njsw36/images/shape/68.svg" alt="shape" className="shapes shape-one" />
-      <img src="/njsw36/images/shape/69.svg" alt="shape" className="shapes shape-two" />
+      <img src="/njsw36/static/images/shape/68.svg" alt="shape" className="shapes shape-one" />
+      <img src="/njsw36/static/images/shape/69.svg" alt="shape" className="shapes shape-two" />
       <img
-        src="/njsw36/images/shape/70.svg"
+        src="/njsw36/static/images/shape/70.svg"
         alt="shape"
         className="shapes shape-three"
       />
       <img
-        src="/njsw36/images/shape/71.svg"
+        src="/njsw36/static/images/shape/71.svg"
         alt="shape"
         className="shapes shape-four"
       />
       <img
-        src="/njsw36/images/shape/72.svg"
+        src="/njsw36/static/images/shape/72.svg"
         alt="shape"
         className="shapes shape-five"
       />
-      <img src="/njsw36/images/shape/73.svg" alt="shape" className="shapes shape-six" />
+      <img src="/njsw36/static/images/shape/73.svg" alt="shape" className="shapes shape-six" />
       <img
-        src="/njsw36/images/shape/74.svg"
+        src="/njsw36/static/images/shape/74.svg"
         alt="shape"
         className="shapes shape-seven"
       />
       <img
-        src="/njsw36/images/shape/75.svg"
+        src="/njsw36/static/images/shape/75.svg"
         alt="shape"
         className="shapes shape-eight"
       />
       <img
-        src="/njsw36/images/shape/76.svg"
+        src="/njsw36/static/images/shape/76.svg"
         alt="shape"
         className="shapes shape-nine"
       />
-      <img src="/njsw36/images/shape/77.svg" alt="shape" className="shapes shape-ten" />
+      <img src="/njsw36/static/images/shape/77.svg" alt="shape" className="shapes shape-ten" />
     </div>
     // End hero-banner-three
   );

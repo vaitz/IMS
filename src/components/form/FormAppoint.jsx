@@ -8,7 +8,7 @@ const FormAppoint = () => {
     <form onClick={handleSubmit}>
       <input type="email" placeholder="ihidago@ujufidnan.gov" />
       <button className="d-flex justify-content-center align-items-center">
-        <img src="images/icon/119.svg" alt="icon" className="rotate-180" />
+        <img src="/njsw36/static/images/icon/119.svg" alt="icon" className="rotate-180" />
       </button>
     </form>
   );

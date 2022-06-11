@@ -21,7 +21,7 @@ const FooterSix = () => {
       <div className="col-lg-4">
         <div className="logo">
           <a href="index.html">
-            <img src="images/logo/deski_06.svg" alt="logo" />
+            <img src="/njsw36/static/images/logo/deski_06.svg" alt="logo" />
           </a>
         </div>
       </div>

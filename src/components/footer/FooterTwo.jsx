@@ -25,7 +25,7 @@ const FooterTwo = () => {
         data-aos-duration="1200"
       >
         <a href="index-customer-support.html" className="logo">
-          <img src="images/logo/deski_03.svg" alt="brand" />
+          <img src="/njsw36/static/images/logo/deski_03.svg" alt="brand" />
         </a>
       </div>
       {/* /.about-widget */}

@@ -32,13 +32,13 @@ const FancyFeatureEight = () => {
         >
           <div className="block-style-ten">
             <div className="icon">
-              <img src={`/njsw36/images/icon/${val.img}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${val.img}.svg`} alt="icon" />
             </div>
             <h6 className="title">{val.title}</h6>
             <p>{val.desc}</p>
             <Link to="about-pm">
               מה זה החלק הזה{" "}
-              <img src="/njsw36/images/icon/56.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/56.svg" alt="icon" />
             </Link>
           </div>
           {/* /.block-style-ten */}

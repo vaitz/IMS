@@ -39,7 +39,7 @@ const BlogStyle6 = () => {
         >
           <div className="post-meta">
             <img
-              src={`images/blog/${item.img}.png`}
+              src={`/njsw36/static/images/blog/${item.img}.png`}
               alt="media"
               className="image-meta"
             />

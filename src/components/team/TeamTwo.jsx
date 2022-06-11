@@ -56,7 +56,7 @@ const TeamTwo = () => {
             className="team-member team-block-one mb-50"
           >
             <div className="img-meta">
-              <img src={`images/media/${item.img}.png`} alt="team" />
+              <img src={`/njsw36/static/images/media/${item.img}.png`} alt="team" />
             </div>
             <div className="info">
               <div className="desig">{item.designation}</div>

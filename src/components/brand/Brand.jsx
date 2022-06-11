@@ -76,7 +76,7 @@ const brand = () => {
       {LogoSlider.map((val, i) => (
         <div className="item" key={i}>
           <a href={val.url}>
-            <img src={`images/logo/${val.img}.png`} alt="logo" />
+            <img src={`/njsw36/static/images/logo/${val.img}.png`} alt="logo" />
           </a>
         </div>
       ))}

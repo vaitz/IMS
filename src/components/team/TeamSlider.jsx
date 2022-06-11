@@ -86,7 +86,7 @@ export default function TeamSlider() {
                 <div className="name">{item.name}</div>
               </div>
               <div className="img-meta">
-                <img src={`images/media/${item.img}.png`} alt="team" />
+                <img src={`/njsw36/static/images/media/${item.img}.png`} alt="team" />
               </div>
             </Link>
           </div>

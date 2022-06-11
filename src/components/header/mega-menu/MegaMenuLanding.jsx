@@ -141,7 +141,6 @@ const MegaMenuLanding = () => {
       {HomeDropdown.map((val, i) => (
         <li key={i}>
           <Link to={val.routerPath} className={val.clasName}>
-            <img src={`images/menu/${val.img}.png`} alt="home-demo" />
             <span className="font-rubik">{val.title}</span>
             <div className={val.inenerTextWrapClass}>
               <div className="font-rubik">{val.inenerText}</div>

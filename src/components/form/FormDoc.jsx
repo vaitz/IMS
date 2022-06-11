@@ -10,7 +10,7 @@ const FormEvent = () => {
       {/* serarch field */}
 
       <button>
-        <img src="images/icon/54.svg" alt="icon" />
+        <img src="/njsw36/static/images/icon/54.svg" alt="icon" />
       </button>
       {/* Search button */}
 

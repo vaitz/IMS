@@ -36,7 +36,7 @@ const CounterThree = () => {
         >
           <div className="counter-box-three">
             <div className="icon">
-              <img src={`images/icon/${val.icon}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${val.icon}.svg`} alt="icon" />
             </div>
             <h2 className="number">
               <span className="timer">

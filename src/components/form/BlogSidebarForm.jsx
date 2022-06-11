@@ -8,7 +8,7 @@ const BlogSidebarForm = () => {
     <form onClick={handleSubmit}>
       <input type="text" placeholder="Search" />
       <button>
-        <img src="images/icon/50.svg" alt="icon" />
+        <img src="/njsw36/static/images/icon/50.svg" alt="icon" />
       </button>
     </form>
   );

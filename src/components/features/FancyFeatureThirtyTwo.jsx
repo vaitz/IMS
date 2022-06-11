@@ -54,7 +54,7 @@ const FancyFeatureThirtyTwo = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: item.bgColor }}
             >
-              <img src={`images/icon/${item.icon}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${item.icon}.svg`} alt="icon" />
             </div>
             <div className="text">
               <h4>{item.title}</h4>

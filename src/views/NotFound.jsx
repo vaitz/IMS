@@ -13,12 +13,12 @@ const NotFound = () => {
       <div className="error-page d-lg-flex align-items-center">
         <div className="img-holder order-lg-last">
           <img
-            src="images/media/404.svg"
+            src="/njsw36/static/images/media/404.svg"
             alt="media"
             className="w-100 illustration"
           />
           <img
-            src="images/media/404-q.svg"
+            src="/njsw36/static/images/media/404-q.svg"
             alt="media"
             className="shapes qus"
           />
@@ -26,7 +26,7 @@ const NotFound = () => {
         <div className="text-wrapper order-lg-first">
           <div className="logo">
             <Link to="/">
-              <img src="images/logo/deski_05.svg" alt="logo" />
+              <img src="/njsw36/static/images/logo/deski_05.svg" alt="logo" />
             </Link>
           </div>
           <h1 className="font-slab">
@@ -44,7 +44,7 @@ const NotFound = () => {
             className="back-home font-rubik d-flex align-items-center justify-content-center"
           >
             <span>Back to Home</span>
-            <img className="rotate-180" src="images/icon/53.svg" alt="icon" />
+            <img className="rotate-180" src="/njsw36/static/images/icon/53.svg" alt="icon" />
           </Link>
         </div>
         {/* /.text-wrapper */}

@@ -69,7 +69,7 @@ const BrandFive = () => {
         <div className="item" key={i}>
           <div className="img-meta d-flex align-items-center justify-content-center">
             <a href={val.url}>
-              <img src={`images/logo/${val.img}.png`} alt="logo" />
+              <img src={`/njsw36/static/images/logo/${val.img}.png`} alt="logo" />
             </a>
           </div>
         </div>

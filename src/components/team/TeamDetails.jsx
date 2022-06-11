@@ -37,7 +37,7 @@ export default function TeamDetails() {
         <div className="main-bg d-lg-flex align-items-center" key={i}>
           <div className="img-meta">
             <img
-              src={`images/media/${val.bigImage}.png`}
+              src={`/njsw36/static/images/media/${val.bigImage}.png`}
               alt="team"
               className="w-100"
             />

@@ -53,7 +53,7 @@ const TeamFive = () => {
         >
           <Link to="/team-details-v1" className="team-member">
             <div className="img-holder">
-              <img src={`images/media/${item.img}.png`} alt="team" />
+              <img src={`/njsw36/static/images/media/${item.img}.png`} alt="team" />
             </div>
             <h6 className="name">{item.name}</h6>
             <div className="position">{item.designation}</div>

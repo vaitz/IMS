@@ -50,7 +50,7 @@ const FancyFeatureSeventeen = () => {
         >
           <div className="block-meta">
             <div className="icon d-flex align-items-end">
-              <img src={`images/icon/${val.img}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${val.img}.svg`} alt="icon" />
             </div>
             <h4>{val.title}</h4>
             <p>{val.desc}</p>

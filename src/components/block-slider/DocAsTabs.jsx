@@ -8,21 +8,21 @@ const DocAsTabs = () => {
         <TabList>
           <Tab>
             <div className="d-flex align-items-center">
-              <img src="images/icon/90.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/90.svg" alt="icon" />
               <p>Team Box</p>
             </div>
           </Tab>
           {/* End .d-felx */}
           <Tab>
             <div className="d-flex align-items-center ">
-              <img src="images/icon/91.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/91.svg" alt="icon" />
               <p>Project & Task</p>
             </div>
           </Tab>
           {/* End .d-felx */}
           <Tab>
             <div className="d-flex align-items-center">
-              <img src="images/icon/92.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/92.svg" alt="icon" />
               <p>Note & Docs</p>
             </div>
           </Tab>
@@ -32,7 +32,7 @@ const DocAsTabs = () => {
         <div className="mt-50 sm-mt-30">
           <TabPanel>
             <img
-              src="images/assets/screen_11.png"
+              src="/njsw36/static/images/assets/screen_11.png"
               alt="screen"
               className="m-auto"
               data-aos="fade"
@@ -41,7 +41,7 @@ const DocAsTabs = () => {
           </TabPanel>
           <TabPanel>
             <img
-              src="images/assets/screen_15.png"
+              src="/njsw36/static/images/assets/screen_15.png"
               alt="screen"
               className="m-auto"
               data-aos="fade"
@@ -50,7 +50,7 @@ const DocAsTabs = () => {
           </TabPanel>
           <TabPanel>
             <img
-              src="images/assets/screen_16.png"
+              src="/njsw36/static/images/assets/screen_16.png"
               alt="screen"
               className="m-auto"
               data-aos="fade"

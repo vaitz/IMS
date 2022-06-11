@@ -40,14 +40,14 @@ const FancyFeatureTewentyThree = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: val.bgColor }}
             >
-              <img src={`images/icon/${val.icon}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${val.icon}.svg`} alt="icon" />
             </div>
             <h4>{val.title}</h4>
             <p>{val.subTitle}</p>
             <a className="arrow-icon" href="#">
               <img
                 className="arrow-icon"
-                src="images/icon/135.svg"
+                src="/njsw36/static/images/icon/135.svg"
                 alt="icon"
               />
             </a>

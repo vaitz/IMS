@@ -40,7 +40,7 @@ const BlogStyle3 = () => {
       {BlogContent.map((item, i) => (
         <div className="post-meta" key={i}>
           <img
-            src={`images/blog/${item.img}.png`}
+            src={`/njsw36/static/images/blog/${item.img}.png`}
             alt="media"
             className="image-meta"
           />

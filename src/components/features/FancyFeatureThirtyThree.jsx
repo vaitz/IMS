@@ -34,7 +34,7 @@ const FancyFeatureThirtyThree = () => {
         >
           <div className="block-style-thirtyThree pr-lg-5 mt-40">
             <div className="icon">
-              <img src={`images/icon/${val.icon}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${val.icon}.svg`} alt="icon" />
             </div>
             <h3 className="title">
               <span>{val.title}</span>

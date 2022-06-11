@@ -55,7 +55,7 @@ const FancyFeatureThirtyFive = () => {
               style={{ background: val.bgColor }}
               className="icon d-flex align-items-center justify-content-center"
             >
-              <img src={`images/icon/${val.icon}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${val.icon}.svg`} alt="icon" />
             </div>
             <h4>{val.title}</h4>
             <p>{val.subTitle}</p>

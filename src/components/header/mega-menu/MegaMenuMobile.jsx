@@ -299,11 +299,11 @@ const MegaMenuMobile = () => {
         <SidebarHeader>
           <div className="logo position-static">
             <a href="index.html">
-              <img src="/images/logo/deski_07.svg" alt="home-demo" />
+              <img src="/njsw36/static/images/logo/deski_07.svg" alt="home-demo" />
             </a>
           </div>
           <div className="fix-icon text-dark" onClick={handleClick}>
-            <img src="images/icon/close-w.svg" alt="icon" />
+            <img src="/njsw36/static/images/icon/close-w.svg" alt="icon" />
           </div>
           {/* Mobile Menu close icon */}
 

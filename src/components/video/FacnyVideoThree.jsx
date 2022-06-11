@@ -38,7 +38,7 @@ const FacnyVideoThree = () => {
           data-aos="fade-right"
           data-aos-duration="1200"
         >
-          <img src="images/media/img_83.png" alt="media" className="m-auto" />
+          <img src="/njsw36/static/images/media/img_83.png" alt="media" className="m-auto" />
         </div>
       </div>
     </>

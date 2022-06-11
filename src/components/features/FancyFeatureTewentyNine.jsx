@@ -21,13 +21,13 @@ const FancyFeatureTewentNine = () => {
             style={{ background: "#623A75" }}
           >
             <div className="logo">
-              <img src="images/logo/logo-53.png" alt="brand" />
+              <img src="/njsw36/static/images/logo/logo-53.png" alt="brand" />
             </div>
             <div
               className="fancybox video-icon tran3s"
               onClick={() => setOpen(true)}
             >
-              <img src="images/icon/152.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/152.svg" alt="icon" />
             </div>
             <h3>
               <Link to="/blog-details">
@@ -40,7 +40,7 @@ const FancyFeatureTewentNine = () => {
               to="/blog-details"
             >
               <span>Continue Reading</span>
-              <img src="images/icon/153.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/153.svg" alt="icon" />
             </Link>
           </div>
           {/* /.block-style-twentyNine */}
@@ -53,13 +53,13 @@ const FancyFeatureTewentNine = () => {
             style={{ background: "#314B7D" }}
           >
             <div className="logo">
-              <img src="images/logo/logo-54.png" alt="brand" />
+              <img src="/njsw36/static/images/logo/logo-54.png" alt="brand" />
             </div>
             <div
               className="fancybox video-icon tran3s"
               onClick={() => setOpen(true)}
             >
-              <img src="images/icon/152.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/152.svg" alt="icon" />
             </div>
             <h3>
               <Link to="/blog-details">
@@ -71,7 +71,7 @@ const FancyFeatureTewentNine = () => {
               to="/blog-details"
             >
               <span>Continue Reading</span>
-              <img src="images/icon/153.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/153.svg" alt="icon" />
             </Link>
           </div>
           {/* /.block-style-twentyNine */}
@@ -84,13 +84,13 @@ const FancyFeatureTewentNine = () => {
             style={{ background: "#2B4E56" }}
           >
             <div className="logo">
-              <img src="images/logo/logo-55.png" alt="brand" />
+              <img src="/njsw36/static/images/logo/logo-55.png" alt="brand" />
             </div>
             <div
               className="fancybox video-icon tran3s"
               onClick={() => setOpen(true)}
             >
-              <img src="images/icon/152.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/152.svg" alt="icon" />
             </div>
             <h3>
               <Link to="/blog-details">
@@ -103,7 +103,7 @@ const FancyFeatureTewentNine = () => {
               to="/blog-details"
             >
               <span>Continue Reading</span>
-              <img src="images/icon/153.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/153.svg" alt="icon" />
             </Link>
           </div>
           {/* /.block-style-twentyNine */}
@@ -116,13 +116,13 @@ const FancyFeatureTewentNine = () => {
             style={{ background: "#7A4040" }}
           >
             <div className="logo">
-              <img src="images/logo/logo-56.png" alt="brand" />
+              <img src="/njsw36/static/images/logo/logo-56.png" alt="brand" />
             </div>
             <div
               className="fancybox video-icon tran3s"
               onClick={() => setOpen(true)}
             >
-              <img src="images/icon/152.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/152.svg" alt="icon" />
             </div>
             <h3>
               <Link to="/blog-details">
@@ -135,7 +135,7 @@ const FancyFeatureTewentNine = () => {
               to="/blog-details"
             >
               <span>Continue Reading</span>
-              <img src="images/icon/153.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/153.svg" alt="icon" />
             </Link>
           </div>
           {/* /.block-style-twentyNine */}

@@ -13,12 +13,12 @@ const FancyVideoFour = () => {
         onClose={() => setOpen(false)}
       />
       <div className="video-meta position-relative" data-aos="fade-up">
-        <img src="images/media/img_107.png" alt="group of people" />
+        <img src="/njsw36/static/images/media/img_107.png" alt="group of people" />
         <div
           className="fancybox video-icon d-flex align-items-center justify-content-center"
           onClick={() => setOpen(true)}
         >
-          <img src="images/icon/148.svg" alt="icon" />
+          <img src="/njsw36/static/images/icon/148.svg" alt="icon" />
         </div>
       </div>
     </>

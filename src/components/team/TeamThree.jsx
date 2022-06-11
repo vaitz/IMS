@@ -109,7 +109,7 @@ const TeamThree = () => {
             {All.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
+                  <img src={`/njsw36/static/images/media/${item.img}.png`} alt="media" />
                   <h4>{item.title}</h4>
                   <strong>{item.designation}</strong>
                 </div>
@@ -128,7 +128,7 @@ const TeamThree = () => {
             {Leadership.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
+                  <img src={`/njsw36/static/images/media/${item.img}.png`} alt="media" />
                   <h4>{item.title}</h4>
                   <strong>{item.designation}</strong>
                 </div>
@@ -147,7 +147,7 @@ const TeamThree = () => {
             {Designer.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
+                  <img src={`/njsw36/static/images/media/${item.img}.png`} alt="media" />
                   <h4>{item.title}</h4>
                   <strong>{item.designation}</strong>
                 </div>
@@ -166,7 +166,7 @@ const TeamThree = () => {
             {Developer.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
+                  <img src={`/njsw36/static/images/media/${item.img}.png`} alt="media" />
                   <h4>{item.title}</h4>
                   <strong>{item.designation}</strong>
                 </div>
@@ -185,7 +185,7 @@ const TeamThree = () => {
             {Marketing.map((item, i) => (
               <Link to="/team-details-v1" className="mix" key={i}>
                 <div className="team-member">
-                  <img src={`images/media/${item.img}.png`} alt="media" />
+                  <img src={`/njsw36/static/images/media/${item.img}.png`} alt="media" />
                   <h4>{item.title}</h4>
                   <strong>{item.designation}</strong>
                 </div>

@@ -61,7 +61,7 @@ const FancyFeatureNinteen = () => {
           >
             <div className="d-flex align-items-start">
               <img
-                src={`images/icon/${val.icon}.svg`}
+                src={`/njsw36/static/images/icon/${val.icon}.svg`}
                 alt="icon"
                 className="icon"
               />

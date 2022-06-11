@@ -42,7 +42,7 @@ const BrandSix = () => {
                 className="icon d-flex align-items-center justify-content-center"
                 key={i}
               >
-                <img src={`images/logo/${brand.img}.png`} alt="brand" />
+                <img src={`/njsw36/static/images/logo/${brand.img}.png`} alt="brand" />
               </div>
               //   /.icon
             ))}

@@ -26,14 +26,14 @@ const AboutFour = () => {
 
       <div className="col-lg-6" data-aos="fade-right" data-aos-duration="1200">
         <div className="img-holder md-mt-80">
-          <img src="images/media/img_39.png" alt="media" />
+          <img src="/njsw36/static/images/media/img_39.png" alt="media" />
           <img
-            src="images/shape/60.svg"
+            src="/njsw36/static/images/shape/60.svg"
             alt="shape"
             className="shapes shape-one"
           />
           <img
-            src="images/shape/61.svg"
+            src="/njsw36/static/images/shape/61.svg"
             alt="shape"
             className="shapes shape-two"
           />

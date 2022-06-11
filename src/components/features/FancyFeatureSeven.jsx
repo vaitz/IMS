@@ -34,7 +34,7 @@ const FancyFeatureSeven = () => {
         >
           <div className="block-style-seven">
             <div className="icon">
-              <img src={`images/icon/${val.icon}.svg`} alt="icon" />
+              <img src={`/njsw36/static/images/icon/${val.icon}.svg`} alt="icon" />
             </div>
             <div className="feature-info">
               <span>{val.meta}</span>

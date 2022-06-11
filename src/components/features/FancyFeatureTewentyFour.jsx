@@ -14,7 +14,7 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#3FE193" }}
             >
-              <img src="images/icon/124.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/124.svg" alt="icon" />
             </div>
             <div className="text">
               <h4>Sports & Fitness</h4>
@@ -41,7 +41,7 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#FF4F86" }}
             >
-              <img src="images/icon/125.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/125.svg" alt="icon" />
             </div>
             <div className="text">
               <h4>Beauty and Wellness</h4>
@@ -67,7 +67,7 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#FFCF39" }}
             >
-              <img src="images/icon/126.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/126.svg" alt="icon" />
             </div>
             <div className="text">
               <h4>Events & entertainment</h4>
@@ -94,7 +94,7 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#6D64FF" }}
             >
-              <img src="images/icon/127.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/127.svg" alt="icon" />
             </div>
             <div className="text">
               <h4>Officials & Financial</h4>
@@ -120,7 +120,7 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#E752FF" }}
             >
-              <img src="images/icon/128.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/128.svg" alt="icon" />
             </div>
             <div className="text">
               <h4>Personal meetings</h4>
@@ -147,7 +147,7 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#29EEFB" }}
             >
-              <img src="images/icon/129.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/129.svg" alt="icon" />
             </div>
             <div className="text">
               <h4>Driving Lessons</h4>
@@ -170,7 +170,7 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#32B5FF" }}
             >
-              <img src="images/icon/130.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/130.svg" alt="icon" />
             </div>
             <div className="text">
               <h4>Education System</h4>
@@ -197,7 +197,7 @@ const FancyFeatureTewentyFour = () => {
               className="icon d-flex align-items-center justify-content-center"
               style={{ background: "#FFA361" }}
             >
-              <img src="images/icon/131.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/131.svg" alt="icon" />
             </div>
             <div className="text">
               <h4>Medical services</h4>

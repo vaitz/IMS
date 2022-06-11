@@ -26,7 +26,7 @@ const FooterThree = () => {
           data-aos="fade-up"
           data-aos-duration="1200"
         >
-          <img src="/njsw36/images/logo/deski_01.svg" alt="" />
+          <img src="/njsw36/static/images/logo/deski_01.svg" alt="" />
         </a>
       </div>
       {/* /.about-widget */}

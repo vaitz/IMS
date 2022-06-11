@@ -64,7 +64,7 @@ const CounterOne = () => {
       <div className="bubble-five"></div>
       <div className="bubble-six"></div>
       <div className="bubble-seven"></div>
-      <img src="images/shape/8.svg" alt="" className="cs-screen dot-shape" />
+      <img src="/njsw36/static/images/shape/8.svg" alt="" className="cs-screen dot-shape" />
     </div>
   );
 };

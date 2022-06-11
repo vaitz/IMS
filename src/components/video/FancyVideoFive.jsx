@@ -19,7 +19,7 @@ const FancyVideoFive = () => {
               <h2>
                 <span>
                   Service we offer is{" "}
-                  <img src="images/shape/line-shape-5.svg" alt="icon" />
+                  <img src="/njsw36/static/images/shape/line-shape-5.svg" alt="icon" />
                 </span>
                 specifically designed to meet your needs.
               </h2>
@@ -35,12 +35,12 @@ const FancyVideoFive = () => {
 
         <div className="col-lg-6 col-md-12 order-lg-first">
           <div className="video-box">
-            <img className="w-100" src="images/media/img_110.png" alt="media" />
+            <img className="w-100" src="/njsw36/static/images/media/img_110.png" alt="media" />
             <div
               onClick={() => setOpen(true)}
               className="fancybox video-button d-flex align-items-center justify-content-center"
             >
-              <img src="images/icon/170.svg" alt="icon" />
+              <img src="/njsw36/static/images/icon/170.svg" alt="icon" />
             </div>
           </div>
           {/* <!-- /.video-box --> */}

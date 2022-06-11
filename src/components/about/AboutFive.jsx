@@ -9,7 +9,7 @@ const AboutFive = () => {
             <h2>
               <span>
                 Exclusive fetures{" "}
-                <img src="images/shape/line-shape-5.svg" alt="shape" />
+                <img src="/njsw36/static/images/shape/line-shape-5.svg" alt="shape" />
               </span>
               with great offers everytime.
             </h2>
@@ -25,19 +25,19 @@ const AboutFive = () => {
 
       <div className="col-lg-6 order-lg-first">
         <div className="img-gallery">
-          <img src="images/media/img_35.png" alt="media" />
+          <img src="/njsw36/static/images/media/img_35.png" alt="media" />
           <img
-            src="images/media/img_36.png"
+            src="/njsw36/static/images/media/img_36.png"
             alt="media"
             className="overlay-img"
           />
           <img
-            src="images/shape/49.svg"
+            src="/njsw36/static/images/shape/49.svg"
             alt="shape"
             className="shapes shape-one"
           />
           <img
-            src="images/shape/50.svg"
+            src="/njsw36/static/images/shape/50.svg"
             alt="shape"
             className="shapes shape-two"
           />
