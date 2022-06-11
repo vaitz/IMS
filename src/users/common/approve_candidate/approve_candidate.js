@@ -6,6 +6,7 @@ import Button from "../../../button";
 import { approveCandidates, getCandidates } from "./requests";
 import { getPrograms } from "../../company_representive/create_intership/requests";
 import Dropdown from "../../../dropdown";
+import Select from "react-select";
 
 const Div = styled.div`
   height: auto;
@@ -25,8 +26,11 @@ const ApproveCandidate = ({ username, userType }) => {
 
   console.log(programs);
   useEffect(() => {
-    getPrograms(setPrograms);
+    getPrograms(setPrograms, formatPrograms);
   }, []);
+
+  const formatPrograms = (programs) =>
+    programs.map((option, index) => ({ value: index, label: option }));
 
   useEffect(() => {
     if (selectedProgram) {
@@ -119,12 +123,7 @@ const ApproveCandidate = ({ username, userType }) => {
 
   return (
     <Fragment>
-      <Dropdown
-        options={programs}
-        placeholder={"בחר תוכנית"}
-        value={selectedProgram}
-        onChange={(program) => setSelectedProgram(program)}
-      />
+      <Select options={programs} />
       {selectedProgram && (
         <>
           <Div>

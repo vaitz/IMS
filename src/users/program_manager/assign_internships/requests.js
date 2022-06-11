@@ -38,7 +38,7 @@ const data = [
     requirements: "requirements",
   },
 ];
-// fetchMock.mock(SERVER_ADDRESS+'/internships/123', data);
+fetchMock.mock(SERVER_ADDRESS + "/internships/123", data);
 
 export const getCompanyData = (
   setCompanyData,

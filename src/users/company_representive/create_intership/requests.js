@@ -41,7 +41,7 @@ export const createInternship = (
     });
 };
 
-export const getPrograms = (setPrograms) => {
+export const getPrograms = (setPrograms, formatPrograms) => {
   fetch(SERVER_ADDRESS + "/activePrograms", {
     method: "Get",
     mode: "cors",
@@ -50,7 +50,7 @@ export const getPrograms = (setPrograms) => {
       response.json().then((data) => {
         let tempData = [""];
         tempData.push(...data);
-        setPrograms(tempData);
+        setPrograms(formatPrograms(tempData));
       });
     })
     .catch((error) => {
@@ -79,7 +79,7 @@ export const getMentors = (setMentors, username) => {
     });
 };
 
-const data = ["123", "2", "3"];
+const data = ["123"];
 const mentors = [
   { firstName: "חי", lastName: "מתתיהו", username: "ff" },
   { firstName: "יובל", lastName: "מור", username: "aa" },

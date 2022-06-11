@@ -56,7 +56,7 @@ const studentsNames1 = [
   },
 ];
 
-// fetchMock.mock(SERVER_ADDRESS+'/mentor/getInterns/user', studentsNames1);
+fetchMock.mock(SERVER_ADDRESS + "/mentor/getInterns/user", studentsNames1);
 
 export const getWorkingHours = (username, setHours, formatHours) =>
   fetch(SERVER_ADDRESS + `/intern/getHours/${username}`, {

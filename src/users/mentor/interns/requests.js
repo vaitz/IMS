@@ -44,4 +44,4 @@ const students = [
   },
 ];
 
-fetchMock.mock(SERVER_ADDRESS + `/mentor/getInterns/user`, students);
+// fetchMock.mock(SERVER_ADDRESS + `/mentor/getInterns/user`, students);
