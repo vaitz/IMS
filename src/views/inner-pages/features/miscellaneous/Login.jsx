@@ -55,19 +55,6 @@ const Login = ({ setUserType, setFirstName, setProgramId, setUsername }) => {
             setFirstName={setFirstName}
             setUsername={setUsername}
           />
-          {/* Login Form End */}
-          <p className="text-center font-rubik copyright-text">
-            Copyright @{new Date().getFullYear()}{" "}
-            <a
-              href="https://themeforest.net/user/ib-themes/portfolio"
-              target="_blank"
-              title="myFrame"
-              rel="noreferrer"
-            >
-              ib-themes
-            </a>{" "}
-            inc.
-          </p>
         </div>
         {/* /.form-wrapper */}
       </div>

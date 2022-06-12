@@ -6841,7 +6841,7 @@ body .theme-btn-fourteen:hover {
 }
 .useable-tools-section-three .logo-wrapper {
   position: absolute;
-  left: -7%;
+  left: 0%;
   top: 50%;
   transform: translateY(-50%);
   max-width: 63%;
@@ -7024,8 +7024,18 @@ body .theme-btn-fourteen:hover {
 }
 .theme-footer-three .top-footer .address-list .social-icon a {
   font-size: 22px;
-  margin-right: 20px;
+  margin-right: 120px;
   color: rgba(0, 0, 0, 0.55);
+}
+.social-icon a {
+  font-size: 30px;
+  margin: 10px;
+  color: rgba(0, 0, 0, 0.55);
+  justify-content: center;
+}
+
+.connect{
+  text-align: center;
 }
 .theme-footer-three .top-footer .address-list .social-icon a:hover {
   color: #000;
@@ -15104,4 +15114,8 @@ body {
   .block-style-thirtySeven {
     margin: 0 15px;
   }
+}
+
+.companies {
+  margin-left: 10px;
 }
