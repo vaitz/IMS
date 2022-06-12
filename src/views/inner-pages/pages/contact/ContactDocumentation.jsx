@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import HeaderThree from "../../../../components/header/HeaderThree";
+import Header from "../../../../components/header/Header";
 import ContactAddress from "../../../../components/contact/address/ContactAddress";
 import ContactForm from "../../../../components/contact/form/ContactForm";
 import CopyRight from "../../../../components/footer/CopyRight";
@@ -17,7 +17,7 @@ const ContactDocumentation = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <HeaderThree />
+      <Header />
       {/* End Header */}
 
       {/* =============================================

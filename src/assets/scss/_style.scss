@@ -6459,6 +6459,22 @@ body .theme-btn-fourteen:hover {
   border-color: var(--blue-light);
   color: #fff;
 }
+
+.theme-menu-three .user-login-button li .logout-action {
+  border: 2px solid #000;
+  background: #000;
+  padding: 0 20px;
+  color: #fff;
+  margin-right: 35px;
+}
+.theme-menu-three .user-login-button li .logout-action img {
+  margin-left: 10px;
+}
+.theme-menu-three .user-login-button li .logout-action:hover {
+  background: var(--blue-light);
+  border-color: var(--blue-light);
+  color: #fff;
+}
 /*-------------------- Theme Hero Banner/Three -----------------*/
 .hero-banner-three {
   padding: 40px 0 0;

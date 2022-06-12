@@ -7,7 +7,7 @@ import {
   AccordionItemButton,
   AccordionItemPanel,
 } from "react-accessible-accordion";
-import HeaderThree from "../../../components/header/HeaderThree";
+import Header from "../../../components/header/Header";
 
 const FaqContent = [
   {
@@ -154,7 +154,7 @@ const DocSidebarContent = () => {
         </title>
       </Helmet>
       {/* End Page SEO Content */}
-      <HeaderThree />
+      <Header />
       {/* End Header */}
 
       <div className="faq-wrraper ">

@@ -13,7 +13,7 @@ import ScrollTopBehaviour from "../components/ScrollTopBehaviour";
 import ChangePass from "../users/common/changePass/changePass";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
-import HeaderThree from "../components/header/HeaderThree";
+import Header from "../components/header/Header";
 import Home from "../users/common/home/home";
 import Internships from "../users/candidate/internships/internships";
 import InternshipsPriorities from "../users/candidate/internships_priorities/internships_priorities";
@@ -38,7 +38,7 @@ const Routes = (props) => {
         <title>תוכנית ההתמחות להייטק</title>
       </Helmet>
       <Router>
-        <HeaderThree {...props} />
+        <Header {...props} />
         <ScrollTopBehaviour />
         <Switch>
           //common

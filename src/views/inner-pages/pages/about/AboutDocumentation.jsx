@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import HeaderThree from "../../../../components/header/HeaderThree";
+import Header from "../../../../components/header/Header";
 import CallToActionTwo from "../../../../components/call-to-action/CallToActionTwo";
 import CounterFiveColored from "../../../../components/counter/CounterFiveColored";
 import TeamSlider from "../../../../components/team/TeamSlider";
@@ -18,7 +18,7 @@ const Documentation = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <HeaderThree />
+      <Header />
       {/* End Header */}
 
       {/* =============================================
