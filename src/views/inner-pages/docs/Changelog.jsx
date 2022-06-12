@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import HeaderThree from "../../../components/header/HeaderThree";
+import Header from "../../../components/header/Header";
 
 const Changelog = () => {
   return (
@@ -9,7 +9,7 @@ const Changelog = () => {
         <title>Changelog || Deski-Saas & Software React Template</title>
       </Helmet>
       {/* End Page SEO Content */}
-      <HeaderThree />
+      <Header />
       {/* End Header */}
 
       {/* 	=============================================

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import HeaderThree from "../../../components/header/HeaderThree";
+import Header from "../../../components/header/Header";
 import FooterEight from "../../../components/footer/FooterEight";
 import CopyRightFour from "../../../components/footer/CopyRightFour";
 import FancyFeatureThirtyFive from "../../../components/features/FancyFeatureThirtyFive";
@@ -15,7 +15,7 @@ const ServiceV3 = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <HeaderThree />
+      <Header />
       {/* End Header */}
 
       {/* =============================================

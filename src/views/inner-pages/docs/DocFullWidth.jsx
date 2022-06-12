@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import ScrollspyNav from "react-scrollspy-nav";
-import HeaderThree from "../../../components/header/HeaderThree";
+import Header from "../../../components/header/Header";
 import DocSidebarContent from "../docs/DocSidebarContent";
 
 const DocFullWidth = () => {
@@ -17,7 +17,7 @@ const DocFullWidth = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <HeaderThree />
+      <Header />
       {/* End Header */}
 
       {/* =============================================

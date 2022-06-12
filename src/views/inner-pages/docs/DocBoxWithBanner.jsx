@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
-import HeaderThree from "../../../components/header/HeaderThree";
+import Header from "../../../components/header/Header";
 import DocSidebarContent from "./DocSidebarContent";
 import FormEvent from "../../../components/form/FormDoc";
 
@@ -16,7 +16,7 @@ const DocBoxWithBanner = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <HeaderThree />
+      <Header />
       {/* End Header */}
 
       {/* 	=============================================

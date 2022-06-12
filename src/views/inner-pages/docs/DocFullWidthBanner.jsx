@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import ScrollspyNav from "react-scrollspy-nav";
 import FormEvent from "../../../components/form/FormDoc";
-import HeaderThree from "../../../components/header/HeaderThree";
+import Header from "../../../components/header/Header";
 import DocSidebarContent from "../docs/DocSidebarContent";
 
 const DocFullWidthBanner = () => {
@@ -17,7 +17,7 @@ const DocFullWidthBanner = () => {
       </Helmet>
       {/* End Page SEO Content */}
 
-      <HeaderThree />
+      <Header />
       {/* End Header */}
 
       {/* 	=============================================
