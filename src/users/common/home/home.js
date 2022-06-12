@@ -1,12 +1,21 @@
 import React from "react";
 import TestimonialTwo from "../../../components/testimonial/TestimonialTwo";
-import BrandThree from "../../../components/brand/BrandThree";
-import FaqClassic from "../../../components/faq/FaqClassic";
-import CallToActionTwo from "../../../components/call-to-action/CallToActionTwo";
-import FooterThree from "../../../components/footer/FooterThree";
-import CopyRight from "../../../components/footer/CopyRight";
+import Companies from "../../../components/brand/Companies";
 import HeroBannerThree from "../../../components/hero-banner/HeroBannerThree";
-
+const socialContent = [
+  {
+    icon: "fa-facebook",
+    link: "https://www.facebook.com/GavYamN/",
+  },
+  {
+    icon: "fa-instagram",
+    link: "https://www.instagram.com/gavyamnegev/",
+  },
+  {
+    icon: "fa-linkedin",
+    link: "https://www.linkedin.com/company/gav-yam-negev-advanced-technologies-park-atp-/",
+  },
+];
 const Home = () => {
   return (
     <div>
@@ -54,7 +63,6 @@ const Home = () => {
         </div>
       </div>
       {/*  /.fancy-feature-eight */}
-
       {/*
      =============================================
 				Document Slide As Nav
@@ -65,18 +73,13 @@ const Home = () => {
       {/*  </div>*/}
       {/*</div>*/}
       {/* End text block based image slide */}
-
-      {/*
-     =============================================
-				Fancy Three Text Blokc
-		============================================== */}
       <div className="fancy-feature-eight pt-150 md-pt-100">
         <div className="container">
           <div className="title-style-four text-center mb-60 md-mb-40">
             <div className="row">
               <div className="col-lg-10 m-auto">
-                <h6>הצטרפו</h6>
-                <h2>
+                <h6 className="font-rubik">הצטרפו לתכונית</h6>
+                <h2 className="font-rubik">
                   סטודנט/ית או חברה שמעוניינת לקחת חלק בתוכנית?{" "}
                   <span>
                     מהרו והירשמו בהקדם{" "}
@@ -199,7 +202,6 @@ const Home = () => {
         </div>
       </div>
       {/* /.fancy-feature-eight */}
-
       {/*
      =============================================
 			Client Feedback Slider Two
@@ -250,7 +252,7 @@ const Home = () => {
             <div className="row">
               <div className="col-lg-7 col-md-9 m-auto">
                 <h6>פידבק</h6>
-                <h2>
+                <h2 className="font-rubik">
                   מה המשתתפים בתוכנית <br />
                   <span>
                     אומרים עליה{" "}
@@ -273,14 +275,13 @@ const Home = () => {
         {/* /.slider-content */}
       </div>
       {/* /.client-feedback-slider-two */}
-
       <div className="useable-tools-section-three pt-200 pb-200 md-pt-100 md-pb-80 overflow-hidden">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
               <div className="title-style-four">
                 <h2>
-                  <span>
+                  <span className="font-rubik">
                     החברות החונכות
                     <img src="/njsw36/static/images/shape/line-shape-10.svg" />
                   </span>
@@ -290,10 +291,8 @@ const Home = () => {
                 החברות נמצאות בפארק ההייטק גב-ים בבאר שבע
               </p>
             </div>
-            {/* End .col */}
           </div>
         </div>
-        {/* /.container */}
 
         <div
           className="
@@ -304,17 +303,10 @@ const Home = () => {
         align-items-center
       "
         >
-          <BrandThree />
+          <Companies />
         </div>
-        {/*  /.logo-wrapper */}
       </div>
 
-      {/* End who use deski section */}
-
-      {/*
-     =============================================
-			Faq Classic
-		============================================== */}
       <div className="faq-classic with-bg">
         <img
           src="/njsw36/static/images/shape/86.svg"
@@ -331,6 +323,32 @@ const Home = () => {
           alt="shape"
           className="shapes shape-three"
         />
+        <div className="connect">
+          <div
+            className="font-rubik"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-delay="150"
+          >
+            <h3 className="footer-title">צרו קשר</h3>
+            <br />
+            <p className="font-rubik">08-6387930, 08-6479259</p>
+            <ul className="info">
+              <li>
+                <a href="mailto:Negev@gav-yam.co.il">Negev@gav-yam.co.il</a>
+              </li>
+            </ul>
+            <ul className="social-icon align-items-center d-flex justify-content-center">
+              {socialContent.map((val, i) => (
+                <li key={i}>
+                  <a href={val.link} target="_blank" rel="noreferrer">
+                    <i className={`fa ${val.icon}`}></i>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
         <img
           src="/njsw36/static/images/shape/89.svg"
           alt="shape"
