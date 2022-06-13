@@ -50,9 +50,15 @@ const Home = () => {
           {/* End .row */}
 
           <div className="row justify-content-center">
-            <img src="/njsw36/static/images/logo/GavYam.jpg" />
-            <img src="/njsw36/static/images/logo/BGU.jpg" />
-            <img src="/njsw36/static/images/logo/aloma.png" />
+            <img
+              src="/njsw36/static/images/logo/GavYam.jpg"
+              className="images"
+            />
+            <img src="/njsw36/static/images/logo/BGU.jpg" className="images" />
+            <img
+              src="/njsw36/static/images/logo/aloma.png"
+              className="images"
+            />
 
             {/*<div className="col-xl-11 m-auto">*/}
             {/*  <FancyFeatureEight />*/}
