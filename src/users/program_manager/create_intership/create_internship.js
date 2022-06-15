@@ -2,10 +2,14 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { createInternship, getCompanies, getMentors } from "./requests";
 import PopUp from "../../../popup";
-import { Select } from "../../guest/register/register";
 import { getPrograms } from "../../company_representive/create_intership/requests";
 import { useHistory } from "react-router-dom";
 import Button from "../../../button";
+
+const Select = styled.select`
+  width: 500px;
+  height: 20px;
+`;
 
 const Label = styled.text`
   font-size: 18px;
