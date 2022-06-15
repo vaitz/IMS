@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { createInternship, getMentors, getPrograms } from "./requests";
 import PopUp from "../../../popup";
-import { Select } from "../../guest/register/register";
 import { useHistory } from "react-router-dom";
 
+const Select = styled.select`
+  width: 500px;
+  height: 20px;
+`;
 const Label = styled.text`
   font-size: 18px;
   color: #666666;
