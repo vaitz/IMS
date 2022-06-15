@@ -84,7 +84,7 @@ const Home = () => {
           <div className="title-style-four text-center mb-60 md-mb-40">
             <div className="row">
               <div className="col-lg-10 m-auto">
-                <h6 className="font-rubik">הצטרפו לתכונית</h6>
+                <h6 className="font-rubik">הצטרפו לתוכנית</h6>
                 <h2 className="font-rubik">
                   סטודנט/ית או חברה שמעוניינת לקחת חלק בתוכנית?{" "}
                   <span>
