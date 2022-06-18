@@ -10,7 +10,6 @@ import {
 } from "../../../constants";
 
 export const loginRequest = (
-  setLoading,
   setError,
   username,
   password,
