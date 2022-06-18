@@ -15,7 +15,6 @@ const Students = ({ username }) => {
       field: "first_name",
       cellStyle: {
         textAlign: "center",
-        width: "150px",
       },
     },
     {
@@ -23,7 +22,6 @@ const Students = ({ username }) => {
       field: "last_name",
       cellStyle: {
         textAlign: "center",
-        width: "150px",
       },
     },
     {
@@ -31,7 +29,6 @@ const Students = ({ username }) => {
       field: "email",
       cellStyle: {
         textAlign: "center",
-        width: "150px",
       },
     },
     {
@@ -39,7 +36,6 @@ const Students = ({ username }) => {
       field: "internship",
       cellStyle: {
         textAlign: "center",
-        width: "150px",
       },
     },
   ];
@@ -60,9 +56,11 @@ const Students = ({ username }) => {
           search: false,
           paging: false,
           pageSize: 10,
+          headerStyle: { position: "sticky", top: 0, textAlign: "center" },
           rowStyle: (rowData) => ({
             backgroundColor:
               selectedRow === rowData.tableData.id ? "#EEE" : "#FFF",
+            textAlign: "center",
           }),
         }}
         onRowClick={(evt, selectedRow) =>

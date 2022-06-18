@@ -19,7 +19,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const App = () => {
   const [userType, setUserType] = useState(GUEST);
-  const [firstName, setFirstName] = useState("אורח");
+  const [firstName, setFirstName] = useState(GUEST);
   const [programId, setProgramId] = useState(123);
   const [username, setUsername] = useState("user");
   const theme = createTheme({
