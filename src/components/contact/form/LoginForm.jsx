@@ -4,6 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { loginRequest } from "../../../users/guest/login/requests";
 import { useHistory } from "react-router-dom";
+import PopUp from "../../../popup";
 
 const LoginForm = ({
   setUserType,
@@ -11,8 +12,7 @@ const LoginForm = ({
   setProgramId,
   setUsername,
 }) => {
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   let history = useHistory();
 
   // for password show hide
@@ -37,7 +37,6 @@ const LoginForm = ({
     console.log("Message submited: " + JSON.stringify(data));
     e.target.reset();
     loginRequest(
-      setLoading,
       setError,
       data.username,
       data.password,
@@ -49,10 +48,40 @@ const LoginForm = ({
     );
   }
 
+  // Showing error message
+  const errorMessage = () => {
+    return (
+      <PopUp
+        trigger={error}
+        setTrigger={() => {
+          setError(false);
+        }}
+      >
+        <h3 className="font-rubik">שם משתמש או סיסמא לא תקינים</h3>
+        <br />
+        <button
+          style={{
+            background: "#DEEAE7",
+            border: "10px",
+            outline: "auto",
+            padding: "3px",
+          }}
+          className="font-rubik"
+          onClick={() => {
+            setError(false);
+          }}
+        >
+          נסה שנית
+        </button>
+      </PopUp>
+    );
+  };
+
   return (
     <>
       <form onSubmit={handleSubmit(onSubmit)} className="user-data-form ">
         <div className="row">
+          <div className="messages">{errorMessage()}</div>
           <div className="col-12">
             <div className="input-group-meta mb-80 sm-mb-70">
               <label>שם משתמש</label>
@@ -99,15 +128,6 @@ const LoginForm = ({
               </span>
             </div>
           </div>
-          {/*<div className="col-12">*/}
-          {/*  <div className="agreement-checkbox d-flex justify-content-between align-items-center">*/}
-          {/*    <div>*/}
-          {/*      <input type="checkbox" id="remember" />*/}
-          {/*      <label htmlFor="remember">Keep me logged in</label>*/}
-          {/*    </div>*/}
-          {/*  </div>*/}
-          {/*  /!*  /.agreement-checkbox *!/*/}
-          {/*</div>*/}
           <div className="col-12">
             <button className="theme-btn-one mt-50 mb-50">התחברות</button>
           </div>
