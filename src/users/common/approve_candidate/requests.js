@@ -66,7 +66,7 @@ const data2 = [
     priority: 1,
   },
 ];
-fetchMock.mock(SERVER_ADDRESS + "/מנטור/user/candidates/123", data);
+fetchMock.mock(SERVER_ADDRESS + "/מנטור/user/candidates/starship", data);
 fetchMock.mock(SERVER_ADDRESS + "/mentor/user/candidates/122", data2);
 
 export const approveCandidates = (username, userType, program, approved) => {

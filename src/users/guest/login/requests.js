@@ -61,10 +61,10 @@ export const loginRequest = (
 };
 
 const data = {
-  userType: COMPANY_REPRESENTATIVE,
+  userType: SYSTEM_MANAGER,
   session: 2,
   username: "user",
-  firstName: "חי",
-  program: "123",
+  firstName: "יובל",
+  program: "starship",
 };
 fetchMock.mock(SERVER_ADDRESS + "/users/login", data);

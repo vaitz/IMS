@@ -1,11 +1,5 @@
 import React, { useState, useEffect } from "react";
 import PopUp from "../../../popup";
-// import {
-//   validatePassword,
-//   validateUsername,
-//   validateEmptyFields,
-//   validateEmail,
-// } from "./validations";
 import { getPrograms, sendDetailsToServer } from "./requests";
 import { useHistory } from "react-router-dom";
 import {
@@ -19,18 +13,6 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
 import * as Yup from "yup";
 
-// const TextLink = styled.a`
-//   color: blue;
-//   border: none;
-//   background: transparent;
-//   outline: none;
-//   cursor: ${({ disabled }) => (disabled ? "default" : "pointer")};
-//   text-decoration: none;
-//   &:hover {
-//     text-decoration: ${({ disabled }) => (disabled ? "none" : "underline")};
-//   }
-// `;
-
 const userTypes = [
   STUDENT,
   COMPANY_REPRESENTATIVE,
@@ -43,79 +25,19 @@ const Register = () => {
   let history = useHistory();
 
   // States for managing the registration form
-  const [isChecked, setIsChecked] = useState(false);
   const [openPopUpStatement, setOpenPopUpStatement] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState("");
   const [programs, setPrograms] = useState([]);
+  const [userType, setUserType] = useState(STUDENT);
 
   useEffect(() => {
     getPrograms(setPrograms);
   }, []);
 
-  // State for registration
-  const [state, setState] = useState({
-    userType: STUDENT,
-    username: "",
-    firstname: "",
-    lastname: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-    companyName: "",
-    program: "",
-  });
-
   const handleChange = (e) => {
     const { id, value } = e.target;
-    console.log(id, value);
-    setState((prevState) => ({
-      ...prevState,
-      [id]: value,
-    }));
+    setUserType(value);
   };
-  useEffect(() => {
-    console.log(error);
-  }, [error, submitted]);
-
-  // const handleSubmitClick = async (e) => {
-  //   console.log(state);
-  //   if (!validateEmptyFields(state)) {
-  //     setError(`אסור להשאיר שדות ריקים`);
-  //   } else {
-  //     if (state.password !== state.confirmPassword) {
-  //       setError("הסיסמאות שהוקלדו לא תאומות");
-  //     } else if (!validatePassword(state.password)) {
-  //       setError("סיסמא לא תקינה, יש להקפיד על ההנחיות לסיסמא");
-  //     } else if (!validateUsername(state.username)) {
-  //       setError("שם משתמש לא תקין, יש להקפיד על שם משתמש באנגלית");
-  //     } else if (!validateEmail(state.email)) {
-  //       setError("אימייל לא תקין, יש להקפיד על כתובת אימייל חוקית");
-  //     } else {
-  //       const response = await sendDetailsToServer(state);
-  //       if (response) {
-  //         // show massage that the register succeed and redirect to login page
-  //         if (response.status === 201) {
-  //           setSubmitted(true);
-  //         } else {
-  //           // errors
-  //           if (
-  //             response.message ===
-  //             "A user with the same username already exists"
-  //           ) {
-  //             setError("שם המשתמש קיים במערכת, נא לבחור שם משתמש אחר");
-  //           } else if (state.userType === MENTOR) {
-  //             setError("שם החברה לא קיים במערכת, נא לבחור שם חברה תקין");
-  //           } else {
-  //             setError("משהו השתבש.. נסה שנית");
-  //           }
-  //         }
-  //       } else {
-  //         setError("משהו השתבש.. נסה שנית");
-  //       }
-  //     }
-  //   }
-  // };
 
   // for password show hide
   const [passwordShown, setPasswordShown] = useState(false);
@@ -127,10 +49,6 @@ const Register = () => {
   const [rePasswordShown, setRePasswordShown] = useState(false);
   const toggleRePasswordVisiblity = () => {
     setRePasswordShown(rePasswordShown ? false : true);
-  };
-
-  const checked = (e) => {
-    setIsChecked(e.target.checked);
   };
 
   const clicked = (e) => {
@@ -148,36 +66,19 @@ const Register = () => {
       >
         <h3>ההרשמה בוצעה בהצלחה!</h3>
         <button
+          style={{
+            background: "#DEEAE7",
+            border: "10px",
+            outline: "auto",
+            padding: "3px",
+          }}
           onClick={() => {
             history.push("/njsw36/login");
           }}
         >
-          ok
+          כניסה
         </button>
       </PopUp>
-    );
-  };
-
-  // Showing error message if error is true
-  const errorMessage = () => {
-    return (
-      <div
-        className="error"
-        style={{
-          display: error ? "" : "none",
-        }}
-      >
-        {
-          <span
-            style={{
-              fontWeight: "bold",
-              color: "red",
-            }}
-          >
-            {error}
-          </span>
-        }
-      </div>
     );
   };
 
@@ -204,10 +105,17 @@ const Register = () => {
   const { register, handleSubmit, formState } = useForm(formOptions);
   const { errors } = formState;
 
-  function onSubmit(data, e) {
+  async function onSubmit(data, e) {
     // display form data on success
     console.log("Message submited: " + JSON.stringify(data));
+    const response = await sendDetailsToServer(data);
+    console.log(response);
+    if (response.status === 201) {
+      setSubmitted(true);
+    }
     e.target.reset();
+
+    // todo: check for errors: user exists, company doesn't exists in the DB
   }
 
   return (
@@ -216,18 +124,16 @@ const Register = () => {
         className="user-data-form font-rubik"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="messages">
-          {errorMessage()}
-          {successMessage()}
-        </div>
+        <div className="messages">{successMessage()}</div>
         <div className="row">
           <div className="col-12">
             <div className="input-group-meta mb-50">
               <label>סוג משתמש:</label>
               <select
                 className="form-control"
+                {...register("userType")}
+                value={userType}
                 id="userType"
-                value={state.userType}
                 onChange={handleChange}
               >
                 {userTypes &&
@@ -248,8 +154,6 @@ const Register = () => {
                 {...register("username")}
                 name="username"
                 placeholder="הכנס\י שם משתמש"
-                value={state.username}
-                onChange={handleChange}
                 required
               />
               {errors.username && (
@@ -268,8 +172,6 @@ const Register = () => {
                 id="password"
                 name="password"
                 placeholder="הכנס\י סיסמא"
-                value={state.password}
-                onChange={handleChange}
                 required
               />
               {errors.password && (
@@ -300,8 +202,6 @@ const Register = () => {
                 name="confirmPassword"
                 id="confirmPassword"
                 placeholder="הכנס\י סיסמא בשנית"
-                value={state.confirmPassword}
-                onChange={handleChange}
                 required
               />
               {errors.confirmPassword && (
@@ -332,8 +232,6 @@ const Register = () => {
                 {...register("firstname")}
                 name="firstname"
                 placeholder="הכנס\י שם פרטי"
-                value={state.firstname}
-                onChange={handleChange}
                 required
               />
               {errors.firstname && (
@@ -352,8 +250,6 @@ const Register = () => {
                 {...register("lastname")}
                 name="lastname"
                 placeholder="הכנס\י שם משפחה"
-                value={state.lastname}
-                onChange={handleChange}
                 required
               />
               {errors.lastname && (
@@ -372,8 +268,6 @@ const Register = () => {
                 {...register("email")}
                 name="email"
                 placeholder="הכנס\י כתובת מייל"
-                value={state.email}
-                onChange={handleChange}
                 required
               />
               {errors.email && (
@@ -381,16 +275,15 @@ const Register = () => {
               )}
             </div>
           </div>
-          {state.userType === STUDENT && (
+          {userType === STUDENT && (
             <div className="col-12">
               <div className="input-group-meta mb-50">
                 <label>שם תוכנית התמחות:</label>
                 <select
                   className="form-control"
                   placeholder="בחר\י את שם התוכנית"
+                  {...register("program")}
                   id="program"
-                  value={state.program}
-                  onChange={handleChange}
                 >
                   {programs &&
                     programs.map((option) => (
@@ -403,21 +296,7 @@ const Register = () => {
             </div>
           )}
 
-          {/*{state.userType === "remove" && (*/}
-          {/*  <div>*/}
-          {/*    <PopUp trigger={openPopUpStatement} setTrigger={clicked}>*/}
-          {/*      <h3>הצהרת רצינות</h3>*/}
-          {/*      <p>בלה בלה בלה....</p>*/}
-          {/*    </PopUp>*/}
-
-          {/*    <input id="isChecked" type="checkbox" onChange={checked} />*/}
-          {/*    <label>*/}
-          {/*      קראתי את <TextLink onClick={clicked}> הצהרת הרצינות</TextLink>{" "}*/}
-          {/*      ואני מסכים\מה עם הנאמר{" "}*/}
-          {/*    </label>*/}
-          {/*  </div>*/}
-          {/*)}*/}
-          {state.userType === STUDENT && (
+          {userType === STUDENT && (
             <div>
               <PopUp trigger={openPopUpStatement} setTrigger={clicked}>
                 <h3>הצהרת רצינות</h3>
@@ -448,8 +327,7 @@ const Register = () => {
               </div>
             </div>
           )}
-          {(state.userType === COMPANY_REPRESENTATIVE ||
-            state.userType === MENTOR) && (
+          {(userType === COMPANY_REPRESENTATIVE || userType === MENTOR) && (
             <div className="col-12">
               <div className="input-group-meta mb-50">
                 <label>שם חברה</label>
@@ -457,8 +335,7 @@ const Register = () => {
                   type="text"
                   id="companyName"
                   placeholder="הכנס\י את שם החברה"
-                  value={state.companyName}
-                  onChange={handleChange}
+                  {...register("companyName")}
                   required
                 />
               </div>
@@ -466,11 +343,7 @@ const Register = () => {
           )}
 
           <div className="col-12">
-            <button
-              type="submit"
-              className="theme-btn-one mt-30 mb-50"
-              // onClick={handleSubmitClick}
-            >
+            <button type="submit" className="theme-btn-one mt-30 mb-50">
               הרשמה
             </button>
           </div>
