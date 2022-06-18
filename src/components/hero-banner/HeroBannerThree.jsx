@@ -29,7 +29,7 @@ const HeroBannerThree = () => {
 
         <p className="sing-in-call">
           רוצה לקחת חלק מהתוכנית?{" "}
-          <Link to="/njsw36/login" className="font-rubik">
+          <Link to="/njsw36/signup" className="font-rubik">
             הרשמה כאן
           </Link>
           .
