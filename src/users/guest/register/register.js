@@ -27,6 +27,8 @@ const Register = () => {
   // States for managing the registration form
   const [openPopUpStatement, setOpenPopUpStatement] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [programs, setPrograms] = useState([]);
   const [userType, setUserType] = useState(STUDENT);
 
@@ -82,6 +84,35 @@ const Register = () => {
     );
   };
 
+  // Showing error message
+  const errorMessage = () => {
+    return (
+      <PopUp
+        trigger={error}
+        setTrigger={() => {
+          setError(false);
+        }}
+      >
+        <h3 className="font-rubik">{errorMsg}</h3>
+        <br />
+        <button
+          style={{
+            background: "#DEEAE7",
+            border: "10px",
+            outline: "auto",
+            padding: "3px",
+          }}
+          className="font-rubik"
+          onClick={() => {
+            setError(false);
+          }}
+        >
+          נסה שנית
+        </button>
+      </PopUp>
+    );
+  };
+
   // for validation
   const validationSchema = Yup.object().shape({
     username: Yup.string().required("נדרש למלא שם משתמש"),
@@ -110,12 +141,21 @@ const Register = () => {
     console.log("Message submited: " + JSON.stringify(data));
     const response = await sendDetailsToServer(data);
     console.log(response);
+    e.target.reset();
     if (response.status === 201) {
       setSubmitted(true);
+    } else if (
+      response.message === "A user with the same username already exists"
+    ) {
+      setError(true);
+      setErrorMsg("שם המשתמש קיים במערכת, נא לבחור שם משתמש אחר");
+    } else if (userType === MENTOR) {
+      setError(true);
+      setErrorMsg("שם החברה לא קיים במערכת, נא לבחור שם חברה תקין");
+    } else {
+      setError(true);
+      setErrorMsg("משהו השתבש.. נסה שנית");
     }
-    e.target.reset();
-
-    // todo: check for errors: user exists, company doesn't exists in the DB
   }
 
   return (
@@ -125,6 +165,7 @@ const Register = () => {
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="messages">{successMessage()}</div>
+        <div className="messages">{errorMessage()}</div>
         <div className="row">
           <div className="col-12">
             <div className="input-group-meta mb-50">

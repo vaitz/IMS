@@ -14,6 +14,7 @@ const Label = styled.text`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 const Input = styled.input`
@@ -26,18 +27,12 @@ const Dropdown = styled(Select)`
 `;
 
 const Button = styled.button`
-  width: auto;
+  width: 200px;
   height: 30px;
-  margin: 150px 300px 200px;
+  margin: 100px 200px;
   background: #7a5cfa;
   color: #ffffff;
 `;
-
-// const customStyles = {
-//     option: (provided, state) => ({
-//         color: "black"
-//     })
-// }
 
 const CreateProgram = () => {
   const [options, setOptions] = useState([]);

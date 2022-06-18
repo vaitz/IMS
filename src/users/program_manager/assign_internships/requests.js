@@ -66,4 +66,3 @@ export const assignIntern = (company, student) => {
     body: JSON.stringify(data),
   }).then((response) => console.log(response));
 };
-

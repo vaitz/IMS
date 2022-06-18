@@ -32,14 +32,6 @@ const ButtonContainer = styled.div`
   justify-content: center;
 `;
 
-// const Button = styled`
-//   width: 150;
-//   height: 30px;
-//   margin-top: 50px;
-//   background: #7a5cfa;
-//   color: #ffffff;
-// `;
-
 const CreateInternship = () => {
   const [program, setProgram] = useState("");
   const [company, setCompany] = useState("");

@@ -37,7 +37,6 @@ export const loginRequest = (
       .json()
       .then((data) => {
         if (response.status === 200) {
-          setLoading(false);
           setUserType(data.userType);
           setUserSession(data.session, data.username);
           setFirstName(data.firstName);
@@ -47,14 +46,11 @@ export const loginRequest = (
           }
           history.push("/njsw36/");
         } else {
-          setError(`שם משתמש או סיסמא לא תקינים`);
+          setError(true);
         }
       })
       .catch((error) => {
-        setLoading(false);
-        if (error.response.status === 401)
-          setError(error.response.data.message);
-        else setError("משהו השתבש, אנא נסה שנית מאוחר יותר");
+        setError(true);
       })
   );
 };
