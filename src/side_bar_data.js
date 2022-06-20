@@ -164,7 +164,7 @@ export const SidebarData = {
     },
     {
       title: "חברות",
-      path: "/njsw36/",
+      path: "/njsw36/companies",
       cName: "nav-text",
     },
     {
@@ -202,7 +202,7 @@ export const SidebarData = {
     },
     {
       title: "חברות",
-      path: "/njsw36/",
+      path: "/njsw36/companies",
       cName: "nav-text",
     },
     {
