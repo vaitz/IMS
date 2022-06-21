@@ -4,14 +4,67 @@ import { validateEmptyFields } from "../../guest/login/validations";
 import { changePassRequest } from "./requests";
 import { validatePassword } from "../../guest/register/validations";
 import PopUp from "../../../popup";
+import styled from "styled-components";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
+import * as Yup from "yup";
+import { COMPANY_REPRESENTATIVE, MENTOR, STUDENT } from "../../../constants";
+import { sendDetailsToServer } from "../../guest/register/requests";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 400px;
+`;
 
 function ChangePass({ username }) {
-  const [loading, setLoading] = useState(false);
   const oldPassword = useFormInput("");
   const password = useFormInput("");
   const confirmPassword = useFormInput("");
-  const [error, setError] = useState(null);
+  const [error, setError] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
   const [submitted, setSubmitted] = useState(false);
+
+  // for validation
+  const validationSchema = Yup.object().shape({
+    oldPassword: Yup.string().required("נדרש למלא סיסמא ישנה"),
+    password: Yup.string()
+      .required("נדרש למלא סיסמא חדשה")
+      .notOneOf(
+        [Yup.ref("oldPassword")],
+        "הסיסמה החדשה חייבת להיות שונה מהישנה"
+      )
+      .matches(
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,})/,
+        "סיסמא לא תקינה, אורך הסיסמא חייב להיות לפחות 6 תווים, אות אחת גדולה באנגלית, אות אחת קטנה בעברית ומספר אחד"
+      ),
+
+    confirmPassword: Yup.string()
+      .oneOf([Yup.ref("password"), null], "הסיסמאות שהוקלדו לא תאומות")
+      .required("נדרש למלא אימות סיסמא"),
+  });
+
+  const formOptions = { resolver: yupResolver(validationSchema) };
+  const { register, handleSubmit, formState } = useForm(formOptions);
+  const { errors } = formState;
+
+  // for old password show hide
+  const [oldPasswordShown, setOldPasswordShown] = useState(false);
+  const toggleOldPasswordVisiblity = () => {
+    setOldPasswordShown(oldPasswordShown ? false : true);
+  };
+
+  // for password show hide
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePasswordVisiblity = () => {
+    setPasswordShown(passwordShown ? false : true);
+  };
+
+  // for Re password show hide
+  const [rePasswordShown, setRePasswordShown] = useState(false);
+  const toggleRePasswordVisiblity = () => {
+    setRePasswordShown(rePasswordShown ? false : true);
+  };
 
   let history = useHistory();
 
@@ -26,109 +79,190 @@ function ChangePass({ username }) {
       >
         <h3>עדכון הסיסמה בוצע בהצלחה!</h3>
         <button
+          style={{
+            background: "#DEEAE7",
+            border: "10px",
+            outline: "auto",
+            padding: "3px",
+          }}
           onClick={() => {
             history.push("/njsw36/");
           }}
         >
-          ok
+          אישור
         </button>
       </PopUp>
     );
   };
 
-  const onClick = async () => {
-    if (
-      !validateEmptyFields([
-        oldPassword.value,
-        password.value,
-        confirmPassword.value,
-      ])
-    ) {
-      setError(`אסור להשאיר שדות ריקים`);
-    } else {
-      if (password.value === oldPassword.value) {
-        setError("הסיסמה החדשה חייבת להיות שונה מהישנה");
-      } else {
-        if (password.value !== confirmPassword.value) {
-          setError("הסיסמאות שהוקלדו לא תאומות");
-        } else {
-          if (!validatePassword(password.value)) {
-            setError("סיסמה לא תקינה, יש להקפיד על ההנחיות לסיסמה");
-          } else {
-            const response = await changePassRequest(
-              setLoading,
-              setError,
-              username,
-              oldPassword,
-              password,
-              history
-            );
-            if (response) {
-              setSubmitted(true);
-            }
-          }
-        }
-      }
-    }
+  // Showing error message
+  const errorMessage = () => {
+    return (
+      <PopUp
+        trigger={error}
+        setTrigger={() => {
+          setError(false);
+        }}
+      >
+        <h3 className="font-rubik">{errorMsg}</h3>
+        <br />
+        <button
+          style={{
+            background: "#DEEAE7",
+            border: "10px",
+            outline: "auto",
+            padding: "3px",
+          }}
+          className="font-rubik"
+          onClick={() => {
+            setError(false);
+          }}
+        >
+          נסה שנית
+        </button>
+      </PopUp>
+    );
   };
 
+  async function onSubmit(data, e) {
+    // display form data on success
+    const response = await changePassRequest(
+      username,
+      oldPassword,
+      password,
+      history
+    );
+    e.target.reset();
+    if (response.status === 200) {
+      setSubmitted(true);
+    } else {
+      setError(true);
+      setErrorMsg("הסיסמא הישנה שסופקה לא תואמת לסיסמא שקיימת במערכת");
+    }
+  }
   return (
-    <div className="container">
-      {successMessage()}
-      <div>
-        <h1>עדכון סיסמה</h1>
-        <label style={{ fontSize: 14 }}>
-          הסיסמה החדשה צריכה להכיל לפחות 6 תווים ולשלב בתוכה אותיות גדולות
-          וקטנות באנגלית ומספרים
-        </label>
-        <br />
-        <br />
-      </div>
-      <div>
-        סיסמה ישנה
-        <br />
-        <input
-          type="password"
-          {...oldPassword}
-          placeholder="הכנס\י סיסמה ישנה"
-          autoComplete="old-password"
-        />
-      </div>
-      <div style={{ marginTop: 10 }}>
-        סיסמה חדשה
-        <br />
-        <input
-          type="password"
-          {...password}
-          placeholder="הכנס\י סיסמה חדשה"
-          autoComplete="new-password"
-        />
-      </div>
-      <div style={{ marginTop: 10 }}>
-        אימות סיסמה חדשה
-        <br />
-        <input
-          type="password"
-          {...confirmPassword}
-          placeholder="הכנס\י סיסמה חדשה בשנית"
-          autoComplete="new-password"
-        />
-      </div>
-      {error && (
-        <>
-          <small style={{ color: "red" }}>{error}</small>
-          <br />
-        </>
-      )}
+    <Container>
+      <h1 className="font-rubik">עדכון סיסמה</h1>
+      <label className="font-rubik" style={{ fontSize: 14 }}>
+        הסיסמה החדשה צריכה להכיל לפחות 6 תווים ולשלב בתוכה אותיות גדולות וקטנות
+        באנגלית ומספרים
+      </label>
       <br />
-      <input
-        type="button"
-        value={loading ? "טוען..." : "עדכון"}
-        onClick={() => onClick()}
-        disabled={loading}
-      />
       <br />
-    </div>
+      <form
+        className="user-data-form font-rubik"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <div className="messages">{successMessage()}</div>
+        {/*<div className="messages">{errorMessage()}</div>*/}
+        <div className="row"></div>
+        <div className="col-12">
+          <div className="input-group-meta mb-50">
+            <label>סיסמה ישנה</label>
+            <input
+              type={oldPasswordShown ? "text" : "password"}
+              {...register("oldPassword")}
+              placeholder="הכנס\י סיסמה ישנה"
+              autoComplete="old-password"
+            />
+            {errors.oldPassword && (
+              <div className="invalid-feedback">
+                {errors.oldPassword?.message}
+              </div>
+            )}
+            <span
+              className="placeholder_icon"
+              onClick={toggleOldPasswordVisiblity}
+            >
+              <span
+                className={
+                  oldPasswordShown ? "passVicon eye-slash" : "passVicon"
+                }
+              >
+                <img src="/njsw36/static/images/icon/view.svg" alt="" />
+              </span>
+            </span>
+          </div>
+        </div>
+        <div className="col-12">
+          <div className="input-group-meta mb-50">
+            <label>סיסמה חדשה</label>
+            <input
+              type={passwordShown ? "text" : "password"}
+              {...register("password")}
+              placeholder="הכנס\י סיסמה חדשה"
+              autoComplete="new-password"
+            />
+            {errors.password && (
+              <div className="invalid-feedback">{errors.password?.message}</div>
+            )}
+            <span
+              className="placeholder_icon"
+              onClick={togglePasswordVisiblity}
+            >
+              <span
+                className={passwordShown ? "passVicon eye-slash" : "passVicon"}
+              >
+                <img src="/njsw36/static/images/icon/view.svg" alt="" />
+              </span>
+            </span>
+          </div>
+        </div>
+        <div className="col-12">
+          <div className="input-group-meta mb-50">
+            <label>אימות סיסמה חדשה</label>
+            <input
+              type={rePasswordShown ? "text" : "password"}
+              {...register("confirmPassword")}
+              placeholder="הכנס\י סיסמה חדשה בשנית"
+              autoComplete="new-password"
+            />
+            {errors.confirmPassword && (
+              <div className="invalid-feedback">
+                {errors.confirmPassword?.message}
+              </div>
+            )}
+            <span
+              className="placeholder_icon"
+              onClick={toggleRePasswordVisiblity}
+            >
+              <span
+                className={
+                  rePasswordShown ? "passVicon eye-slash" : "passVicon"
+                }
+              >
+                <img src="/njsw36/static/images/icon/view.svg" alt="" />
+              </span>
+            </span>
+          </div>
+        </div>
+        {/*{error && (*/}
+        {/*  <>*/}
+        {/*    <small style={{ color: "red" }}>{error}</small>*/}
+        {/*    <br />*/}
+        {/*  </>*/}
+        {/*)}*/}
+        <br />
+        {/*<input*/}
+        {/*  type="button"*/}
+        {/*  value={loading ? "טוען..." : "עדכון"}*/}
+        {/*  onClick={() => onClick()}*/}
+        {/*  disabled={loading}*/}
+        {/*/>*/}
+        <button
+          type="submit"
+          style={{
+            background: "#DEEAE7",
+            border: "10px",
+            outline: "auto",
+            padding: "3px",
+          }}
+        >
+          עדכון
+        </button>
+        <br />
+      </form>
+    </Container>
   );
 }
 
