@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import PopUp from "../../../popup";
-import { createInternship } from "../../program_manager/create_intership/requests";
 import { useHistory } from "react-router-dom";
 import { createCompanyPage } from "./requests";
 
@@ -14,6 +13,8 @@ const Label = styled.text`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
 `;
 
 const Input = styled.input`
@@ -22,9 +23,8 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  width: auto;
+  width: 200px;
   height: 30px;
-  margin: 150px 300px 200px;
   background: #7a5cfa;
   color: #ffffff;
 `;
@@ -34,6 +34,7 @@ const CompanyPage = () => {
   const [employees, setEmployees] = useState("");
   const [location, setLocation] = useState("");
   const [yearEstablish, setYearEstablish] = useState("");
+  const [linkedinLink, setLinkedinLink] = useState("");
   const [about, setAbout] = useState("");
   const [popup, setPopup] = useState(false);
   const [error, setError] = useState(null);
@@ -51,7 +52,8 @@ const CompanyPage = () => {
       employees,
       location,
       yearEstablish,
-      about
+      about,
+      linkedinLink
     );
   };
 
@@ -85,6 +87,12 @@ const CompanyPage = () => {
         type="text"
         value={yearEstablish}
         onChange={(e) => setYearEstablish(e.target.value)}
+      />{" "}
+      <Label>לינק ללניקדאין</Label>
+      <Input
+        type="text"
+        value={linkedinLink}
+        onChange={(e) => setLinkedinLink(e.target.value)}
       />
       <Label>אודות</Label>
       <textarea
