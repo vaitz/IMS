@@ -115,20 +115,38 @@ const Register = () => {
 
   // for validation
   const validationSchema = Yup.object().shape({
+    userType: Yup.string(),
     username: Yup.string().required("נדרש למלא שם משתמש"),
     firstname: Yup.string().required("נדרש למלא שם פרטי"),
     lastname: Yup.string().required("נדרש למלא שם משפחה"),
     password: Yup.string()
-      .min(6, "סיסמא לא תקינה, אורך הסיסמא חייב להיות לפחות 6 תווים")
-      .required("נדרש למלא סיסמא"),
+      .required("נדרש למלא סיסמא")
+      .matches(
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{6,})/,
+        "סיסמא לא תקינה, אורך הסיסמא חייב להיות לפחות 6 תווים, אות אחת גדולה באנגלית, אות אחת קטנה בעברית ומספר אחד"
+      ),
     confirmPassword: Yup.string()
       .oneOf([Yup.ref("password"), null], "הסיסמאות שהוקלדו לא תאומות")
       .required("נדרש למלא אימות סיסמא"),
     email: Yup.string()
       .required("נדרש למלא כתובת אימייל")
       .email("אימייל לא תקין, יש להקפיד על כתובת אימייל חוקית"),
-    acceptTerms: Yup.bool().oneOf([true], "יש לאשר שהצהרת הרצינות נקראה"),
-    //program name, company name?
+    program: Yup.string().when("userType", {
+      is: STUDENT,
+      then: Yup.string()
+        .min(2, "נדרש לבחור תוכנית התמחות")
+        .required("נדרש לבחור תוכנית התמחות"),
+    }),
+    companyName: Yup.string().when("userType", {
+      is: MENTOR || COMPANY_REPRESENTATIVE,
+      then: Yup.string().required("נדרש למלא שם חברה"),
+    }),
+    acceptTerms: Yup.boolean().when("userType", {
+      is: STUDENT,
+      then: Yup.boolean()
+        .required("יש לאשר שהצהרת הרצינות נקראה")
+        .oneOf([true], "יש לאשר שהצהרת הרצינות נקראה"),
+    }),
   });
 
   const formOptions = { resolver: yupResolver(validationSchema) };
@@ -333,6 +351,11 @@ const Register = () => {
                       </option>
                     ))}
                 </select>
+                {errors.program && (
+                  <div className="invalid-feedback">
+                    {errors.program?.message}
+                  </div>
+                )}
               </div>
             </div>
           )}
@@ -341,7 +364,7 @@ const Register = () => {
             <div>
               <PopUp trigger={openPopUpStatement} setTrigger={clicked}>
                 <h3>הצהרת רצינות</h3>
-                <p>בלה בלה בלה....</p>
+                <p>כאן צריך להכניס תוכן של הצהרת רצינות.</p>
               </PopUp>
 
               <div className="col-12">
@@ -363,6 +386,11 @@ const Register = () => {
                         {errors.acceptTerms?.message}
                       </div>
                     )}
+                    <p>
+                      <a href="#" onClick={clicked}>
+                        הצהרת הרצינות
+                      </a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -379,6 +407,11 @@ const Register = () => {
                   {...register("companyName")}
                   required
                 />
+                {errors.companyName && (
+                  <div className="invalid-feedback">
+                    {errors.companyName?.message}
+                  </div>
+                )}
               </div>
             </div>
           )}
