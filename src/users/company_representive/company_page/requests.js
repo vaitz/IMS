@@ -8,7 +8,8 @@ export const createCompanyPage = (
   employees,
   location,
   yearEstablish,
-  about
+  about,
+  linkedinLink
 ) => {
   const data = {
     companyName: companyName,
@@ -16,6 +17,7 @@ export const createCompanyPage = (
     location: location,
     yearEstablish: yearEstablish,
     about: about,
+    linkedinLink: linkedinLink,
   };
   const response = fetch(SERVER_ADDRESS + "/companyRep/createCompanyProfile", {
     method: "POST",

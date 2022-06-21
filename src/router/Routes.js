@@ -30,6 +30,7 @@ import { AssignInternships } from "../users/program_manager/assign_internships/a
 import Programs from "../users/system_manager/programs/programs";
 import CreateProgram from "../users/system_manager/create_program/create_program";
 import CreateInternship from "../users/program_manager/create_intership/create_internship";
+import Companies from "../users/program_manager/companies/companies";
 
 const Routes = (props) => {
   return (
@@ -41,6 +42,7 @@ const Routes = (props) => {
         <Header {...props} />
         <ScrollTopBehaviour />
         <Switch>
+          <Route exact path="/njsw36/companies" component={Companies} />
           //common
           <Route exact path="/njsw36/" component={Home} />
           <Route path="/njsw36/changePass">

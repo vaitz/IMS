@@ -4,6 +4,7 @@ import Select from "react-select";
 import styled from "styled-components";
 import { getWorkingHours } from "./requests";
 import Button from "../../../button";
+import Popup from "../../../popup";
 
 const Dropdown = styled(Select)`
   margin: 20px 0 100px;
@@ -68,6 +69,7 @@ const ApproveHours = ({ username }) => {
   const [hours, setHours] = useState([]);
   const [showHours, setShowHours] = useState(false);
   const [disableButton, setDisableButton] = useState(true);
+  const [popUp, setPopUp] = useState(false);
 
   useEffect(() => {
     getInterns(username, setInterns, formatInterns);
@@ -108,13 +110,17 @@ const ApproveHours = ({ username }) => {
     const hoursIds = hours
       .filter((hour) => hour.checked === true)
       .map(({ id }) => id);
-    approvedHours(username, selectedIntern.username, hoursIds).then(() =>
-      getWorkingHours(selectedIntern.username, setHours, formatHours)
-    );
+    approvedHours(username, selectedIntern.username, hoursIds).then(() => {
+      getWorkingHours(selectedIntern.username, setHours, formatHours);
+      setPopUp(true);
+    });
   };
 
   return (
     <Container className="font-rubik">
+      <Popup trigger={popUp} setTrigger={() => setPopUp(false)}>
+        השעות אושרו
+      </Popup>
       <Width>
         <h2>אישור דיווח שעות</h2>
         <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
