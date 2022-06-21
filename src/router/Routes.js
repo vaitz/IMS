@@ -31,6 +31,7 @@ import Programs from "../users/system_manager/programs/programs";
 import CreateProgram from "../users/system_manager/create_program/create_program";
 import CreateInternship from "../users/program_manager/create_intership/create_internship";
 import Companies from "../users/program_manager/companies/companies";
+import ApproveAssignments from "../users/program_manager/approve_assignments/approve_assignments";
 
 const Routes = (props) => {
   return (
@@ -109,6 +110,9 @@ const Routes = (props) => {
             path="/njsw36/createInternship/manager"
             component={CreateInternship}
           />
+          <Route path="/njsw36/approveAssignments">
+            <ApproveAssignments programId={props.programId} />
+          </Route>
           //System manager
           <Route path="/njsw36/programs">
             <Programs />

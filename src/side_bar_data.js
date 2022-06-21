@@ -221,6 +221,11 @@ export const SidebarData = {
       cName: "nav-text",
     },
     {
+      title: "אשר שיבוצים",
+      path: "/njsw36/approveAssignments",
+      cName: "nav-text",
+    },
+    {
       title: "סטטיסטיקות",
       path: "/njsw36/",
       cName: "nav-text",
