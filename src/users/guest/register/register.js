@@ -156,15 +156,11 @@ const Register = () => {
 
   async function onSubmit(data, e) {
     // display form data on success
-    console.log("Message submited: " + JSON.stringify(data));
     const response = await sendDetailsToServer(data);
-    console.log(response);
     e.target.reset();
     if (response.status === 201) {
       setSubmitted(true);
-    } else if (
-      response.message === "A user with the same username already exists"
-    ) {
+    } else if (response.status === 400) {
       setError(true);
       setErrorMsg("שם המשתמש קיים במערכת, נא לבחור שם משתמש אחר");
     } else if (userType === MENTOR) {
