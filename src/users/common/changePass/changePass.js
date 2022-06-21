@@ -151,7 +151,7 @@ function ChangePass({ username }) {
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="messages">{successMessage()}</div>
-        {/*<div className="messages">{errorMessage()}</div>*/}
+        <div className="messages">{errorMessage()}</div>
         <div className="row"></div>
         <div className="col-12">
           <div className="input-group-meta mb-50">
