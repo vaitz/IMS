@@ -4,8 +4,8 @@ import fetchMock from "fetch-mock";
 export const changePassRequest = async (username, oldPassword, newPassword) => {
   const data = {
     username: username,
-    old_password: oldPassword.value,
-    new_password: newPassword.value,
+    old_password: oldPassword,
+    new_password: newPassword,
   };
   const res = await fetch(SERVER_ADDRESS + "/users/changePsw", {
     method: "POST",

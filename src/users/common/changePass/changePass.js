@@ -18,9 +18,6 @@ const Container = styled.div`
 `;
 
 function ChangePass({ username }) {
-  const oldPassword = useFormInput("");
-  const password = useFormInput("");
-  const confirmPassword = useFormInput("");
   const [error, setError] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -128,8 +125,8 @@ function ChangePass({ username }) {
     // display form data on success
     const response = await changePassRequest(
       username,
-      oldPassword,
-      password,
+      data.oldPassword,
+      data.password,
       history
     );
     e.target.reset();
