@@ -56,7 +56,7 @@ export const loginRequest = (
 };
 
 const data = {
-  userType: SYSTEM_MANAGER,
+  userType: MENTOR,
   session: 2,
   username: "user",
   firstName: "יובל",

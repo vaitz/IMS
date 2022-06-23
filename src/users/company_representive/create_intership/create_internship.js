@@ -3,10 +3,12 @@ import styled from "styled-components";
 import { createInternship, getMentors, getPrograms } from "./requests";
 import PopUp from "../../../popup";
 import { useHistory } from "react-router-dom";
+import Select from "react-select";
 
-const Select = styled.select`
+const Dropdown = styled(Select)`
   width: 500px;
   height: 20px;
+  margin-bottom: 20px;
 `;
 const Label = styled.text`
   font-size: 18px;
@@ -17,17 +19,20 @@ const Label = styled.text`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 `;
 
 const Input = styled.input`
   width: 500px;
-  height: 20px;
+  height: 40px;
 `;
 
 const Button = styled.button`
-  width: auto;
-  height: 30px;
-  margin: 150px 300px 200px;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
   background: #7a5cfa;
   color: #ffffff;
 `;
@@ -45,9 +50,12 @@ const CreateInternshipCom = ({ username }) => {
   let history = useHistory();
 
   useEffect(() => {
-    getPrograms(setPrograms);
+    getPrograms({ setPrograms, formatPrograms });
     getMentors(setMentors, username);
   }, []);
+
+  const formatPrograms = (programs) =>
+    programs.map((option, index) => ({ value: index, label: option }));
 
   const onSubmit = () => {
     createInternship(
@@ -70,31 +78,20 @@ const CreateInternshipCom = ({ username }) => {
         </PopUp>
       )}
       <Label>שם התוכנית</Label>
-      <Select
-        id="program"
+      <Dropdown
         value={program}
-        onChange={(e) => setProgram(e.target.value)}
-      >
-        {programs &&
-          programs.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-      </Select>
+        onChange={setProgram}
+        options={programs}
+        menuPosition={"fixed"}
+        placeholder={"בחר תוכנית"}
+      />
       <Label>שם המנטור\ית</Label>
-      <Select
-        id="mentor"
+      <Dropdown
         value={mentor}
-        onChange={(e) => setMentor(e.target.value)}
-      >
-        {mentors &&
-          mentors.map((option) => (
-            <option key={option.key} value={option.key}>
-              {option.value}
-            </option>
-          ))}
-      </Select>
+        onChange={setMentor}
+        options={mentors}
+        placeholder={"בחר מנטור"}
+      />
       <Label>שם ההתמחות</Label>
       <Input
         type="text"

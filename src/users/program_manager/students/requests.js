@@ -59,4 +59,4 @@ const students = [
   },
 ];
 
-fetchMock.mock(SERVER_ADDRESS + `/students/starship`, students);
+fetchMock.mock(SERVER_ADDRESS + `/students/123`, students);

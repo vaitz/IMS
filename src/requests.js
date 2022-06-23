@@ -2,6 +2,8 @@ import { SERVER_ADDRESS } from "./config";
 import fetchMock from "fetch-mock";
 import {
   ADVANCED_CANDIDATE,
+  COMPANY_REPRESENTATIVE,
+  MENTOR,
   PROGRAM_MANAGER,
   SYSTEM_MANAGER,
 } from "./constants";
@@ -52,7 +54,7 @@ const data = {
 fetchMock.mock(SERVER_ADDRESS + `/users/logout`, { data: "" });
 fetchMock.mock(SERVER_ADDRESS + `/users/details/user`, {
   status: 200,
-  userType: PROGRAM_MANAGER,
+  userType: ADVANCED_CANDIDATE,
   firstName: "hay",
   program: "star",
 });

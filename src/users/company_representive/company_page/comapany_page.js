@@ -19,7 +19,7 @@ const Container = styled.div`
 
 const Input = styled.input`
   width: 500px;
-  height: 20px;
+  height: 40px;
 `;
 
 const Button = styled.button`
@@ -59,6 +59,7 @@ const CompanyPage = () => {
 
   return (
     <Container>
+      <h2>דף חברה</h2>
       {popup && (
         <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>
           הדף נשמר בהצלחה

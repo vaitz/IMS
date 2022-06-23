@@ -1,7 +1,7 @@
 import fetchMock from "fetch-mock";
 import { SERVER_ADDRESS } from "../../../config";
 
-/*fetchMock.mock(SERVER_ADDRESS + "/internships/123", [
+fetchMock.mock(SERVER_ADDRESS + "/internships/star", [
   {
     companyName: "רפאל",
     internshipName: "מפתח/ת צד לקוח",
@@ -25,7 +25,7 @@ import { SERVER_ADDRESS } from "../../../config";
       "סיגמאביט מחפשת סטודנטים להתמחות בפיתוח מוצרים בעולמות התקשורת האלחוטית. במסגרת התפקיד תצטרף לצוות ההנדסה של החברה הפועל בתחומי הנדסת מערכת, פיתוח, ניהול בדיקות ואוטומציה ועוד. כמתמחה תיקח חלק פעיל בפיתוח מערכות ומוצרים מובילים של החברה.",
     requirements: "ידע בסיסי ב Linux ,C/c++ , C#/java/java script -ייתרון",
   },
-]);*/
+]);
 
 export const getInternships = (program, setInternships) => {
   fetch(SERVER_ADDRESS + "/internships/" + program, {

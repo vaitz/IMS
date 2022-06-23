@@ -20,7 +20,6 @@ import InternshipsPriorities from "../users/candidate/internships_priorities/int
 import ReportHours from "../users/intern/report_hours/report_hours";
 import UploadReport from "../users/intern/upload_report/upload_report";
 import ApproveMentorCandidates from "../users/mentor/approve_candidates";
-import Students from "../users/mentor/interns/students";
 import ApproveHours from "../users/mentor/approve_hours/approve_hours";
 import UploadReportMentor from "../users/mentor/upload_report/upload_report";
 import CompanyPage from "../users/company_representive/company_page/comapany_page";
@@ -32,6 +31,8 @@ import CreateProgram from "../users/system_manager/create_program/create_program
 import CreateInternship from "../users/program_manager/create_intership/create_internship";
 import Companies from "../users/program_manager/companies/companies";
 import ApproveAssignments from "../users/program_manager/approve_assignments/approve_assignments";
+import Students from "../users/program_manager/students/students";
+import Interns from "../users/mentor/interns/interns";
 
 const Routes = (props) => {
   return (
@@ -81,7 +82,7 @@ const Routes = (props) => {
             <ApproveMentorCandidates username={props.username} />
           </Route>
           <Route path="/njsw36/mentor/interns">
-            <Students username={props.username} />
+            <Interns username={props.username} />
           </Route>
           <Route path="/njsw36/mentor/approveHours">
             <ApproveHours username={props.username} />
@@ -101,7 +102,7 @@ const Routes = (props) => {
           </Route>
           //Program manager
           <Route path="/njsw36/students">
-            <Students username={props.username} />
+            <Students programId={props.programId} />
           </Route>
           <Route path="/njsw36/assignInternships">
             <AssignInternships programId={props.programId} />

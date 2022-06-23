@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import Select from "react-select";
 import { createInternship, getCompanies, getMentors } from "./requests";
 import PopUp from "../../../popup";
 import { getPrograms } from "../../company_representive/create_intership/requests";
 import { useHistory } from "react-router-dom";
-import Button from "../../../button";
 
-const Select = styled.select`
+const Dropdown = styled(Select)`
   width: 500px;
   height: 20px;
+  margin-bottom: 20px;
 `;
-
 const Label = styled.text`
   font-size: 18px;
   color: #666666;
@@ -20,16 +20,23 @@ const Label = styled.text`
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 400px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 40px;
 `;
 
 const Input = styled.input`
-  height: 20px;
+  width: 500px;
+  height: 40px;
 `;
 
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
+const Button = styled.button`
+  width: 150px;
+  height: 40px;
+  margin: 20px 0 40px;
+  background: #7a5cfa;
+  color: #ffffff;
 `;
 
 const CreateInternship = () => {
@@ -47,13 +54,16 @@ const CreateInternship = () => {
   let history = useHistory();
 
   useEffect(() => {
-    getPrograms(setPrograms);
-    getCompanies(setCompanies);
+    getPrograms({ setPrograms, formatPrograms: format });
+    getCompanies({ setCompanies, formatCampaigns: format });
   }, []);
+
+  const format = (programs) =>
+    programs.map((option, index) => ({ value: index, label: option }));
 
   useEffect(() => {
     if (company) {
-      getMentors(setMentors, company);
+      getMentors({ setMentors, company });
     }
   }, [company]);
 
@@ -78,47 +88,28 @@ const CreateInternship = () => {
         </PopUp>
       )}
       <h2>יצירת התמחות</h2>
-
       <Label>שם התוכנית</Label>
-      <Select
-        id="program"
+      <Dropdown
         value={program}
-        onChange={(e) => setProgram(e.target.value)}
-      >
-        {programs &&
-          programs.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-      </Select>
+        onChange={setProgram}
+        options={programs}
+        placeholder={"בחר תוכנית"}
+      />
       <Label>שם החברה</Label>
-      <Select
-        id="company"
+      <Dropdown
         value={company}
-        onChange={(e) => setCompany(e.target.value)}
-      >
-        {companies &&
-          companies.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-      </Select>
+        onChange={setCompany}
+        options={companies}
+        placeholder={"בחר חברה"}
+      />
       <Label>שם המנטור</Label>
-      <Select
-        id="mentor"
+      <Dropdown
         value={mentor}
-        onChange={(e) => setMentor(e.target.value)}
-      >
-        {mentors &&
-          mentors.map((option) => (
-            <option key={option.username} value={option.username}>
-              {option.name}
-            </option>
-          ))}
-      </Select>
-      <Label>שם ההתמחות</Label>
+        onChange={setMentor}
+        options={mentors}
+        placeholder={"בחר מנטור"}
+      />
+      <Label>שם ההתמחות (ללא רווח)</Label>
       <Input
         type="text"
         value={internshipName}
@@ -145,21 +136,20 @@ const CreateInternship = () => {
         </>
       )}
       <br />
-      <ButtonContainer>
-        <Button
-          onClick={() => onSubmit()}
-          disabled={
-            !(
-              company &&
-              internshipName &&
-              internshipDescription &&
-              demands &&
-              program
-            )
-          }
-          value={"צור התמחות"}
-        />
-      </ButtonContainer>
+      <Button
+        onClick={() => onSubmit()}
+        disabled={
+          !(
+            company &&
+            internshipName &&
+            internshipDescription &&
+            demands &&
+            program
+          )
+        }
+      >
+        צור התמחות
+      </Button>
     </Container>
   );
 };

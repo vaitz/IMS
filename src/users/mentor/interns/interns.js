@@ -5,7 +5,7 @@ import { getStudentsRequest } from "./requests";
 import MaterialTable from "material-table";
 import { makeStyles } from "@material-ui/core/styles";
 
-const Students = ({ username }) => {
+const Interns = ({ username }) => {
   const [students, setStudents] = useState([]);
   const [selectedRow, setSelectedRow] = useState(null);
 
@@ -63,12 +63,12 @@ const Students = ({ username }) => {
             textAlign: "center",
           }),
         }}
-        onRowClick={(evt, selectedRow) =>
-          setSelectedRow(selectedRow.tableData.id)
-        }
+        // onRowClick={(evt, selectedRow) =>
+        //   setSelectedRow(selectedRow.tableData.id)
+        // }
       />
     </>
   );
 };
 
-export default Students;
+export default Interns;
