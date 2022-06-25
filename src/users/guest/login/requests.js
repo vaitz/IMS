@@ -55,7 +55,7 @@ export const loginRequest = (
 };
 
 const data = {
-  userType: ADVANCED_CANDIDATE,
+  userType: PROGRAM_MANAGER,
   session: 2,
   username: "user",
   firstName: "יובל",

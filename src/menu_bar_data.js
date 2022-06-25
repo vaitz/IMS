@@ -12,7 +12,7 @@ import {
 } from "./constants";
 
 // for setting tab or changing password icon: FaCog
-export const SidebarData = {
+export const MenuBarData = {
   [GUEST]: [
     {
       title: "",
@@ -29,7 +29,12 @@ export const SidebarData = {
     },
     {
       title: "דף אישי",
-      path: "/njsw36/",
+      path: "/404/",
+      cName: "nav-text",
+    },
+    {
+      title: "תשלום דמי רצינות",
+      path: "/404/",
       cName: "nav-text",
     },
     {
@@ -47,7 +52,7 @@ export const SidebarData = {
     },
     {
       title: "דף אישי",
-      path: "/njsw36/",
+      path: "/404/",
       cName: "nav-text",
     },
     {
@@ -75,7 +80,7 @@ export const SidebarData = {
     },
     {
       title: "דף אישי",
-      path: "/njsw36/",
+      path: "/404/",
       cName: "nav-text",
     },
     {
@@ -184,7 +189,7 @@ export const SidebarData = {
     },
     {
       title: "סטטיסטיקות",
-      path: "/njsw36/",
+      path: "/404/",
       cName: "nav-text",
     },
     {
@@ -227,7 +232,7 @@ export const SidebarData = {
     },
     {
       title: "סטטיסטיקות",
-      path: "/njsw36/",
+      path: "/404/",
       cName: "nav-text",
     },
     {
@@ -255,7 +260,7 @@ export const SidebarData = {
     },
     {
       title: "סטטיסטיקות",
-      path: "/njsw36/",
+      path: "/404/",
       cName: "nav-text",
     },
     {

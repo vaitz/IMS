@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SidebarData } from "../../../side_bar_data";
+import { MenuBarData } from "../../../menu_bar_data";
 import {
   ADVANCED_CANDIDATE,
   COMPANY_REPRESENTATIVE,
@@ -14,7 +14,7 @@ import {
 const MegaMenu = ({ userType }) => {
   return (
     <>
-      {SidebarData[userType].map((item) => (
+      {MenuBarData[userType].map((item) => (
         <li className="navbar-nav">
           <Link
             to={item.path}
