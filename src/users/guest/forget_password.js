@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { useHistory, Link } from "react-router-dom";
-import { validateEmptyFields } from "./login/validations";
-import { changePassRequest } from "./login/requests";
-import { validateEmail, validatePassword } from "./register/validations";
+import { useHistory } from "react-router-dom";
 import PopUp from "../../components/popup";
 
 // email page
@@ -36,19 +33,19 @@ export function ForgetPassEmail() {
   };
 
   const onClick = async () => {
-    if (!validateEmptyFields([email.value])) {
-      setError(`אסור להשאיר שדות ריקים`);
-    } else {
-      if (!validateEmail(email.value)) {
-        setError("אימייל לא תקין, יש להקפיד על כתובת אימייל חוקית");
-      } else {
-        // const response = await changePassRequest(setLoading, setError, username, oldPassword, password, history);
-        // if(response){
-        setSubmitted(true);
-
-        // else- email not related to a user (show error?)
-      }
-    }
+    // if (!validateEmptyFields([email.value])) {
+    //   setError(`אסור להשאיר שדות ריקים`);
+    // } else {
+    //   if (!validateEmail(email.value)) {
+    //     setError("אימייל לא תקין, יש להקפיד על כתובת אימייל חוקית");
+    //   } else {
+    //     // const response = await changePassRequest(setLoading, setError, username, oldPassword, password, history);
+    //     // if(response){
+    //     setSubmitted(true);
+    //
+    //     // else- email not related to a user (show error?)
+    //   }
+    // }
   };
 
   return (
@@ -122,22 +119,22 @@ export function ForgetPass() {
   };
 
   const onClick = async () => {
-    if (!validateEmptyFields([password.value, confirmPassword.value])) {
-      setError(`אסור להשאיר שדות ריקים`);
-    } else {
-      if (password.value !== confirmPassword.value) {
-        setError("הסיסמאות שהוקלדו לא תאומות");
-      } else {
-        if (!validatePassword(password.value)) {
-          setError("סיסמה לא תקינה, יש להקפיד על ההנחיות לסיסמה");
-        } else {
-          // const response = await changePassRequest(setLoading, setError, username??, password, history);
-          // if(response){
-          //     setSubmitted(true);
-          // }
-        }
-      }
-    }
+    // if (!validateEmptyFields([password.value, confirmPassword.value])) {
+    //   setError(`אסור להשאיר שדות ריקים`);
+    // } else {
+    //   if (password.value !== confirmPassword.value) {
+    //     setError("הסיסמאות שהוקלדו לא תאומות");
+    //   } else {
+    //     if (!validatePassword(password.value)) {
+    //       setError("סיסמה לא תקינה, יש להקפיד על ההנחיות לסיסמה");
+    //     } else {
+    //       // const response = await changePassRequest(setLoading, setError, username??, password, history);
+    //       // if(response){
+    //       //     setSubmitted(true);
+    //       // }
+    //     }
+    //   }
+    // }
   };
 
   return (
