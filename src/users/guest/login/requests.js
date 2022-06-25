@@ -56,7 +56,7 @@ export const loginRequest = (
 };
 
 const data = {
-  userType: MENTOR,
+  userType: COMPANY_REPRESENTATIVE,
   session: 2,
   username: "user",
   firstName: "יובל",

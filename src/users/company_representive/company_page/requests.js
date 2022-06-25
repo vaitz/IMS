@@ -13,7 +13,7 @@ export const createCompanyPage = (
 ) => {
   const data = {
     companyName: companyName,
-    employees: employees,
+    workersAmount: employees,
     location: location,
     yearEstablish: yearEstablish,
     about: about,
@@ -38,6 +38,26 @@ export const createCompanyPage = (
     });
 };
 
+export const getCompanyName = (setCompanyName, username) => {
+  fetch(SERVER_ADDRESS + `/companyRep/${username}/companyName`, {
+    method: "Get",
+    mode: "cors",
+  })
+    .then((response) => {
+      response.json().then((data) => {
+        console.log(data);
+        setCompanyName(data.data);
+      });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
 fetchMock.mock(SERVER_ADDRESS + "/companyRep/createCompanyProfile", {
   status: 201,
+});
+
+fetchMock.mock(SERVER_ADDRESS + "/companyRep/user/companyName", {
+  data: "company1",
 });
