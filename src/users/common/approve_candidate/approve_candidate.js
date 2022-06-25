@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import styled from "styled-components";
 import MaterialTable from "material-table";
-import tableIcons from "../../program_manager/assign_internships/MaterialTableIcons";
+import tableIcons from "../../../components/MaterialTableIcons";
 import Button from "../../../components/button";
 import { approveCandidates, getCandidates } from "./requests";
 import { getPrograms } from "../../company_representive/create_intership/requests";
@@ -147,7 +147,6 @@ const ApproveCandidate = ({ username, userType }) => {
           <Div>
             <MaterialTable
               pageSize={30}
-              title="מועמדים"
               data={candidates}
               columns={columns}
               icons={tableIcons}
@@ -156,9 +155,11 @@ const ApproveCandidate = ({ username, userType }) => {
                 paging: false,
                 pageSize: 10,
                 headerStyle: {
-                  width: "200px",
                   textAlign: "center",
+                  fontSize: "20px",
+                  fontFamily: "Rubik",
                 },
+                showTitle: false,
                 cellStyle: {
                   width: "200px",
                   textAlign: "center",

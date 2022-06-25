@@ -57,5 +57,6 @@ fetchMock.mock(SERVER_ADDRESS + "/company/meta", {
   yearEstablish: "2005",
   workersAmount: 3000,
   location: "tel aviv",
-  about: "about",
+  about:
+    "dscsdvcdsvwfkjcnewinefdjiew bfhwebcufhjwedhcbfhwenbdcjxkinmqask qsndxjk aqwbndcuyqefcybhqewfucqndjkq",
 });

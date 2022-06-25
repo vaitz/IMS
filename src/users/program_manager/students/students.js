@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 import MaterialTable from "material-table";
-import tableIcons from "../assign_internships/MaterialTableIcons";
+import tableIcons from "../../../components/MaterialTableIcons";
 import { getStudentsRequest } from "./requests";
-
-const Div = styled.div`
-  height: auto;
-  display: flex;
-  background-color: #f7f8fc;
-`;
 
 const Students = ({ programId }) => {
   const [students, setStudents] = useState([]);
@@ -71,10 +64,19 @@ const Students = ({ programId }) => {
   }, []);
 
   return (
-    <>
+    <div className="font-rubik container nav-container">
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <h2>סטודנטים</h2>
+        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+      </div>
       <MaterialTable
         pageSize={30}
-        title="סטודנטים"
         data={students}
         columns={columns}
         icons={tableIcons}
@@ -88,13 +90,16 @@ const Students = ({ programId }) => {
           }),
           headerStyle: {
             textAlign: "center",
+            fontSize: "20px",
+            fontFamily: "Rubik",
           },
+          showTitle: false,
         }}
-        onRowClick={(evt, selectedRow) =>
-          setSelectedRow(selectedRow.tableData.id)
-        }
+        // onRowClick={(evt, selectedRow) =>
+        //   setSelectedRow(selectedRow.tableData.id)
+        // }
       />
-    </>
+    </div>
   );
 };
 

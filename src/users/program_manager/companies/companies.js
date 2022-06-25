@@ -50,7 +50,9 @@ const Companies = () => {
     companies.map((company, index) => ({ label: company, value: index }));
 
   return (
-    <Container className="font-rubik">
+    <Container className="font-rubik container nav-container">
+      <h2>חברות בתוכנית</h2>
+      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       <div className="position">בחר חברה</div>
       <Dropdown
         options={companies}
@@ -60,28 +62,32 @@ const Companies = () => {
       />
 
       {selectedCompany && (
-        <Row>
-          <Col>
-            <h6 className="font-gilroy-bold">שם החברה</h6>
-            <p className="pb-45">{selectedCompanyData.companyName}</p>
-          </Col>
-          <Col>
-            <h6 className="font-gilroy-bold">שנת הקמה</h6>
-            <p className="pb-45">{selectedCompanyData.yearEstablish}</p>
-          </Col>
-          <Col>
-            <h6 className="font-gilroy-bold">כמות עובדים</h6>
-            <p className="pb-45">{selectedCompanyData.workersAmount}</p>
-          </Col>
-          <Col>
-            <h6 className="font-gilroy-bold">מיקום</h6>
-            <p className="pb-45">{selectedCompanyData.location}</p>
-          </Col>
-          <Col>
-            <h6 className="font-gilroy-bold">מידע נוסף</h6>
-            <p className="pb-45">{selectedCompanyData.about}</p>
-          </Col>
-        </Row>
+        <div>
+          <Row className="font-rubik">
+            <Col>
+              <h5>שם החברה</h5>
+              <p className="pb-45">{selectedCompanyData.companyName}</p>
+            </Col>
+            <Col>
+              <h5>מיקום</h5>
+              <p className="pb-45">{selectedCompanyData.location}</p>
+            </Col>
+            <Col>
+              <h5>שנת הקמה</h5>
+              <p className="pb-45">{selectedCompanyData.yearEstablish}</p>
+            </Col>
+            <Col>
+              <h5>כמות עובדים</h5>
+              <p className="pb-45">{selectedCompanyData.workersAmount}</p>
+            </Col>
+          </Row>
+          <Row className="font-rubik">
+            <Col>
+              <h5>מידע נוסף</h5>
+              <p className="pb-45">{selectedCompanyData.about}</p>
+            </Col>
+          </Row>
+        </div>
       )}
     </Container>
   );

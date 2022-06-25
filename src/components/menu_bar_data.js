@@ -112,7 +112,7 @@ export const MenuBarData = {
       cName: "nav-text",
     },
     {
-      title: "סטודנטים",
+      title: "מתמחים",
       path: "/njsw36/mentor/interns",
       cName: "nav-text",
     },

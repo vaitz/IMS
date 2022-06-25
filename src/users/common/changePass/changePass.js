@@ -9,6 +9,7 @@ import * as Yup from "yup";
 
 const Container = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 0 400px;
 `;
@@ -134,8 +135,9 @@ function ChangePass({ username }) {
     }
   }
   return (
-    <Container>
-      <h1 className="font-rubik">עדכון סיסמה</h1>
+    <Container className="font-rubik">
+      <h2 className="font-rubik">עדכון סיסמה</h2>
+      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       <label className="font-rubik" style={{ fontSize: 14 }}>
         הסיסמה החדשה צריכה להכיל לפחות 6 תווים ולשלב בתוכה אותיות גדולות וקטנות
         באנגלית ומספרים
@@ -229,46 +231,15 @@ function ChangePass({ username }) {
             </span>
           </div>
         </div>
-        {/*{error && (*/}
-        {/*  <>*/}
-        {/*    <small style={{ color: "red" }}>{error}</small>*/}
-        {/*    <br />*/}
-        {/*  </>*/}
-        {/*)}*/}
-        <br />
-        {/*<input*/}
-        {/*  type="button"*/}
-        {/*  value={loading ? "טוען..." : "עדכון"}*/}
-        {/*  onClick={() => onClick()}*/}
-        {/*  disabled={loading}*/}
-        {/*/>*/}
-        <button
-          type="submit"
-          style={{
-            background: "#DEEAE7",
-            border: "10px",
-            outline: "auto",
-            padding: "3px",
-          }}
-        >
+
+        <button type="submit" className="theme-btn-one mt-50 mb-50">
           עדכון
         </button>
+
         <br />
       </form>
     </Container>
   );
 }
-
-const useFormInput = (initialValue) => {
-  const [value, setValue] = useState(initialValue);
-
-  const handleChange = (e) => {
-    setValue(e.target.value);
-  };
-  return {
-    value,
-    onChange: handleChange,
-  };
-};
 
 export default ChangePass;

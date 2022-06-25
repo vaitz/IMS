@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { getPrograms } from "./requests";
 import MaterialTable from "material-table";
-import tableIcons from "../../program_manager/assign_internships/MaterialTableIcons";
+import tableIcons from "../../../components/MaterialTableIcons";
 
 const Title = styled.div`
   display: flex;
@@ -77,10 +77,17 @@ const Programs = () => {
   ];
 
   return (
-    <>
-      <Title>
+    <div className="font-rubik container nav-container">
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
         <h2>תוכניות קיימות</h2>
-      </Title>
+        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+      </div>
       <MaterialTable
         pageSize={30}
         data={programs}
@@ -92,11 +99,13 @@ const Programs = () => {
           pageSize: 10,
           headerStyle: {
             textAlign: "center",
+            fontSize: "20px",
+            fontFamily: "Rubik",
           },
           showTitle: false,
         }}
       />
-    </>
+    </div>
   );
 };
 

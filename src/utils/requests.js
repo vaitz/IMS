@@ -1,10 +1,13 @@
 import { SERVER_ADDRESS } from "./config";
 import fetchMock from "fetch-mock";
 import {
+  STUDENT,
   ADVANCED_CANDIDATE,
+  INTERN,
   COMPANY_REPRESENTATIVE,
   MENTOR,
   PROGRAM_MANAGER,
+  PROGRAM_COORDINATOR,
   SYSTEM_MANAGER,
 } from "./constants";
 
@@ -44,17 +47,10 @@ export const getDetails = (
   );
 };
 
-const data = {
-  userType: ADVANCED_CANDIDATE,
-  session: 2,
-  username: "user",
-  firstName: "חי",
-  program: "123",
-};
 fetchMock.mock(SERVER_ADDRESS + `/users/logout`, { data: "" });
 fetchMock.mock(SERVER_ADDRESS + `/users/details/user`, {
   status: 200,
-  userType: ADVANCED_CANDIDATE,
-  firstName: "hay",
-  program: "star",
+  userType: PROGRAM_MANAGER,
+  firstName: "יובל",
+  program: "123",
 });
