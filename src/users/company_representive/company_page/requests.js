@@ -29,7 +29,6 @@ export const createCompanyPage = (
     body: JSON.stringify(data),
   })
     .then((response) => {
-      console.log(response);
       if (response.status === 201) setPopup(true);
       else setError("משהו השתבש, אנא נסה שנית מאוחר יותר");
     })
@@ -54,10 +53,45 @@ export const getCompanyName = (setCompanyName, username) => {
     });
 };
 
+export const getCompanyData = (
+  companyName,
+  setEmployees,
+  setLocation,
+  setYearEstablish,
+  setLinkedinLink,
+  setAbout
+) => {
+  fetch(SERVER_ADDRESS + `/company/${companyName}`, {
+    method: "Get",
+    mode: "cors",
+  })
+    .then((response) => {
+      response.json().then((data) => {
+        setEmployees(data.workersAmount);
+        setLocation(data.location);
+        setYearEstablish(data.yearEstablish);
+        setAbout(data.about);
+        setLinkedinLink(data.linkedinLink);
+      });
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
 fetchMock.mock(SERVER_ADDRESS + "/companyRep/createCompanyProfile", {
   status: 201,
 });
 
 fetchMock.mock(SERVER_ADDRESS + "/companyRep/user/companyName", {
   data: "company1",
+});
+
+fetchMock.mock(SERVER_ADDRESS + "/company/company1", {
+  companyName: "companyName",
+  workersAmount: "100",
+  location: "bs",
+  yearEstablish: "1990",
+  about: "dscdscsdc",
+  linkedinLink: "link",
 });
