@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import PopUp from "../../../popup";
 import { useHistory } from "react-router-dom";
-import { createCompanyPage, getCompanyName } from "./requests";
+import { createCompanyPage, getCompanyName, getCompanyData } from "./requests";
 
 const Label = styled.text`
   font-size: 18px;
@@ -42,8 +42,20 @@ const CompanyPage = ({ username }) => {
 
   useEffect(() => {
     getCompanyName(setCompanyName, username);
-    // companyData()
   }, []);
+
+  useEffect(() => {
+    if (companyName) {
+      getCompanyData(
+        companyName,
+        setEmployees,
+        setLocation,
+        setYearEstablish,
+        setLinkedinLink,
+        setAbout
+      );
+    }
+  }, [companyName]);
 
   const onSubmit = () => {
     createCompanyPage(

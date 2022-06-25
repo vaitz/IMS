@@ -23,7 +23,6 @@ export const loginRequest = (
     username: username,
     password: password,
   };
-  console.log(data);
   fetch(SERVER_ADDRESS + "/users/login", {
     method: "POST",
     headers: {
