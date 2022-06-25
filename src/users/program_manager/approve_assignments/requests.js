@@ -1,11 +1,11 @@
 import { SERVER_ADDRESS } from "../../../config";
 
-export const approveAssignments = ({ programId, history }) => {
+export const approveAssignments = ({ programId, history, username }) => {
   const data = {
     program: programId,
-    status: true,
+    username: username,
   };
-  return fetch(SERVER_ADDRESS + "/programManager/updateProgramStatus", {
+  return fetch(SERVER_ADDRESS + "/programManager/approveAssign", {
     method: "POST",
     mode: "cors",
     headers: {
