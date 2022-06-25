@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import PopUp from "../../../popup";
+import PopUp from "../../../components/popup";
 import { getPrograms, sendDetailsToServer } from "./requests";
 import { useHistory } from "react-router-dom";
 import {
@@ -8,7 +8,7 @@ import {
   MENTOR,
   PROGRAM_MANAGER,
   PROGRAM_COORDINATOR,
-} from "../../../constants";
+} from "../../../utils/constants";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
 import * as Yup from "yup";

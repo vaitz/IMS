@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import PopUp from "../../../popup";
+import PopUp from "../../../components/popup";
 import { useHistory } from "react-router-dom";
 import { createCompanyPage, getCompanyName, getCompanyData } from "./requests";
 

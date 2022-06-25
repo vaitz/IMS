@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Select from "react-select";
 import { createProgram, getProgramManagers } from "./requests";
-import PopUp from "../../../popup";
+import PopUp from "../../../components/popup";
 import { useHistory } from "react-router-dom";
 
 const Label = styled.text`

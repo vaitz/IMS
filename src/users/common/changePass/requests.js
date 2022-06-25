@@ -1,4 +1,4 @@
-import { SERVER_ADDRESS } from "../../../config";
+import { SERVER_ADDRESS } from "../../../utils/config";
 import fetchMock from "fetch-mock";
 
 export const changePassRequest = async (username, oldPassword, newPassword) => {

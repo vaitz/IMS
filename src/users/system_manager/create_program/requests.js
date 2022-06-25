@@ -1,5 +1,5 @@
 import fetchMock from "fetch-mock";
-import { SERVER_ADDRESS } from "../../../config";
+import { SERVER_ADDRESS } from "../../../utils/config";
 
 export const getProgramManagers = (setOptions, formatOptions) =>
   fetch(SERVER_ADDRESS + "/programManagers").then((response) => {

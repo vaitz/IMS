@@ -1,7 +1,7 @@
 import React from "react";
-import TestimonialTwo from "../../../components/testimonial/TestimonialTwo";
-import Companies from "../../../components/brand/Companies";
-import HeroBannerThree from "../../../components/hero-banner/HeroBannerThree";
+import Recommendations from "../../../components/Recommendations";
+import Companies from "../../../components/Companies";
+import InternshipInfo from "../../../components/InternshipInfo";
 const socialContent = [
   {
     icon: "fa-facebook",
@@ -19,7 +19,7 @@ const socialContent = [
 const Home = () => {
   return (
     <div>
-      <HeroBannerThree />
+      <InternshipInfo />
       <div className="fancy-feature-eight mt-110 md-mt-80">
         <div className="container">
           <div className="row">
@@ -275,7 +275,7 @@ const Home = () => {
 
         <div className="slider-content">
           <div className="clientSliderTwo slick-nav-none">
-            <TestimonialTwo />
+            <Recommendations />
           </div>
         </div>
         {/* /.slider-content */}

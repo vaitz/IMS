@@ -3,12 +3,16 @@ import { useHistory } from "react-router-dom";
 import { validateEmptyFields } from "../../guest/login/validations";
 import { changePassRequest } from "./requests";
 import { validatePassword } from "../../guest/register/validations";
-import PopUp from "../../../popup";
+import PopUp from "../../../components/popup";
 import styled from "styled-components";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
 import * as Yup from "yup";
-import { COMPANY_REPRESENTATIVE, MENTOR, STUDENT } from "../../../constants";
+import {
+  COMPANY_REPRESENTATIVE,
+  MENTOR,
+  STUDENT,
+} from "../../../utils/constants";
 import { sendDetailsToServer } from "../../guest/register/requests";
 
 const Container = styled.div`

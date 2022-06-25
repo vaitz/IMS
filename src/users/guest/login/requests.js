@@ -1,5 +1,5 @@
-import { setUserSession } from "../../../utils/common";
-import { SERVER_ADDRESS } from "../../../config";
+import { setUserSession } from "../../../utils/session";
+import { SERVER_ADDRESS } from "../../../utils/config";
 import fetchMock from "fetch-mock";
 import {
   PROGRAM_MANAGER,
@@ -8,7 +8,7 @@ import {
   INTERN,
   SYSTEM_MANAGER,
   ADVANCED_CANDIDATE,
-} from "../../../constants";
+} from "../../../utils/constants";
 
 export const loginRequest = (
   setError,

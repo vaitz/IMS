@@ -3,8 +3,8 @@ import { approvedHours, getInterns } from "./requests";
 import Select from "react-select";
 import styled from "styled-components";
 import { getWorkingHours } from "./requests";
-import Button from "../../../button";
-import Popup from "../../../popup";
+import Button from "../../../components/button";
+import Popup from "../../../components/popup";
 
 const Dropdown = styled(Select)`
   margin: 20px 0 100px;
