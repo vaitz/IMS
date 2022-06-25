@@ -1,12 +1,12 @@
 import { SERVER_ADDRESS } from "../../../config";
 import fetchMock from "fetch-mock";
 
-export const approveAssignments = ({ programId, history }) => {
+export const approveAssignments = ({ programId, history, username }) => {
   const data = {
     program: programId,
-    status: true,
+    username: username,
   };
-  return fetch(SERVER_ADDRESS + "/programManager/updateProgramStatus", {
+  return fetch(SERVER_ADDRESS + "/programManager/approveAssign", {
     method: "POST",
     mode: "cors",
     headers: {
@@ -21,6 +21,6 @@ export const approveAssignments = ({ programId, history }) => {
   });
 };
 
-fetchMock.mock(SERVER_ADDRESS + "/programManager/updateProgramStatus", {
+fetchMock.mock(SERVER_ADDRESS + "/programManager/approveAssign", {
   status: 200,
 });
