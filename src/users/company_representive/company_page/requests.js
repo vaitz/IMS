@@ -12,7 +12,7 @@ export const createCompanyPage = (
 ) => {
   const data = {
     companyName: companyName,
-    employees: employees,
+    workersAmount: employees,
     location: location,
     yearEstablish: yearEstablish,
     about: about,
@@ -31,6 +31,22 @@ export const createCompanyPage = (
       console.log(response);
       if (response.status === 201) setPopup(true);
       else setError("משהו השתבש, אנא נסה שנית מאוחר יותר");
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
+export const getCompanyName = (setCompanyName, username) => {
+  fetch(SERVER_ADDRESS + `/companyRep/${username}/companyName`, {
+    method: "Get",
+    mode: "cors",
+  })
+    .then((response) => {
+      response.json().then((data) => {
+        console.log(data);
+        setCompanyName(data.data);
+      });
     })
     .catch((error) => {
       console.log(error);

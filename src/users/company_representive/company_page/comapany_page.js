@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import PopUp from "../../../popup";
 import { useHistory } from "react-router-dom";
-import { createCompanyPage } from "./requests";
+import { createCompanyPage, getCompanyName } from "./requests";
 
 const Label = styled.text`
   font-size: 18px;
@@ -29,7 +29,7 @@ const Button = styled.button`
   color: #ffffff;
 `;
 
-const CompanyPage = () => {
+const CompanyPage = ({ username }) => {
   const [companyName, setCompanyName] = useState("");
   const [employees, setEmployees] = useState("");
   const [location, setLocation] = useState("");
@@ -40,9 +40,10 @@ const CompanyPage = () => {
   const [error, setError] = useState(null);
   let history = useHistory();
 
-  // useEffect(() => {
-  //     companyData()
-  // }, [])
+  useEffect(() => {
+    getCompanyName(setCompanyName, username);
+    // companyData()
+  }, []);
 
   const onSubmit = () => {
     createCompanyPage(
@@ -65,12 +66,12 @@ const CompanyPage = () => {
           הדף נשמר בהצלחה
         </PopUp>
       )}
-      <Label>שם החברה</Label>
-      <Input
-        type="text"
-        value={companyName}
-        onChange={(e) => setCompanyName(e.target.value)}
-      />
+      <Label>שם החברה: {companyName}</Label>
+      {/*<Input*/}
+      {/*  type="text"*/}
+      {/*  value={companyName}*/}
+      {/*  onChange={(e) => setCompanyName(e.target.value)}*/}
+      {/*/>*/}
       <Label>מספר עובדים</Label>
       <Input
         type="text"
