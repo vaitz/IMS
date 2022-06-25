@@ -50,7 +50,7 @@ export const getDetails = (
 fetchMock.mock(SERVER_ADDRESS + `/users/logout`, { data: "" });
 fetchMock.mock(SERVER_ADDRESS + `/users/details/user`, {
   status: 200,
-  userType: PROGRAM_MANAGER,
+  userType: MENTOR,
   firstName: "יובל",
   program: "123",
 });

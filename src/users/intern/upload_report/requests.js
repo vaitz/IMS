@@ -1,12 +1,17 @@
 import { SERVER_ADDRESS } from "../../../utils/config";
 import fetchMock from "fetch-mock";
 
-export const sendFile = (username, report) => {
+export const sendFile = (username, report, setSubmitted) => {
   return fetch(SERVER_ADDRESS + `/intern/uploadReport/${username}`, {
     method: "POST",
     mode: "cors",
     body: report,
-  }).then((response) => console.log(response));
+  }).then((response) => {
+    console.log(response);
+    if (response.status === 200) {
+      setSubmitted(true);
+    }
+  });
 };
 
-fetchMock.mock(SERVER_ADDRESS + "/intern/uploadReport", { status: 200 });
+fetchMock.mock(SERVER_ADDRESS + "/intern/uploadReport/user", { status: 200 });
