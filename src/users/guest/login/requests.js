@@ -1,13 +1,5 @@
-import {setUserSession} from "../../../utils/common";
-import {SERVER_ADDRESS} from '../../../config'
-import {
-  PROGRAM_MANAGER,
-  MENTOR,
-  COMPANY_REPRESENTATIVE,
-  INTERN,
-  SYSTEM_MANAGER,
-  ADVANCED_CANDIDATE,
-} from "../../../constants";
+import { setUserSession } from "../../../utils/session";
+import { SERVER_ADDRESS } from "../../../utils/config";
 
 export const loginRequest = (
   setError,

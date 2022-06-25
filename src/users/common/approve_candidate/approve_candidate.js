@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import styled from "styled-components";
 import MaterialTable from "material-table";
 import tableIcons from "../../program_manager/assign_internships/MaterialTableIcons";
-import Button from "../../../button";
+import Button from "../../../components/button";
 import { approveCandidates, getCandidates } from "./requests";
 import { getPrograms } from "../../company_representive/create_intership/requests";
 import Select from "react-select";

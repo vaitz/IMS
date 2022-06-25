@@ -1,11 +1,13 @@
-import {SERVER_ADDRESS} from "../../../config";
+import { SERVER_ADDRESS } from "../../../utils/config";
 
 export const sendFile = (username, report, intern) => {
-    return fetch(SERVER_ADDRESS+`/mentor/${username}/uploadReport/${intern.username}`,
-        {
-            method: 'POST',
-            mode: "cors",
-            body: report
-        }).then(response => console.log(response));
-}
+  return fetch(
+    SERVER_ADDRESS + `/mentor/${username}/uploadReport/${intern.username}`,
+    {
+      method: "POST",
+      mode: "cors",
+      body: report,
+    }
+  ).then((response) => console.log(response));
+};
 

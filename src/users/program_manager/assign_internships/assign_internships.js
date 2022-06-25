@@ -3,7 +3,7 @@ import styled from "styled-components";
 import MaterialTable from "material-table";
 import { assignIntern, getCompanies, getCompanyData } from "./requests";
 import tableIcons from "./MaterialTableIcons";
-import Button from "../../../button";
+import Button from "../../../components/button";
 import Select from "react-select";
 
 const Div = styled.div`

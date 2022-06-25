@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Select from "react-select";
 import { createInternship, getCompanies, getMentors } from "./requests";
-import PopUp from "../../../popup";
+import PopUp from "../../../components/popup";
 import { getPrograms } from "../../company_representive/create_intership/requests";
 import { useHistory } from "react-router-dom";
 

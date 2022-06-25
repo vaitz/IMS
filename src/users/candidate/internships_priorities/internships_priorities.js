@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { getInternships, sendInternshipsToServer } from "./requests";
-import Button from "../../../button";
+import Button from "../../../components/button";
 import styled from "styled-components";
 import Select from "react-select";
-import PopUp from "../../../popup";
+import PopUp from "../../../components/popup";
 import { useHistory } from "react-router-dom";
 
 const ButtonWrapper = styled.div`

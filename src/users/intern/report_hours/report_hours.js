@@ -5,7 +5,7 @@ import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import styled from "styled-components";
 import { DatePicker, TimePicker } from "@mui/lab";
 import { getWorkingHours, reportHours } from "./requests";
-import Button from "../../../button";
+import Button from "../../../components/button";
 
 const ContentContainer = styled.div`
   padding: 0 300px 100px;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { createInternship, getMentors, getPrograms } from "./requests";
-import PopUp from "../../../popup";
+import PopUp from "../../../components/popup";
 import { useHistory } from "react-router-dom";
 import Select from "react-select";
 

@@ -1,4 +1,4 @@
-import { SERVER_ADDRESS } from "../../../config";
+import { SERVER_ADDRESS } from "../../../utils/config";
 
 export const getInterns = (username, setInterns, formatInterns) =>
   fetch(SERVER_ADDRESS + `/mentor/getInterns/${username}`, {
@@ -9,7 +9,6 @@ export const getInterns = (username, setInterns, formatInterns) =>
       setInterns(formatInterns(data));
     })
   );
-
 
 export const getWorkingHours = (username, setHours, formatHours) =>
   fetch(SERVER_ADDRESS + `/intern/getHours/${username}`, {
@@ -37,4 +36,3 @@ export const approvedHours = (mentorUsername, internUsername, hours) => {
     body: JSON.stringify(data),
   }).then((response) => console.log(response));
 };
-

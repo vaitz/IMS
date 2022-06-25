@@ -1,27 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import Routes from "./router/Routes";
+import Routes from "./Routes";
 import ScrollToTop from "./components/ScrollToTop";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { getUser } from "./utils/common";
-import { getDetails } from "./requests";
-import {
-  ADVANCED_CANDIDATE,
-  GUEST,
-  INTERN,
-  SYSTEM_MANAGER,
-  PROGRAM_MANAGER,
-  COMPANY_REPRESENTATIVE,
-  MENTOR,
-} from "./constants";
+import { getUser } from "./utils/session";
+import { getDetails } from "./utils/requests";
+import { GUEST } from "./utils/constants";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const App = () => {
   const [userType, setUserType] = useState(GUEST);
   const [firstName, setFirstName] = useState(GUEST);
-  const [programId, setProgramId] = useState(123);
-  const [username, setUsername] = useState("user");
+  const [programId, setProgramId] = useState();
+  const [username, setUsername] = useState("");
   const theme = createTheme({
     background: {
       primary: {
