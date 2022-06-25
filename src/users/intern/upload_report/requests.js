@@ -1,4 +1,4 @@
-import {SERVER_ADDRESS} from "../../../config";
+import { SERVER_ADDRESS } from "../../../utils/config";
 
 export const sendFile = (username, report) => {
   return fetch(SERVER_ADDRESS + `/intern/uploadReport/${username}`, {
@@ -7,4 +7,3 @@ export const sendFile = (username, report) => {
     body: report,
   }).then((response) => console.log(response));
 };
-

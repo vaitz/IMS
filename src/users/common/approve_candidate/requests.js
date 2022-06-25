@@ -1,4 +1,4 @@
-import {SERVER_ADDRESS} from "../../../config";
+import { SERVER_ADDRESS } from "../../../utils/config";
 
 export const getCandidates = (
   username,
@@ -42,4 +42,3 @@ export const approveCandidates = (username, userType, program, approved) => {
     body: JSON.stringify(data),
   }).then((response) => console.log(response));
 };
-
