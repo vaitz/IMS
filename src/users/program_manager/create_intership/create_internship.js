@@ -88,6 +88,8 @@ const CreateInternship = () => {
         </PopUp>
       )}
       <h2>יצירת התמחות</h2>
+      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+
       <Label>שם התוכנית</Label>
       <Dropdown
         value={program}

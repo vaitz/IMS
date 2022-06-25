@@ -70,12 +70,14 @@ const CreateProgram = () => {
   };
 
   return (
-    <Container>
+    <Container className="font-rubik">
       {popup && (
         <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>
           {`נוצרה תוכנית התמחות חדשה:  "${internshipName}"  `}
         </PopUp>
       )}
+      <h3>יצירת תוכנית התמחות</h3>
+      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       <Label>שם תוכנית התמחות</Label>
       <Input
         type="text"

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
-import tableIcons from "../../program_manager/assign_internships/MaterialTableIcons";
+import tableIcons from "../../../components/MaterialTableIcons";
 import { getStudentsRequest } from "./requests";
 import MaterialTable from "material-table";
-import { makeStyles } from "@material-ui/core/styles";
 
 const Interns = ({ username }) => {
   const [students, setStudents] = useState([]);
@@ -45,10 +43,19 @@ const Interns = ({ username }) => {
   }, []);
 
   return (
-    <>
+    <div className="font-rubik container nav-container">
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          flexDirection: "column",
+        }}
+      >
+        <h2>מתמחים</h2>
+        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+      </div>
       <MaterialTable
         pageSize={30}
-        title="סטודנטים"
         data={students}
         columns={columns}
         icons={tableIcons}
@@ -56,7 +63,12 @@ const Interns = ({ username }) => {
           search: false,
           paging: false,
           pageSize: 10,
-          headerStyle: { position: "sticky", top: 0, textAlign: "center" },
+          headerStyle: {
+            textAlign: "center",
+            fontSize: "20px",
+            fontFamily: "Rubik",
+          },
+          showTitle: false,
           rowStyle: (rowData) => ({
             backgroundColor:
               selectedRow === rowData.tableData.id ? "#EEE" : "#FFF",
@@ -67,7 +79,7 @@ const Interns = ({ username }) => {
         //   setSelectedRow(selectedRow.tableData.id)
         // }
       />
-    </>
+    </div>
   );
 };
 

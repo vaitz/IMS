@@ -94,8 +94,10 @@ const UploadReportMentor = ({ username }) => {
   };
 
   return (
-    <Container>
+    <Container className="font-rubik">
       <h2>הגשת משובים</h2>
+      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+
       <Dropdown
         options={interns}
         value={selectedIntern}

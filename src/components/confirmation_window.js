@@ -45,7 +45,7 @@ const Buttons = styled.div`
 const ConfirmationWindow = (props) => {
   console.log(props);
   return (
-    <Container>
+    <Container className="font-rubik">
       <ContentWrapper>
         {props.content}
         <Buttons>

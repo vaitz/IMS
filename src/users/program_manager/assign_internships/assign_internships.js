@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import styled from "styled-components";
 import MaterialTable from "material-table";
 import { assignIntern, getCompanies, getCompanyData } from "./requests";
-import tableIcons from "./MaterialTableIcons";
+import tableIcons from "../../../components/MaterialTableIcons";
 import Button from "../../../components/button";
 import Select from "react-select";
 
@@ -113,6 +113,7 @@ export const AssignInternships = ({ programId }) => {
         <h2>שיבוץ התמחויות</h2>
         <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       </span>
+      <p>בחר התמחות לשיבוץ:</p>
       <BaseDropDown
         options={companies}
         placeholder={"בחר חברה"}
@@ -136,7 +137,10 @@ export const AssignInternships = ({ programId }) => {
             }),
             headerStyle: {
               textAlign: "center",
+              fontSize: "20px",
+              fontFamily: "Rubik",
             },
+            showTitle: false,
           }}
           onRowClick={(evt, selectedRow) => setSelectedRow(selectedRow)}
         />

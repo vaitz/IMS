@@ -71,8 +71,9 @@ const CompanyPage = ({ username }) => {
   };
 
   return (
-    <Container>
+    <Container className="font-rubik">
       <h2>דף חברה</h2>
+      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       {popup && (
         <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>
           הדף נשמר בהצלחה
