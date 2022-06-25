@@ -1,4 +1,4 @@
-import {SERVER_ADDRESS} from '../../../config'
+import { SERVER_ADDRESS } from "../../../utils/config";
 
 export const getWorkingHours = (username, setHours) =>
   fetch(SERVER_ADDRESS + `/intern/getHours/${username}`, {
@@ -25,4 +25,3 @@ export const reportHours = (username, hours) => {
     body: JSON.stringify(data),
   }).then((response) => console.log(response));
 };
-

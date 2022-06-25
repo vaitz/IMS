@@ -1,4 +1,4 @@
-import {SERVER_ADDRESS} from '../../../config'
+import { SERVER_ADDRESS } from "../../../utils/config";
 
 export const changePassRequest = async (username, oldPassword, newPassword) => {
   const data = {
@@ -17,4 +17,3 @@ export const changePassRequest = async (username, oldPassword, newPassword) => {
   console.log("post", res);
   return res;
 };
-

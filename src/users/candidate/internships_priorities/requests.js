@@ -1,4 +1,4 @@
-import {SERVER_ADDRESS} from '../../../config'
+import { SERVER_ADDRESS } from "../../../utils/config";
 
 // export const getPrioritiesAmount = (program, setPrioritiesAmount) => {
 //     fetch(SERVER_ADDRESS+'/prioritiesAmount/'+program,
