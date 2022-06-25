@@ -109,7 +109,7 @@ const CreateInternship = () => {
         options={mentors}
         placeholder={"בחר מנטור"}
       />
-      <Label>שם ההתמחות (ללא רווח)</Label>
+      <Label>שם ההתמחות</Label>
       <Input
         type="text"
         value={internshipName}
