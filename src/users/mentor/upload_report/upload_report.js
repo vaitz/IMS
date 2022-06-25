@@ -1,21 +1,28 @@
-import React, {useEffect, useState} from 'react';
-import {Button} from "@mui/material";
-import {getInterns} from "../approve_hours/requests";
-import {sendFile} from "./requests";
+import React, { useEffect, useState } from "react";
+import { Button } from "@mui/material";
+import { getInterns } from "../approve_hours/requests";
+import { sendFile } from "./requests";
 import styled from "styled-components";
 import Select from "react-select";
 
 const Dropdown = styled(Select)`
   width: 300px;
   margin: 20px 0 50px;
-`
+`;
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+`;
 
 const Label = styled.label`
   .custom-file-input::-webkit-file-upload-button {
     visibility: hidden;
   }
   .custom-file-input::before {
-    content: 'בחר קובץ';
+    content: "בחר קובץ";
     display: inline-block;
     background: linear-gradient(top, #f9f9f9, #e3e3e3);
     border: 1px solid #999;
@@ -35,68 +42,74 @@ const Label = styled.label`
   .custom-file-input:active::before {
     background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
   }
-`
+`;
 
 const StylesButton = styled.button`
   width: 100px;
-`
+`;
 
 const UploadReportMentor = ({ username }) => {
-    const [file, setFile] = useState();
-    const [interns, setInterns] = useState([]);
-    const [selectedIntern, setSelectedIntern] = useState();
+  const [file, setFile] = useState();
+  const [interns, setInterns] = useState([]);
+  const [selectedIntern, setSelectedIntern] = useState();
 
-    useEffect(() => {
-        getInterns(username, setInterns, formatInterns)
-    }, [])
+  useEffect(() => {
+    getInterns(username, setInterns, formatInterns);
+  }, []);
 
-    const formatInterns = (interns) => {
-        return interns.map((intern, index) => ({...intern, value: index, label: intern.first_name + " " +  intern.last_name})
-        )
-    }
+  const formatInterns = (interns) => {
+    return interns.map((intern, index) => ({
+      ...intern,
+      value: index,
+      label: intern.first_name + " " + intern.last_name,
+    }));
+  };
 
-    const onFileUpload = () => {
-        const formData = new FormData();
-        formData.append(
-            "report",
-            file
-        );
-        sendFile(username, formData, selectedIntern);
-    };
+  const onFileUpload = () => {
+    const formData = new FormData();
+    formData.append("report", file);
+    sendFile(username, formData, selectedIntern);
+  };
 
-    const onFileChange = event => {
-        setFile(event.target.files[0]);
-    };
+  const onFileChange = (event) => {
+    setFile(event.target.files[0]);
+  };
 
-
-
-    const UploadControl = ({ children, value, disabled }) => {
-        return (
-            <label htmlFor="contained-button-file" className="m-0 w-100">
-                <input
-                    value={value}
-                    accept={"image/*"}
-                    disabled={disabled}
-                    style={{ display: 'none' }}
-                    id="contained-button-file"
-                    multiple
-                    type="file"
-                    onChange={onFileChange}
-                />
-                {children}
-            </label>
-        );
-    };
-
+  const UploadControl = ({ children, value, disabled }) => {
     return (
-        <>
-            <Dropdown options={interns} value={selectedIntern} onChange={setSelectedIntern} placeholder={"בחר מתמחה"}/>
-               <StylesButton>
-                   <UploadControl />
-               </StylesButton>
-            <Button onClick={onFileUpload} disabled={!selectedIntern}>שלח קובץ</Button>
-        </>
-    )
-}
+      <label htmlFor="contained-button-file" className="m-0 w-100">
+        <input
+          value={value}
+          accept={"image/*"}
+          disabled={disabled}
+          style={{ display: "none" }}
+          id="contained-button-file"
+          multiple
+          type="file"
+          onChange={onFileChange}
+        />
+        {children}
+      </label>
+    );
+  };
+
+  return (
+    <Container>
+      <h2>הגשת משובים</h2>
+      <Dropdown
+        options={interns}
+        value={selectedIntern}
+        onChange={setSelectedIntern}
+        placeholder={"בחר מתמחה"}
+      />
+      <StylesButton>
+        <UploadControl />
+      </StylesButton>
+      <Button onClick={onFileUpload} disabled={!selectedIntern}>
+        שלח קובץ
+      </Button>
+    </Container>
+  );
+};
 
 export default UploadReportMentor;

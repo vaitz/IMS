@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { getInternships } from "./requests";
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+`;
+
 const Internships = ({ program }) => {
   const [internships, setInternships] = useState([]);
   const [showInternships, setShowInternships] = useState([]);
@@ -13,27 +20,23 @@ const Internships = ({ program }) => {
   useEffect(() => {
     setShowInternships(
       internships.map((internship) => (
-        <div>
-          <h2>
+        <Container>
+          <h3>
             {internship.companyName}- {internship.internshipName}
-          </h2>
+          </h3>
           <p>{internship.about}</p>
-          <p>
-            <h4>דרישות: </h4>
-            {internship.requirements}
-          </p>
-        </div>
+          <h4>דרישות </h4>
+          {internship.requirements}
+        </Container>
       ))
     );
   }, [internships]);
 
   return (
-    <div>
-      <div>
-        <h1>התמחויות</h1>
-        {showInternships}
-      </div>
-    </div>
+    <Container>
+      <h2>התמחויות</h2>
+      {showInternships}
+    </Container>
   );
 };
 

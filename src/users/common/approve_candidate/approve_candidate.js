@@ -10,6 +10,7 @@ import Select from "react-select";
 const Dropdown = styled(Select)`
   margin: 20px 0 60px;
   width: 300px;
+  position: relative;
 `;
 
 const Div = styled.div`
@@ -34,9 +35,8 @@ const ApproveCandidate = ({ username, userType }) => {
   const [programs, setPrograms] = useState([{ value: 0, label: "test" }]);
   const [selectedProgram, setSelectedProgram] = useState();
 
-  console.log(userType);
   useEffect(() => {
-    getPrograms(setPrograms, formatPrograms);
+    getPrograms({ setPrograms, formatPrograms });
   }, []);
 
   const formatPrograms = (programs) =>
@@ -140,6 +140,7 @@ const ApproveCandidate = ({ username, userType }) => {
         value={selectedProgram}
         placeholder={"בחר תוכנית"}
         onChange={setSelectedProgram}
+        menuPosition={"fixed"}
       />
       {selectedProgram && (
         <>

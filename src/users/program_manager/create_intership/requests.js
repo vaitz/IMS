@@ -41,21 +41,20 @@ export const createInternship = (
     });
 };
 
-export const getMentors = (setMentors, company) => {
-  fetch(SERVER_ADDRESS + `/mentors/${company}`, {
+export const getMentors = ({ setMentors, company }) => {
+  fetch(SERVER_ADDRESS + `/mentors/${company.label}`, {
     method: "Get",
     mode: "cors",
   })
     .then((response) => {
       response.json().then((data) => {
-        console.log(data);
-        let tempData = [{ username: "", name: "" }];
-        let names = data.map((mentor) => ({
+        let names = data.map((mentor, index) => ({
           username: mentor.username,
           name: mentor.firstName + " " + mentor.lastName,
+          label: mentor.firstName + " " + mentor.lastName,
+          value: index,
         }));
-        tempData.push(...names);
-        setMentors(tempData);
+        setMentors(names);
       });
     })
     .catch((error) => {
@@ -63,16 +62,14 @@ export const getMentors = (setMentors, company) => {
     });
 };
 
-export const getCompanies = (setCompanies) => {
+export const getCompanies = ({ setCompanies, formatCampaigns }) => {
   fetch(SERVER_ADDRESS + `/companies`, {
     method: "Get",
     mode: "cors",
   })
     .then((response) => {
       response.json().then((data) => {
-        let tempData = [""];
-        tempData.push(...data);
-        setCompanies(tempData);
+        setCompanies(formatCampaigns(data));
       });
     })
     .catch((error) => {

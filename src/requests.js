@@ -1,6 +1,8 @@
 import { SERVER_ADDRESS } from "./config";
 import {
   ADVANCED_CANDIDATE,
+  COMPANY_REPRESENTATIVE,
+  MENTOR,
   PROGRAM_MANAGER,
   SYSTEM_MANAGER,
 } from "./constants";
