@@ -107,7 +107,10 @@ const Routes = (props) => {
             component={CreateInternship}
           />
           <Route path="/njsw36/approveAssignments">
-            <ApproveAssignments programId={props.programId} />
+            <ApproveAssignments
+              programId={props.programId}
+              username={props.username}
+            />
           </Route>
           //System manager
           <Route path="/njsw36/programs">
