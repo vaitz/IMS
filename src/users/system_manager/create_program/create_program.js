@@ -70,7 +70,7 @@ const CreateProgram = () => {
   };
 
   return (
-    <Container className="font-rubik">
+    <Container className="font-rubik mt-35">
       {popup && (
         <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>
           {`נוצרה תוכנית התמחות חדשה:  "${internshipName}"  `}

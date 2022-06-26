@@ -132,7 +132,7 @@ const ApproveCandidate = ({ username, userType }) => {
       }));
 
   return (
-    <Container className="font-rubik">
+    <Container className="font-rubik mt-35">
       <h2>אישור מועמדים</h2>
       <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       <Dropdown

@@ -7,7 +7,6 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 80px;
 `;
 
 const Dropdown = styled(Select)`
@@ -50,7 +49,7 @@ const Companies = () => {
     companies.map((company, index) => ({ label: company, value: index }));
 
   return (
-    <Container className="font-rubik container nav-container">
+    <Container className="font-rubik container nav-container mt-35">
       <h2>חברות בתוכנית</h2>
       <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       <div className="position">בחר חברה</div>
