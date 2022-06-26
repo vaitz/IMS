@@ -139,7 +139,13 @@ const UploadReportMentor = ({ username }) => {
         />
 
         {selectedIntern && (
-          <div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
             <form
               id="form-file-upload"
               onDragEnter={handleDrag}
