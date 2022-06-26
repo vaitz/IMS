@@ -108,7 +108,7 @@ export const AssignInternships = ({ programId }) => {
   };
 
   return (
-    <Container className="font-rubik text-center">
+    <Container className="font-rubik text-center mt-35">
       <span>
         <h2>שיבוץ התמחויות</h2>
         <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />

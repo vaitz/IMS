@@ -71,7 +71,7 @@ const CompanyPage = ({ username }) => {
   };
 
   return (
-    <Container className="font-rubik">
+    <Container className="font-rubik mt-35">
       <h2>דף חברה</h2>
       <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       {popup && (

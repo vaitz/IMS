@@ -96,7 +96,7 @@ const UploadReport = ({ username }) => {
   };
 
   return (
-    <div className="font-rubik align-items-center justify-content-center">
+    <div className="font-rubik align-items-center justify-content-center mt-35">
       <div
         style={{
           display: "flex",

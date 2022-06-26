@@ -135,7 +135,7 @@ function ChangePass({ username }) {
     }
   }
   return (
-    <Container className="font-rubik">
+    <Container className="font-rubik  mt-35">
       <h2 className="font-rubik">עדכון סיסמה</h2>
       <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
       <label className="font-rubik" style={{ fontSize: 14 }}>

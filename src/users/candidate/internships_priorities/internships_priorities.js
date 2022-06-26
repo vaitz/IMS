@@ -82,7 +82,7 @@ const InternshipsPriorities = ({ username, program }) => {
   };
 
   return (
-    <Container className="font-rubik">
+    <Container className="font-rubik mt-35">
       <Row>
         {popup && (
           <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>

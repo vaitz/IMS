@@ -7,6 +7,7 @@ import Button from "../../../components/button";
 import Popup from "../../../components/popup";
 
 const Dropdown = styled(Select)`
+  width: 500px;
   margin: 20px 0 100px;
 `;
 const Item = styled.div`
@@ -117,20 +118,29 @@ const ApproveHours = ({ username }) => {
   };
 
   return (
-    <Container className="font-rubik">
+    <Container className="font-rubik mt-35">
       <Popup trigger={popUp} setTrigger={() => setPopUp(false)}>
         השעות אושרו
       </Popup>
       <Width>
-        <h2>אישור דיווח שעות</h2>
-        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
-        <div>בחר מתמחה</div>
-        <Dropdown
-          options={interns}
-          value={selectedIntern}
-          onChange={setSelectedIntern}
-          placeholder={"בחר מתמחה"}
-        />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
+          <h2>אישור דיווח שעות</h2>
+          <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+          <div>בחר מתמחה</div>
+
+          <Dropdown
+            options={interns}
+            value={selectedIntern}
+            onChange={setSelectedIntern}
+            placeholder={"בחר מתמחה"}
+          />
+        </div>
         {showHours && (
           <HeaderWrapper>
             <Row>

@@ -149,11 +149,18 @@ const ReportHours = ({ username }) => {
   };
 
   return (
-    <ContentContainer dir="rtl" className="font-rubik">
+    <ContentContainer dir="rtl" className="font-rubik mt-35">
       <Container>
-        <span className="text-center">
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            flexDirection: "column",
+          }}
+        >
           <h2>השעות שלי</h2>
-        </span>
+          <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+        </div>
         <HeaderWrapper>
           <Row>
             <div>תאריך</div>

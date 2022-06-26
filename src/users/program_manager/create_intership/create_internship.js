@@ -22,8 +22,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
-  padding-top: 40px;
 `;
 
 const Input = styled.input`
@@ -81,7 +79,7 @@ const CreateInternship = () => {
   };
 
   return (
-    <Container className="font-rubik">
+    <Container className="font-rubik mt-35">
       {popup && (
         <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>
           {`נוצרה ההתמחות:  "${internshipName}"  `}

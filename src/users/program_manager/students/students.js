@@ -64,7 +64,7 @@ const Students = ({ programId }) => {
   }, []);
 
   return (
-    <div className="font-rubik container nav-container">
+    <div className="font-rubik container nav-container mt-35">
       <div
         style={{
           display: "flex",
