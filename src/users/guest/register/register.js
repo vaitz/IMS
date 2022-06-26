@@ -116,7 +116,11 @@ const Register = () => {
   // for validation
   const validationSchema = Yup.object().shape({
     userType: Yup.string(),
-    username: Yup.string().required("נדרש למלא שם משתמש"),
+    username: Yup.string()
+      .required("נדרש למלא שם משתמש")
+      .min(4, "שם המשתמש חייב להיות לפחות 4 תווים")
+      .max(15, "שם המשתמש לא יכול להיות מעל 15 תווים")
+      .matches(/^[A-Za-z]+$/, "שם המשתמש יכול להיות מורכב רק מאותיות באנגלית"),
     firstname: Yup.string().required("נדרש למלא שם פרטי"),
     lastname: Yup.string().required("נדרש למלא שם משפחה"),
     password: Yup.string()
