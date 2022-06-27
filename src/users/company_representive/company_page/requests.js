@@ -29,7 +29,7 @@ export const createCompanyPage = (
     body: JSON.stringify(data),
   })
     .then((response) => {
-      if (response.status === 201) setPopup(true);
+      if (response.status === 201 || response.status === 200) setPopup(true);
       else setError("משהו השתבש, אנא נסה שנית מאוחר יותר");
     })
     .catch((error) => {
