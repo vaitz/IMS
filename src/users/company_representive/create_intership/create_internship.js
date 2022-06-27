@@ -61,12 +61,12 @@ const CreateInternshipCom = ({ username }) => {
     createInternship(
       setPopup,
       setError,
-      program,
+      program.label,
       internshipName,
       internshipDescription,
       demands,
       username,
-      mentor
+      mentor.value
     );
   };
 

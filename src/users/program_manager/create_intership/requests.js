@@ -49,11 +49,9 @@ export const getMentors = ({ setMentors, company }) => {
   })
     .then((response) => {
       response.json().then((data) => {
-        let names = data.map((mentor, index) => ({
-          username: mentor.username,
-          name: mentor.firstName + " " + mentor.lastName,
+        let names = data.map((mentor) => ({
           label: mentor.firstName + " " + mentor.lastName,
-          value: index,
+          value: mentor.username,
         }));
         setMentors(names);
       });
@@ -79,7 +77,6 @@ export const getCompanies = ({ setCompanies, formatCampaigns }) => {
 };
 
 fetchMock.mock(SERVER_ADDRESS + "/programManager/createInternship", "success");
-// fetchMock.mock(SERVER_ADDRESS+'/companies', ['elbit','meta']);
 fetchMock.mock(SERVER_ADDRESS + "/mentors/elbit", [
   { username: "maor", firstName: "maor", lastName: "cohen" },
   { username: "maor", firstName: "yuval", lastName: "cohen" },

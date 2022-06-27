@@ -69,12 +69,12 @@ const CreateInternship = () => {
     createInternship(
       setPopup,
       setError,
-      company,
+      company.label,
       internshipName,
       internshipDescription,
       demands,
-      program,
-      mentor
+      program.label,
+      mentor.value
     );
   };
 
@@ -104,8 +104,8 @@ const CreateInternship = () => {
       />
       <Label>שם המנטור</Label>
       <Dropdown
-        value={mentor}
-        onChange={setMentor}
+        value={mentor.value}
+        onChange={setMentor(mentor)}
         options={mentors}
         placeholder={"בחר מנטור"}
       />
