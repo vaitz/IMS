@@ -48,11 +48,9 @@ export const getMentors = ({ setMentors, company }) => {
   })
     .then((response) => {
       response.json().then((data) => {
-        let names = data.map((mentor, index) => ({
-          username: mentor.username,
-          name: mentor.firstName + " " + mentor.lastName,
+        let names = data.map((mentor) => ({
           label: mentor.firstName + " " + mentor.lastName,
-          value: index,
+          value: mentor.username,
         }));
         setMentors(names);
       });

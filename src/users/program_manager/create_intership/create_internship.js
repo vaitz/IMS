@@ -69,12 +69,12 @@ const CreateInternship = () => {
     createInternship(
       setPopup,
       setError,
-      company,
+      company.label,
       internshipName,
       internshipDescription,
       demands,
-      program,
-      mentor
+      program.label,
+      mentor.value
     );
   };
 
