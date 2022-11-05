@@ -34,7 +34,7 @@ export const loginRequest = (
           if (data.program) {
             setProgramId(data.program);
           }
-          history.push("/njsw36/");
+          history.push("/");
         } else {
           setError(true);
         }

@@ -13,7 +13,7 @@ const ApproveAssignments = ({ programId, username }) => {
   return (
     <ConfirmationWindow
       onApprove={() => onApprove()}
-      onCancel={() => history.push("/njsw36/")}
+      onCancel={() => history.push("/")}
       content={"האם לאשר סופית את שיבוץ ההתמחויות?"}
     />
   );

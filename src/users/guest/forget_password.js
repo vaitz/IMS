@@ -17,13 +17,13 @@ export function ForgetPassEmail() {
       <PopUp
         trigger={submitted}
         setTrigger={() => {
-          history.push("/njsw36");
+          history.push("");
         }}
       >
         <h3>אימייל עם קישור לעדכון הסיסמה נשלח, נא לבדוק בתיבת הדואר הנכנס</h3>
         <button
           onClick={() => {
-            history.push("/njsw36");
+            history.push("");
           }}
         >
           ok
@@ -103,13 +103,13 @@ export function ForgetPass() {
       <PopUp
         trigger={submitted}
         setTrigger={() => {
-          history.push("/njsw36/login");
+          history.push("/login");
         }}
       >
         <h3>עדכון הסיסמה בוצע בהצלחה!</h3>
         <button
           onClick={() => {
-            history.push("/njsw36/login");
+            history.push("/login");
           }}
         >
           ok

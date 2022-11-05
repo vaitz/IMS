@@ -121,7 +121,7 @@ const LoginForm = ({
                     passwordShown ? "passVicon eye-slash" : "passVicon"
                   }
                 >
-                  <img src="/njsw36/static/images/icon/view.svg" alt="ico" />
+                  <img src="/static/images/icon/view.svg" alt="ico" />
                 </span>
               </span>
             </div>

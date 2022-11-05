@@ -44,9 +44,9 @@ const Header = ({
       >
         <div className="d-flex font-rubik align-items-center justify-content-center">
           <div className="logo">
-            <Link to="/njsw36/">
+            <Link to="/">
               <img
-                src="/njsw36/static/images/logo/logo.png"
+                src="/static/images/logo/logo.png"
                 alt="brand logo"
                 width="190"
                 height="70"
@@ -75,14 +75,11 @@ const Header = ({
                     {userType !== GUEST && (
                       <li key="disconnect">
                         <Link
-                          to="/njsw36/"
+                          to="/"
                           onClick={onLogout}
                           className="logout-action d-flex align-items-center"
                         >
-                          <img
-                            src="/njsw36/static/images/icon/120.svg"
-                            alt="icon"
-                          />
+                          <img src="/static/images/icon/120.svg" alt="icon" />
                           <span>התנתקות</span>
                         </Link>
                       </li>
@@ -93,27 +90,21 @@ const Header = ({
                     <ul className="right-widget user-login-button d-flex align-items-center justify-content-center">
                       <li>
                         <Link
-                          to="/njsw36/login"
+                          to="/login"
                           className="signIn-action d-flex align-items-center"
                         >
-                          <img
-                            src="/njsw36/static/images/icon/52.svg"
-                            alt="icon"
-                          />
+                          <img src="/static/images/icon/52.svg" alt="icon" />
                           <span>התחברות</span>
                         </Link>
                       </li>
                       {/* End li */}
                       <li>
                         <Link
-                          to="/njsw36/signup"
+                          to="/signup"
                           className="signUp-action d-flex align-items-center"
                         >
                           <span>הרשמה לתוכנית</span>
-                          <img
-                            src="/njsw36/static/images/icon/53.svg"
-                            alt="icon"
-                          />
+                          <img src="/static/images/icon/53.svg" alt="icon" />
                         </Link>
                       </li>
                     </ul>

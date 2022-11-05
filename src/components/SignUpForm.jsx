@@ -138,7 +138,7 @@ const SignUpForm = () => {
                     passwordShown ? "passVicon eye-slash" : "passVicon"
                   }
                 >
-                  <img src="/njsw36/static/images/icon/view.svg" alt="" />
+                  <img src="/static/images/icon/view.svg" alt="" />
                 </span>
               </span>
               {/* End placeholder icon */}
@@ -169,7 +169,7 @@ const SignUpForm = () => {
                     rePasswordShown ? "passVicon eye-slash" : "passVicon"
                   }
                 >
-                  <img src="/njsw36/static/images/icon/view.svg" alt="" />
+                  <img src="/static/images/icon/view.svg" alt="" />
                 </span>
               </span>
               {/* End placeholder icon */}

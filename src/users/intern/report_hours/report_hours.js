@@ -159,7 +159,7 @@ const ReportHours = ({ username }) => {
           }}
         >
           <h2>השעות שלי</h2>
-          <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+          <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
         </div>
         <HeaderWrapper>
           <Row>

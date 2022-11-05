@@ -13,12 +13,12 @@ const NotFound = () => {
       <div className="error-page d-lg-flex align-items-center">
         <div className="img-holder order-lg-last">
           <img
-            src="/njsw36/static/images/media/404.svg"
+            src="/static/images/media/404.svg"
             alt="media"
             className="w-100 illustration"
           />
           <img
-            src="/njsw36/static/images/media/404-q.svg"
+            src="/static/images/media/404-q.svg"
             alt="media"
             className="shapes qus"
           />
@@ -32,13 +32,13 @@ const NotFound = () => {
           <p className="font-rubik">כנראה ימומש בקרוב, הישארו מעודכנים!</p>
 
           <Link
-            to="/njsw36"
+            to=""
             className="back-home font-rubik d-flex align-items-center justify-content-center"
           >
             <span>חזור לדף הבית</span>
             <img
               className="rotate-180"
-              src="/njsw36/static/images/icon/53.svg"
+              src="/static/images/icon/53.svg"
               alt="icon"
             />
           </Link>

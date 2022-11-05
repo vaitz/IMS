@@ -97,7 +97,7 @@ const UploadReportMentor = ({ username }) => {
       <PopUp
         trigger={submitted}
         setTrigger={() => {
-          history.push("/njsw36/");
+          history.push("/");
         }}
       >
         <h3>ההעלאה בוצעה בהצלחה!</h3>
@@ -109,7 +109,7 @@ const UploadReportMentor = ({ username }) => {
             padding: "3px",
           }}
           onClick={() => {
-            history.push("/njsw36/");
+            history.push("/");
           }}
         >
           אוקיי
@@ -129,7 +129,7 @@ const UploadReportMentor = ({ username }) => {
       >
         <div className="messages">{successMessage()}</div>
         <h2>הגשת משובים</h2>
-        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+        <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
         <p>בחר מתמחה על מנת להגיש משוב עבורו</p>
         <Dropdown
           options={interns}

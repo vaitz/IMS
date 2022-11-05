@@ -131,7 +131,7 @@ const ApproveHours = ({ username }) => {
           }}
         >
           <h2>אישור דיווח שעות</h2>
-          <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+          <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
           <div>בחר מתמחה</div>
 
           <Dropdown

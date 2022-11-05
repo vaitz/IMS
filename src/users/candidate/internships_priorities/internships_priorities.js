@@ -85,13 +85,13 @@ const InternshipsPriorities = ({ username, program }) => {
     <Container className="font-rubik mt-35">
       <Row>
         {popup && (
-          <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>
+          <PopUp trigger={popup} setTrigger={() => history.push("/")}>
             {"בחירת התמחויות לפי סדר עדיפויות בוצע בהצלחה!"}
           </PopUp>
         )}
         <Column>
           <h1>בחירת עדיפויות</h1>
-          <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+          <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
           <Title>
             נא לבחור את ההתמחויות לפי סדר עדיפות (יש חשיבות לסדר בחירה)
           </Title>
@@ -135,7 +135,7 @@ const InternshipsPriorities = ({ username, program }) => {
             <Button value={"שלח עדיפויות"} onClick={handleClick} />
           </ButtonWrapper>
         </Column>
-        <img src={"/njsw36/static/images/assets/ils_03.svg"} />
+        <img src={"/static/images/assets/ils_03.svg"} />
       </Row>
     </Container>
   );

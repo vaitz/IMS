@@ -52,7 +52,7 @@ const Interns = ({ username }) => {
         }}
       >
         <h2>מתמחים</h2>
-        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+        <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
       </div>
       <MaterialTable
         pageSize={30}

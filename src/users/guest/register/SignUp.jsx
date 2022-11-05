@@ -21,17 +21,17 @@ const SignUp = () => {
           </h3>
           <div className="illustration-holder">
             <img
-              src="/njsw36/static/images/assets/ils_08.svg"
+              src="/static/images/assets/ils_08.svg"
               alt="illustration"
               className="illustration"
             />
             <img
-              src="/njsw36/static/images/assets/ils_08.1.svg"
+              src="/static/images/assets/ils_08.1.svg"
               alt="illustration"
               className="shapes shape-one"
             />
             <img
-              src="/njsw36/static/images/assets/ils_08.2.svg"
+              src="/static/images/assets/ils_08.2.svg"
               alt="illustration"
               className="shapes shape-two"
             />
@@ -41,12 +41,12 @@ const SignUp = () => {
 
         <div className="form-wrapper">
           <div className="font-rubik mt-10">
-            <Link className="font-rubik go-back-button" to="/njsw36/">
+            <Link className="font-rubik go-back-button" to="/">
               חזור לדף הבית
             </Link>
             <h2 className="font-rubik">הצטרפו אלינו!</h2>
             <p className="header-info pt-20 pb-30">
-              נרשמת למערכת כבר? מעבר ל<Link to="/njsw36/login">התחברות</Link>
+              נרשמת למערכת כבר? מעבר ל<Link to="/login">התחברות</Link>
             </p>
           </div>
           <Register />

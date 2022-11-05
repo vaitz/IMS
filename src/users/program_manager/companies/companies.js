@@ -51,7 +51,7 @@ const Companies = () => {
   return (
     <Container className="font-rubik container nav-container mt-35">
       <h2>חברות בתוכנית</h2>
-      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+      <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
       <div className="position">בחר חברה</div>
       <Dropdown
         options={companies}

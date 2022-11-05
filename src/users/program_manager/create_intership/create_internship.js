@@ -81,12 +81,12 @@ const CreateInternship = () => {
   return (
     <Container className="font-rubik mt-35">
       {popup && (
-        <PopUp trigger={popup} setTrigger={() => history.push("/njsw36/")}>
+        <PopUp trigger={popup} setTrigger={() => history.push("/")}>
           {`נוצרה ההתמחות:  "${internshipName}"  `}
         </PopUp>
       )}
       <h2>יצירת התמחות</h2>
-      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+      <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
 
       <Label>שם התוכנית</Label>
       <Dropdown

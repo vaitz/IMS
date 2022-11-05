@@ -111,7 +111,7 @@ export const AssignInternships = ({ programId }) => {
     <Container className="font-rubik text-center mt-35">
       <span>
         <h2>שיבוץ התמחויות</h2>
-        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+        <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
       </span>
       <p>בחר התמחות לשיבוץ:</p>
       <BaseDropDown

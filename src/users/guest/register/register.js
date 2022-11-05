@@ -63,7 +63,7 @@ const Register = () => {
       <PopUp
         trigger={submitted}
         setTrigger={() => {
-          history.push("/njsw36/login");
+          history.push("/login");
         }}
       >
         <h3>ההרשמה בוצעה בהצלחה!</h3>
@@ -75,7 +75,7 @@ const Register = () => {
             padding: "3px",
           }}
           onClick={() => {
-            history.push("/njsw36/login");
+            history.push("/login");
           }}
         >
           כניסה
@@ -247,7 +247,7 @@ const Register = () => {
                     passwordShown ? "passVicon eye-slash" : "passVicon"
                   }
                 >
-                  <img src="/njsw36/static/images/icon/view.svg" alt="" />
+                  <img src="/static/images/icon/view.svg" alt="" />
                 </span>
               </span>
             </div>
@@ -277,7 +277,7 @@ const Register = () => {
                     rePasswordShown ? "passVicon eye-slash" : "passVicon"
                   }
                 >
-                  <img src="/njsw36/static/images/icon/view.svg" alt="" />
+                  <img src="/static/images/icon/view.svg" alt="" />
                 </span>
               </span>
             </div>

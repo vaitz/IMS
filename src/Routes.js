@@ -39,14 +39,14 @@ const Routes = (props) => {
         <Header {...props} />
         <ScrollTopBehaviour />
         <Switch>
-          <Route exact path="/njsw36/companies" component={Companies} />
+          <Route exact path="/companies" component={Companies} />
           //common
-          <Route exact path="/njsw36/" component={Home} />
-          <Route path="/njsw36/changePass">
+          <Route exact path="/" component={Home} />
+          <Route path="/changePass">
             <ChangePass username={props.username} />
           </Route>
           //guest
-          <Route path="/njsw36/login">
+          <Route path="/login">
             <Login
               setUserType={props.setUserType}
               setFirstName={props.setFirstName}
@@ -54,69 +54,69 @@ const Routes = (props) => {
               setUsername={props.setUsername}
             />
           </Route>
-          <Route path="/njsw36/SignUp" component={SignUp} />
+          <Route path="/SignUp" component={SignUp} />
           // Advanced candidate
-          <Route path="/njsw36/internships">
+          <Route path="/internships">
             <Internships program={props.programId} />
           </Route>
-          <Route path="/njsw36/internshipsPriorities">
+          <Route path="/internshipsPriorities">
             <InternshipsPriorities
               program={props.programId}
               username={props.username}
             />
           </Route>
           // Intern
-          <Route path="/njsw36/reportHours">
+          <Route path="/reportHours">
             <ReportHours username={props.username} />
           </Route>
-          <Route path="/njsw36/uploadReport">
+          <Route path="/uploadReport">
             <UploadReport username={props.username} />
           </Route>
           //Mentor
-          <Route path="/njsw36/approveMentorCandidates">
+          <Route path="/approveMentorCandidates">
             <ApproveMentorCandidates username={props.username} />
           </Route>
-          <Route path="/njsw36/mentor/interns">
+          <Route path="/mentor/interns">
             <Interns username={props.username} />
           </Route>
-          <Route path="/njsw36/mentor/approveHours">
+          <Route path="/mentor/approveHours">
             <ApproveHours username={props.username} />
           </Route>
-          <Route path="/njsw36/uploadReportMentor">
+          <Route path="/uploadReportMentor">
             <UploadReportMentor username={props.username} />
           </Route>
           // COMPANY_REPRESENTATIVE
-          <Route path="/njsw36/CompanyPage">
+          <Route path="/CompanyPage">
             <CompanyPage username={props.username} />
           </Route>
-          <Route path="/njsw36/createInternship/company">
+          <Route path="/createInternship/company">
             <CreateInternshipCom username={props.username} />
           </Route>
-          <Route path="/njsw36/approveCompanyRepCandidates">
+          <Route path="/approveCompanyRepCandidates">
             <ApproveCompanyRepCandidates username={props.username} />
           </Route>
           //Program manager
-          <Route path="/njsw36/students">
+          <Route path="/students">
             <Students programId={props.programId} />
           </Route>
-          <Route path="/njsw36/assignInternships">
+          <Route path="/assignInternships">
             <AssignInternships programId={props.programId} />
           </Route>
           <Route
-            path="/njsw36/createInternship/manager"
+            path="/createInternship/manager"
             component={CreateInternship}
           />
-          <Route path="/njsw36/approveAssignments">
+          <Route path="/approveAssignments">
             <ApproveAssignments
               programId={props.programId}
               username={props.username}
             />
           </Route>
           //System manager
-          <Route path="/njsw36/programs">
+          <Route path="/programs">
             <Programs />
           </Route>
-          <Route path="/njsw36/createProgram" component={CreateProgram} />
+          <Route path="/createProgram" component={CreateProgram} />
           // Not found
           <Route path="/404" component={NotFound} />
           <Route component={NotFound} />

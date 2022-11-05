@@ -70,7 +70,7 @@ export default function Recommendations() {
         <div className="item" key={i}>
           <div className="bg-wrapper">
             <img
-              src={`/njsw36/static/images/logo/${val.img}.png`}
+              src={`/static/images/logo/${val.img}.png`}
               alt=""
               className="logo mr-auto"
             />

@@ -28,14 +28,14 @@ const InternshipInfo = () => {
 
         <p className="sing-in-call">
           רוצה לקחת חלק מהתוכנית?{" "}
-          <Link to="/njsw36/signup" className="font-rubik">
+          <Link to="/signup" className="font-rubik">
             הרשמה כאן
           </Link>
           .
         </p>
 
         <img
-          src="/njsw36/static/images/assets/ils_09.svg"
+          src="/static/images/assets/ils_09.svg"
           alt="illustration"
           className="illustration"
         />
@@ -43,52 +43,52 @@ const InternshipInfo = () => {
       {/* /.container */}
 
       <img
-        src="/njsw36/static/images/shape/68.svg"
+        src="/static/images/shape/68.svg"
         alt="shape"
         className="shapes shape-one"
       />
       <img
-        src="/njsw36/static/images/shape/69.svg"
+        src="/static/images/shape/69.svg"
         alt="shape"
         className="shapes shape-two"
       />
       <img
-        src="/njsw36/static/images/shape/70.svg"
+        src="/static/images/shape/70.svg"
         alt="shape"
         className="shapes shape-three"
       />
       <img
-        src="/njsw36/static/images/shape/71.svg"
+        src="/static/images/shape/71.svg"
         alt="shape"
         className="shapes shape-four"
       />
       <img
-        src="/njsw36/static/images/shape/72.svg"
+        src="/static/images/shape/72.svg"
         alt="shape"
         className="shapes shape-five"
       />
       <img
-        src="/njsw36/static/images/shape/73.svg"
+        src="/static/images/shape/73.svg"
         alt="shape"
         className="shapes shape-six"
       />
       <img
-        src="/njsw36/static/images/shape/74.svg"
+        src="/static/images/shape/74.svg"
         alt="shape"
         className="shapes shape-seven"
       />
       <img
-        src="/njsw36/static/images/shape/75.svg"
+        src="/static/images/shape/75.svg"
         alt="shape"
         className="shapes shape-eight"
       />
       <img
-        src="/njsw36/static/images/shape/76.svg"
+        src="/static/images/shape/76.svg"
         alt="shape"
         className="shapes shape-nine"
       />
       <img
-        src="/njsw36/static/images/shape/77.svg"
+        src="/static/images/shape/77.svg"
         alt="shape"
         className="shapes shape-ten"
       />

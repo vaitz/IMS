@@ -15,7 +15,7 @@ export const approveAssignments = ({ programId, history, username }) => {
     body: JSON.stringify(data),
   }).then((response) => {
     if (response.status === 200) {
-      history.push("/njsw36/");
+      history.push("/");
     }
   });
 };

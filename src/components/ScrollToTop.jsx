@@ -32,7 +32,7 @@ export default function ScrollToTop() {
       {isVisible && (
         <div>
           <button className="scroll-top " onClick={scrollToTop}>
-            <img src="/njsw36/static/images/icon/chevron-w.png" alt="icon" />
+            <img src="/static/images/icon/chevron-w.png" alt="icon" />
           </button>
         </div>
       )}

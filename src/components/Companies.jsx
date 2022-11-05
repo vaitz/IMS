@@ -32,7 +32,7 @@ const Companies = () => {
           className="companies d-flex align-items-center justify-content-center"
           key={i}
         >
-          <img src={`/njsw36/static/images/logo/${val}.png`} alt="logo" />
+          <img src={`/static/images/logo/${val}.png`} alt="logo" />
         </div>
       ))}
     </>

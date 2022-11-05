@@ -37,7 +37,7 @@ const Home = () => {
                     {" "}
                     והיכרות מעשית עם סביבת הפיתוח{" "}
                     <img
-                      src="/njsw36/static/images/shape/line-shape-3.svg"
+                      src="/static/images/shape/line-shape-3.svg"
                       alt="shape"
                     />
                   </span>
@@ -50,20 +50,14 @@ const Home = () => {
           {/* End .row */}
 
           <div className="row justify-content-center">
-            <img
-              src="/njsw36/static/images/logo/GavYam.jpg"
-              className="images"
-            />
-            <img src="/njsw36/static/images/logo/BGU.jpg" className="images" />
-            <img
-              src="/njsw36/static/images/logo/aloma.png"
-              className="images"
-            />
+            <img src="/static/images/logo/GavYam.jpg" className="images" />
+            <img src="/static/images/logo/BGU.jpg" className="images" />
+            <img src="/static/images/logo/aloma.png" className="images" />
 
             {/*<div className="col-xl-11 m-auto">*/}
             {/*  <FancyFeatureEight />*/}
             {/*</div>*/}
-            {/*<img src="/njsw36/static/images/logo/starship.jpg" className="illustration" />*/}
+            {/*<img src="/static/images/logo/starship.jpg" className="illustration" />*/}
           </div>
           {/* End .row */}
         </div>
@@ -90,7 +84,7 @@ const Home = () => {
                   <span>
                     מהרו והירשמו בהקדם{" "}
                     <img
-                      src="/njsw36/static/images/shape/line-shape-2.svg"
+                      src="/static/images/shape/line-shape-2.svg"
                       alt="shape"
                     />
                   </span>
@@ -109,7 +103,7 @@ const Home = () => {
               >
                 <div className="illustration-holder">
                   <img
-                    src="/njsw36/static/images/assets/ils_10.svg"
+                    src="/static/images/assets/ils_10.svg"
                     alt="illustration"
                   />
                 </div>
@@ -146,7 +140,7 @@ const Home = () => {
               >
                 <div className="illustration-holder">
                   <img
-                    src="/njsw36/static/images/assets/ils_11.svg"
+                    src="/static/images/assets/ils_11.svg"
                     alt="illustration"
                   />
                 </div>
@@ -179,7 +173,7 @@ const Home = () => {
               >
                 <div className="illustration-holder">
                   <img
-                    src="/njsw36/static/images/assets/ils_12.svg"
+                    src="/static/images/assets/ils_12.svg"
                     alt="illustration"
                   />
                 </div>
@@ -214,42 +208,42 @@ const Home = () => {
 		============================================== */}
       <div className="client-feedback-slider-two mt-180 md-mt-100">
         <img
-          src="/njsw36/static/images/shape/78.svg"
+          src="/static/images/shape/78.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="/njsw36/static/images/shape/79.svg"
+          src="/static/images/shape/79.svg"
           alt="shape"
           className="shapes shape-two"
         />
         <img
-          src="/njsw36/static/images/shape/80.svg"
+          src="/static/images/shape/80.svg"
           alt="shape"
           className="shapes shape-three"
         />
         <img
-          src="/njsw36/static/images/shape/81.svg"
+          src="/static/images/shape/81.svg"
           alt="shape"
           className="shapes shape-four"
         />
         <img
-          src="/njsw36/static/images/shape/82.svg"
+          src="/static/images/shape/82.svg"
           alt="shape"
           className="shapes shape-five"
         />
         <img
-          src="/njsw36/static/images/shape/83.svg"
+          src="/static/images/shape/83.svg"
           alt="shape"
           className="shapes shape-six"
         />
         <img
-          src="/njsw36/static/images/shape/84.svg"
+          src="/static/images/shape/84.svg"
           alt="shape"
           className="shapes shape-seven"
         />
         <img
-          src="/njsw36/static/images/shape/85.svg"
+          src="/static/images/shape/85.svg"
           alt="shape"
           className="shapes shape-eight"
         />
@@ -263,7 +257,7 @@ const Home = () => {
                   <span>
                     אומרים עליה{" "}
                     <img
-                      src="/njsw36/static/images/shape/line-shape-2.svg"
+                      src="/static/images/shape/line-shape-2.svg"
                       alt="shape"
                     />
                   </span>
@@ -289,7 +283,7 @@ const Home = () => {
                 <h2>
                   <span className="font-rubik">
                     החברות החונכות
-                    <img src="/njsw36/static/images/shape/line-shape-10.svg" />
+                    <img src="/static/images/shape/line-shape-10.svg" />
                   </span>
                 </h2>
               </div>
@@ -315,17 +309,17 @@ const Home = () => {
 
       <div className="faq-classic with-bg">
         <img
-          src="/njsw36/static/images/shape/86.svg"
+          src="/static/images/shape/86.svg"
           alt="shape"
           className="shapes shape-one"
         />
         <img
-          src="/njsw36/static/images/shape/87.svg"
+          src="/static/images/shape/87.svg"
           alt="shape"
           className="shapes shape-two"
         />
         <img
-          src="/njsw36/static/images/shape/88.svg"
+          src="/static/images/shape/88.svg"
           alt="shape"
           className="shapes shape-three"
         />
@@ -356,17 +350,17 @@ const Home = () => {
           </div>
         </div>
         <img
-          src="/njsw36/static/images/shape/89.svg"
+          src="/static/images/shape/89.svg"
           alt="shape"
           className="shapes shape-four"
         />
         <img
-          src="/njsw36/static/images/shape/90.svg"
+          src="/static/images/shape/90.svg"
           alt="shape"
           className="shapes shape-five"
         />
         <img
-          src="/njsw36/static/images/shape/91.svg"
+          src="/static/images/shape/91.svg"
           alt="shape"
           className="shapes shape-six"
         />

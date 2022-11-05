@@ -16,7 +16,7 @@ export const MenuBarData = {
   [GUEST]: [
     {
       title: "",
-      path: "/njsw36/",
+      path: "/",
       cName: "nav-text",
     },
   ],
@@ -24,7 +24,7 @@ export const MenuBarData = {
   [STUDENT]: [
     {
       title: "בית",
-      path: "/njsw36/",
+      path: "/",
       cName: "nav-text",
     },
     {
@@ -39,7 +39,7 @@ export const MenuBarData = {
     },
     {
       title: "עדכון סיסמה",
-      path: "/njsw36/changePass",
+      path: "/changePass",
       cName: "nav-text",
     },
   ],
@@ -47,7 +47,7 @@ export const MenuBarData = {
   [ADVANCED_CANDIDATE]: [
     {
       title: "בית",
-      path: "/njsw36/",
+      path: "/",
       cName: "nav-text",
     },
     {
@@ -57,17 +57,17 @@ export const MenuBarData = {
     },
     {
       title: "צפייה בהתמחויות",
-      path: "/njsw36/internships",
+      path: "/internships",
       cName: "nav-text",
     },
     {
       title: "בחירת התמחויות",
-      path: "/njsw36/internshipsPriorities",
+      path: "/internshipsPriorities",
       cName: "nav-text",
     },
     {
       title: "עדכון סיסמה",
-      path: "/njsw36/changePass",
+      path: "/changePass",
       cName: "nav-text",
     },
   ],
@@ -75,7 +75,7 @@ export const MenuBarData = {
   [INTERN]: [
     {
       title: "בית",
-      path: "/njsw36/",
+      path: "/",
       cName: "nav-text",
     },
     {
@@ -85,17 +85,17 @@ export const MenuBarData = {
     },
     {
       title: "דיווח שעות",
-      path: "/njsw36/reportHours",
+      path: "/reportHours",
       cName: "nav-text",
     },
     {
       title: "הגש דוח",
-      path: "/njsw36/uploadReport",
+      path: "/uploadReport",
       cName: "nav-text",
     },
     {
       title: "עדכון סיסמה",
-      path: "/njsw36/changePass",
+      path: "/changePass",
       cName: "nav-text",
     },
   ],
@@ -103,32 +103,32 @@ export const MenuBarData = {
   [MENTOR]: [
     {
       title: "בית",
-      path: "/njsw36/",
+      path: "/",
       cName: "nav-text",
     },
     {
       title: "צפה במועמדים",
-      path: "/njsw36/approveMentorCandidates",
+      path: "/approveMentorCandidates",
       cName: "nav-text",
     },
     {
       title: "מתמחים",
-      path: "/njsw36/mentor/interns",
+      path: "/mentor/interns",
       cName: "nav-text",
     },
     {
       title: "אישור דיווח שעות",
-      path: "/njsw36/mentor/approveHours",
+      path: "/mentor/approveHours",
       cName: "nav-text",
     },
     {
       title: "הגשת משובים",
-      path: "/njsw36/uploadReportMentor",
+      path: "/uploadReportMentor",
       cName: "nav-text",
     },
     {
       title: "עדכון סיסמה",
-      path: "/njsw36/changePass",
+      path: "/changePass",
       cName: "nav-text",
     },
   ],
@@ -136,27 +136,27 @@ export const MenuBarData = {
   [COMPANY_REPRESENTATIVE]: [
     {
       title: "בית",
-      path: "/njsw36/",
+      path: "/",
       cName: "nav-text",
     },
     {
       title: "דף החברה",
-      path: "/njsw36/companyPage",
+      path: "/companyPage",
       cName: "nav-text",
     },
     {
       title: "יצירת התמחות",
-      path: "/njsw36/createInternship/company",
+      path: "/createInternship/company",
       cName: "nav-text",
     },
     {
       title: "צפה במועמדים",
-      path: "/njsw36/approveCompanyRepCandidates",
+      path: "/approveCompanyRepCandidates",
       cName: "nav-text",
     },
     {
       title: "עדכון סיסמה",
-      path: "/njsw36/changePass",
+      path: "/changePass",
       cName: "nav-text",
     },
   ],
@@ -164,27 +164,27 @@ export const MenuBarData = {
   [PROGRAM_COORDINATOR]: [
     {
       title: "בית",
-      path: "/njsw36/",
+      path: "/",
       cName: "nav-text",
     },
     {
       title: "חברות",
-      path: "/njsw36/companies",
+      path: "/companies",
       cName: "nav-text",
     },
     {
       title: "יצירת התמחות",
-      path: "/njsw36/createInternship/manager",
+      path: "/createInternship/manager",
       cName: "nav-text",
     },
     {
       title: "סטודנטים",
-      path: "/njsw36/students",
+      path: "/students",
       cName: "nav-text",
     },
     {
       title: "שיבוץ התמחויות",
-      path: "/njsw36/assignInternships",
+      path: "/assignInternships",
       cName: "nav-text",
     },
     {
@@ -194,7 +194,7 @@ export const MenuBarData = {
     },
     {
       title: "עדכון סיסמה",
-      path: "/njsw36/changePass",
+      path: "/changePass",
       cName: "nav-text",
     },
   ],
@@ -202,32 +202,32 @@ export const MenuBarData = {
   [PROGRAM_MANAGER]: [
     {
       title: "בית",
-      path: "/njsw36/",
+      path: "/",
       cName: "nav-text",
     },
     {
       title: "חברות",
-      path: "/njsw36/companies",
+      path: "/companies",
       cName: "nav-text",
     },
     {
       title: "סטודנטים",
-      path: "/njsw36/students",
+      path: "/students",
       cName: "nav-text",
     },
     {
       title: "יצירת התמחות",
-      path: "/njsw36/createInternship/manager",
+      path: "/createInternship/manager",
       cName: "nav-text",
     },
     {
       title: "שיבוץ התמחויות",
-      path: "/njsw36/assignInternships",
+      path: "/assignInternships",
       cName: "nav-text",
     },
     {
       title: "אשר שיבוצים",
-      path: "/njsw36/approveAssignments",
+      path: "/approveAssignments",
       cName: "nav-text",
     },
     {
@@ -237,7 +237,7 @@ export const MenuBarData = {
     },
     {
       title: "עדכון סיסמה",
-      path: "/njsw36/changePass",
+      path: "/changePass",
       cName: "nav-text",
     },
   ],
@@ -245,17 +245,17 @@ export const MenuBarData = {
   [SYSTEM_MANAGER]: [
     {
       title: "בית",
-      path: "/njsw36/",
+      path: "/",
       cName: "nav-text",
     },
     {
       title: "תוכניות קיימות",
-      path: "/njsw36/programs",
+      path: "/programs",
       cName: "nav-text",
     },
     {
       title: "הוספת תוכנית התמחות",
-      path: "/njsw36/createProgram",
+      path: "/createProgram",
       cName: "nav-text",
     },
     {
@@ -265,7 +265,7 @@ export const MenuBarData = {
     },
     {
       title: "עדכון סיסמה",
-      path: "/njsw36/changePass",
+      path: "/changePass",
       cName: "nav-text",
     },
   ],

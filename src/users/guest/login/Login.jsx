@@ -14,21 +14,21 @@ const Login = ({ setUserType, setFirstName, setProgramId, setUsername }) => {
         <div className="illustration-wrapper d-flex align-items-center justify-content-between flex-column">
           <h3 className="font-rubik">
             רוצה לקחת חלק מתוכנית <br />
-            ההתמחות? <Link to="/njsw36/signup">הרשמ/י כאן</Link>
+            ההתמחות? <Link to="/signup">הרשמ/י כאן</Link>
           </h3>
           <div className="illustration-holder">
             <img
-              src="/njsw36/static/images/assets/ils_08.svg"
+              src="/static/images/assets/ils_08.svg"
               alt="illustration"
               className="illustration"
             />
             <img
-              src="/njsw36/static/images/assets/ils_08.1.svg"
+              src="/static/images/assets/ils_08.1.svg"
               alt="illustration"
               className="shapes shape-one"
             />
             <img
-              src="/njsw36/static/images/assets/ils_08.2.svg"
+              src="/static/images/assets/ils_08.2.svg"
               alt="illustration"
               className="shapes shape-two"
             />
@@ -38,14 +38,14 @@ const Login = ({ setUserType, setFirstName, setProgramId, setUsername }) => {
 
         <div className="form-wrapper">
           <div className="font-rubik mt-80 md-mt-40">
-            <Link className="font-rubik go-back-button" to="/njsw36/">
+            <Link className="font-rubik go-back-button" to="/">
               חזור לדף הבית
             </Link>
             <h2 className="font-rubik">
               שלום, ברוכים הבאים! <br />
             </h2>
             <p className="header-info pt-30 pb-50">
-              עדיין איך לך משתמש? <Link to="/njsw36/signup">הרשם כאן</Link>
+              עדיין איך לך משתמש? <Link to="/signup">הרשם כאן</Link>
             </p>
           </div>
 

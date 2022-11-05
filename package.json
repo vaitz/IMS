@@ -52,7 +52,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://rps.ise.bgu.ac.il/njsw36/",
+  "homepage": "https://internship.cs.bgu.ac.il/",
   "eslintConfig": {
     "extends": [
       "react-app",

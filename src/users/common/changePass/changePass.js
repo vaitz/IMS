@@ -68,7 +68,7 @@ function ChangePass({ username }) {
       <PopUp
         trigger={submitted}
         setTrigger={() => {
-          history.push("/njsw36/");
+          history.push("/");
         }}
       >
         <h3>עדכון הסיסמה בוצע בהצלחה!</h3>
@@ -80,7 +80,7 @@ function ChangePass({ username }) {
             padding: "3px",
           }}
           onClick={() => {
-            history.push("/njsw36/");
+            history.push("/");
           }}
         >
           אישור
@@ -137,7 +137,7 @@ function ChangePass({ username }) {
   return (
     <Container className="font-rubik  mt-35">
       <h2 className="font-rubik">עדכון סיסמה</h2>
-      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+      <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
       <label className="font-rubik" style={{ fontSize: 14 }}>
         הסיסמה החדשה צריכה להכיל לפחות 6 תווים ולשלב בתוכה אותיות גדולות וקטנות
         באנגלית ומספרים
@@ -174,7 +174,7 @@ function ChangePass({ username }) {
                   oldPasswordShown ? "passVicon eye-slash" : "passVicon"
                 }
               >
-                <img src="/njsw36/static/images/icon/view.svg" alt="" />
+                <img src="/static/images/icon/view.svg" alt="" />
               </span>
             </span>
           </div>
@@ -198,7 +198,7 @@ function ChangePass({ username }) {
               <span
                 className={passwordShown ? "passVicon eye-slash" : "passVicon"}
               >
-                <img src="/njsw36/static/images/icon/view.svg" alt="" />
+                <img src="/static/images/icon/view.svg" alt="" />
               </span>
             </span>
           </div>
@@ -226,7 +226,7 @@ function ChangePass({ username }) {
                   rePasswordShown ? "passVicon eye-slash" : "passVicon"
                 }
               >
-                <img src="/njsw36/static/images/icon/view.svg" alt="" />
+                <img src="/static/images/icon/view.svg" alt="" />
               </span>
             </span>
           </div>

@@ -41,7 +41,7 @@ const Internships = ({ program }) => {
   return (
     <Container>
       <h2 className="font-rubik mt-35">התמחויות</h2>
-      <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+      <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
       {showInternships}
     </Container>
   );

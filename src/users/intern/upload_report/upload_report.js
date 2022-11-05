@@ -74,7 +74,7 @@ const UploadReport = ({ username }) => {
       <PopUp
         trigger={submitted}
         setTrigger={() => {
-          history.push("/njsw36/");
+          history.push("/");
         }}
       >
         <h3>ההעלאה בוצעה בהצלחה!</h3>
@@ -86,7 +86,7 @@ const UploadReport = ({ username }) => {
             padding: "3px",
           }}
           onClick={() => {
-            history.push("/njsw36/");
+            history.push("/");
           }}
         >
           אוקיי
@@ -106,7 +106,7 @@ const UploadReport = ({ username }) => {
       >
         <div className="messages">{successMessage()}</div>
         <h2>העלאת דוח מסכם</h2>
-        <img src="/njsw36/static/images/shape/line-shape-3.svg" alt="shape" />
+        <img src="/static/images/shape/line-shape-3.svg" alt="shape" />
 
         <form
           id="form-file-upload"
